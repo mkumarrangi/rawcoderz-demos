@@ -4,156 +4,383 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Stay Dry Roofing · Concept homepage</title>
+<meta name="color-scheme" content="light">
+<title>Stay Dry Roofing · Concept homepage by Rawcoderz</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#14181d;--ink2:#4a525c;--paper:#f6f4f0;--card:#fff;--line:#dcd8d1;--slate:#1f2a35;--amber:#e8a020;--amber-ink:#1a1204;--ok:#1d7a46}
+:root{
+  --paper:#F1F4F3;--card:#FFFFFF;--line:#D6DDDD;--ink-soft:#46525C;--ok:#1E7A4C;--err:#B42318;
+  --ink:#1C3528;--ink-2:#284A38;--accent:#E6C140;--accent-ink:#1C2612;--accent-deep:#836810;
+  --wrap:1160px;--gut:20px;
+}
 *{box-sizing:border-box}
-html,body{margin:0}
-body{font-family:"Barlow",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper);font-size:17px;line-height:1.5}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:17px;line-height:1.55;font-stretch:100%}
 a{color:inherit}
-.concept{background:#fff7e0;color:#4a3a10;font-size:13px;padding:8px 16px;text-align:center;border-bottom:1px solid #ecd9a3}
-.concept b{font-weight:600}
-.top{background:var(--slate);color:#fff;position:sticky;top:0;z-index:5}
-.top .in{max-width:1120px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-.brand{font-family:"Barlow Condensed",Arial Narrow,sans-serif;font-weight:700;font-size:24px;letter-spacing:.02em;text-transform:uppercase;line-height:1.05}
-.call{display:inline-flex;align-items:center;gap:8px;background:var(--amber);color:var(--amber-ink);text-decoration:none;font-weight:700;padding:10px 16px;border-radius:6px;white-space:nowrap}
-.hero{background:linear-gradient(180deg,var(--slate) 0,#25323f 100%);color:#fff}
-.hero .in{max-width:1120px;margin:0 auto;padding:44px 20px 56px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:36px;align-items:start}
-@media (max-width:860px){.hero .in{grid-template-columns:minmax(0,1fr);padding-top:28px}}
-.eyebrow{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--amber)}
-h1{font-family:"Barlow Condensed",Arial Narrow,sans-serif;font-weight:700;font-size:clamp(40px,6vw,64px);line-height:.98;margin:10px 0 16px;text-wrap:balance}
-.lede{font-size:19px;color:#d7dde4;max-width:34ch;margin:0 0 22px}
-.proof{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
-.stars{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 14px;font-weight:600}
-.stars span{color:var(--amber);letter-spacing:2px}
-.proof a{color:#c9d2db;font-size:15px}
-.quote{background:var(--card);color:var(--ink);border-radius:12px;padding:22px;box-shadow:0 18px 40px rgba(0,0,0,.25)}
-.quote h2{font-family:"Barlow Condensed",Arial Narrow,sans-serif;font-size:28px;margin:0 0 4px;text-transform:uppercase;letter-spacing:.02em}
-.quote .sub{margin:0 0 16px;color:var(--ink2);font-size:15px}
-.steps{display:flex;gap:6px;margin-bottom:16px}
-.steps i{flex:1;height:5px;border-radius:3px;background:var(--line)}
-.steps i.on{background:var(--amber)}
-.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.opt{border:1.5px solid var(--line);background:#fff;border-radius:8px;padding:14px 12px;font:inherit;font-weight:600;text-align:left;cursor:pointer}
-.opt:hover,.opt:focus-visible{border-color:var(--slate);outline:none}
-label{display:block;font-size:14px;font-weight:600;margin:10px 0 4px}
-input{width:100%;font:inherit;padding:12px;border:1.5px solid var(--line);border-radius:8px}
-input:focus{outline:none;border-color:var(--slate)}
-.go{margin-top:14px;width:100%;background:var(--amber);color:var(--amber-ink);border:0;border-radius:8px;padding:14px;font:inherit;font-weight:700;font-size:18px;cursor:pointer}
-.fine{font-size:13px;color:var(--ink2);margin:10px 0 0}
-.done{text-align:center;padding:12px 4px}
-.done .tick{width:54px;height:54px;border-radius:50%;background:#e2f3e9;color:var(--ok);display:grid;place-items:center;font-size:28px;margin:0 auto 10px}
+img,svg{display:block}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* honest preview banner */
+.concept{background:#FFF4CC;color:#4A3B00;font-size:13.5px;line-height:1.4;padding:9px var(--gut);text-align:center;border-bottom:1px solid #EBD98F}
+.concept b{font-weight:650}
+
+/* header */
+.top{background:var(--ink);color:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(255,255,255,.08)}
+.top .wrap{display:flex;align-items:center;gap:24px;min-height:68px}
+.mark{font-stretch:118%;font-weight:800;font-size:21px;letter-spacing:-.01em;line-height:1.05;text-decoration:none;margin-right:auto}
+.mark small{display:block;font-stretch:100%;font-weight:450;font-size:12.5px;letter-spacing:0;color:rgba(255,255,255,.66);margin-top:3px}
+.nav{display:flex;gap:22px;font-size:15px}
+.nav a{text-decoration:none;color:rgba(255,255,255,.82)}
+.nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:10px;font:inherit;font-weight:700;font-size:16px;line-height:1;padding:14px 18px;cursor:pointer;text-decoration:none;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.call{background:var(--accent);color:var(--accent-ink)}
+.btn.call:hover{filter:brightness(1.06)}
+@media (max-width:880px){.nav{display:none}}
+@media (max-width:560px){.top .btn.call span{display:none}.top .btn.call{padding:12px}}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);grid-template-areas:"copy form" "proof form";grid-template-rows:auto 1fr;column-gap:56px;row-gap:28px;align-items:start;padding-top:56px;padding-bottom:128px}
+.copy{grid-area:copy}.quote{grid-area:form}.proof{grid-area:proof}
+@media (max-width:940px){.hero .wrap{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "form" "proof";grid-template-rows:auto;row-gap:28px;padding-top:32px;padding-bottom:104px}}
+.place{display:flex;align-items:center;gap:8px;font-size:15px;color:rgba(255,255,255,.72);margin:0 0 18px}
+.place svg{width:16px;height:16px;color:var(--accent)}
+h1{font-stretch:122%;font-weight:800;font-size:clamp(40px,6.4vw,78px);line-height:.96;letter-spacing:-.022em;margin:0 0 22px;text-wrap:balance;max-width:13ch}
+.lede{font-size:clamp(17px,1.6vw,20px);color:rgba(255,255,255,.82);max-width:40ch;margin:0}
+.lede a{color:#fff;font-weight:650;text-underline-offset:4px;white-space:nowrap}
+.proof{list-style:none;margin:0;padding:22px 0 0;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:18px 34px}
+.proof li{font-size:15px;color:rgba(255,255,255,.74);max-width:24ch;line-height:1.35}
+.proof b{display:block;font-stretch:112%;font-weight:750;font-size:22px;color:#fff;letter-spacing:-.01em;margin-bottom:3px}
+.stars{position:relative;display:inline-block;width:110px;height:20px;vertical-align:-3px;margin-right:8px}
+.stars svg{position:absolute;inset:0;width:110px;height:20px}
+.stars .fill{position:absolute;inset:0;overflow:hidden}
+.proof a{color:rgba(255,255,255,.9);text-underline-offset:3px}
+
+/* the rooftops */
+.roofs{position:absolute;left:0;right:0;bottom:-1px;height:110px;z-index:1;color:var(--paper)}
+.roofs svg{width:100%;height:100%}
+@media (max-width:940px){.roofs{height:76px}}
+
+/* quote form */
+.quote{background:var(--card);color:var(--ink);border-radius:16px;box-shadow:0 30px 60px -28px rgba(0,0,0,.55),0 0 0 1px rgba(0,0,0,.04);overflow:hidden}
+.q-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:20px 22px 0}
+.q-head h2{font-stretch:112%;font-weight:780;font-size:22px;letter-spacing:-.01em;margin:0}
+.q-step{font-size:13.5px;color:var(--ink-soft);white-space:nowrap}
+.q-bar{height:4px;background:var(--line);margin:14px 22px 0;border-radius:2px;overflow:hidden}
+.q-bar i{display:block;height:100%;width:33.33%;background:var(--accent-deep);border-radius:2px;transition:width .35s ease}
+.q-body{padding:18px 22px 22px}
+fieldset{border:0;margin:0 0 16px;padding:0;min-width:0}
+legend{font-weight:650;font-size:16px;padding:0;margin:0 0 10px}
+.q-title{font-weight:650;font-size:16px;margin:0 0 10px;outline:none}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.choices.five{grid-template-columns:repeat(5,minmax(0,1fr))}
+.choices.two{grid-template-columns:1fr 1fr}
+@media (max-width:420px){.choices.five{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.choice{position:relative}
+.choice input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.choice span{display:flex;align-items:center;min-height:50px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;font-weight:600;font-size:15px;line-height:1.25;background:#fff;transition:border-color .15s,background .15s}
+.choices.five .choice span,.choices.two .choice span{justify-content:center;text-align:center;min-height:44px;padding:8px 6px;font-size:14.5px}
+.choice input:hover+span{border-color:var(--ink-soft)}
+.choice input:checked+span{border-color:var(--ink);background:color-mix(in srgb,var(--accent) 16%,#fff);box-shadow:inset 0 0 0 1px var(--ink)}
+.choice input:focus-visible+span{outline:3px solid var(--accent);outline-offset:2px}
+.choice.wide{grid-column:1/-1}
+label.f{display:block;font-weight:600;font-size:15px;margin:0 0 6px}
+.field{margin:0 0 14px}
+.field input{width:100%;font:inherit;font-size:17px;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.field input:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 45%,transparent)}
+.field input[aria-invalid="true"]{border-color:var(--err)}
+.err{color:var(--err);font-size:14px;margin:6px 0 0;min-height:0}
+.err:empty{display:none}
+.q-actions{display:flex;gap:10px;align-items:center;margin-top:6px}
+.go{flex:1;background:var(--accent);color:var(--accent-ink);font-size:17px;padding:16px}
+.go:hover{filter:brightness(1.05)}
+.back{background:transparent;color:var(--ink-soft);padding:16px 8px;font-weight:600}
+.back:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+.fine{font-size:13px;color:var(--ink-soft);margin:12px 0 0;line-height:1.4}
 [hidden]{display:none!important}
-section{max-width:1120px;margin:0 auto;padding:56px 20px}
-section h2.t{font-family:"Barlow Condensed",Arial Narrow,sans-serif;font-size:36px;text-transform:uppercase;margin:0 0 18px;letter-spacing:.01em}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.svc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
-.svc h3{margin:0 0 6px;font-size:19px}
-.svc p{margin:0;color:var(--ink2);font-size:15px}
-.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
-.why div{border-top:3px solid var(--amber);padding-top:12px}
-.why b{display:block;font-family:"Barlow Condensed",Arial Narrow,sans-serif;font-size:30px}
-.band{background:var(--slate);color:#fff;text-align:center}
-.band section{padding:44px 20px}
-.band h2{font-family:"Barlow Condensed",Arial Narrow,sans-serif;font-size:34px;text-transform:uppercase;margin:0 0 14px}
-footer{max-width:1120px;margin:0 auto;padding:28px 20px 90px;color:var(--ink2);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
-.mobilebar{position:fixed;left:0;right:0;bottom:0;display:none;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:var(--slate);z-index:6}
-.mobilebar a{flex:1;text-align:center;text-decoration:none;font-weight:700;padding:12px;border-radius:8px}
-.mobilebar .a{background:var(--amber);color:var(--amber-ink)}
-.mobilebar .b{background:rgba(255,255,255,.12);color:#fff}
-@media (max-width:700px){.mobilebar{display:flex}.top .call{display:none}}
+.done-head{display:flex;gap:12px;align-items:center;margin:0 0 6px}
+.done-head .tick{width:40px;height:40px;border-radius:50%;background:#E3F3EA;color:var(--ok);display:grid;place-items:center;flex:none}
+.done-head .tick svg{width:22px;height:22px}
+.done-head h3{margin:0;font-stretch:112%;font-size:21px;font-weight:780;outline:none}
+.done p{margin:0 0 12px;color:var(--ink-soft);font-size:15px}
+.sms{background:#EEF1F1;border-radius:14px;padding:14px;margin:4px 0 12px}
+.sms .from{font-size:12.5px;color:var(--ink-soft);margin:0 0 8px;text-align:center}
+.bubble{background:#fff;border:1px solid var(--line);border-radius:16px 16px 16px 4px;padding:11px 13px;font-size:15px;line-height:1.45;max-width:94%;white-space:pre-line}
+
+/* sections */
+main section{padding:84px 0}
+@media (max-width:700px){main section{padding:60px 0}}
+h2.t{font-stretch:116%;font-weight:800;font-size:clamp(30px,3.6vw,44px);line-height:1.02;letter-spacing:-.018em;margin:0 0 14px;max-width:20ch;text-wrap:balance}
+.intro{color:var(--ink-soft);max-width:56ch;margin:0 0 36px;font-size:18px}
+
+.svc{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;margin:0;padding:0;list-style:none;border-top:2px solid var(--ink)}
+@media (max-width:760px){.svc{grid-template-columns:1fr}}
+.svc li{display:grid;grid-template-columns:34px minmax(0,1fr);gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
+.svc svg{width:30px;height:30px;color:var(--accent-deep);margin-top:2px}
+.svc h3{margin:0 0 4px;font-size:19px;font-weight:700;font-stretch:106%}
+.svc p{margin:0;color:var(--ink-soft);font-size:16px;max-width:42ch}
+
+.how{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;counter-reset:s}
+@media (max-width:760px){.steps{grid-template-columns:1fr;gap:26px}}
+.steps li{counter-increment:s;position:relative;padding-top:58px}
+.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:800;font-stretch:112%;font-size:19px}
+.steps li:not(:last-child)::after{content:"";position:absolute;top:21px;left:54px;right:-20px;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 8px,transparent 8px 14px)}
+@media (max-width:760px){.steps li:not(:last-child)::after{display:none}}
+.steps h3{margin:0 0 6px;font-size:20px;font-weight:720;font-stretch:108%}
+.steps p{margin:0;color:var(--ink-soft);font-size:16px;max-width:34ch}
+
+.revs{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px 48px;align-items:start}
+@media (max-width:860px){.revs{grid-template-columns:1fr}}
+blockquote{margin:0}
+.lead-q{font-stretch:104%;font-size:clamp(22px,2.4vw,29px);line-height:1.32;font-weight:520;letter-spacing:-.005em;padding-left:24px;border-left:5px solid var(--accent)}
+.lead-q p{margin:0 0 16px}
+cite{font-style:normal;font-size:15px;color:var(--ink-soft);font-weight:600}
+.side-q{display:grid;gap:22px}
+.side-q blockquote{padding:0 0 22px;border-bottom:1px solid var(--line)}
+.side-q blockquote:last-child{border-bottom:0;padding-bottom:0}
+.side-q p{margin:0 0 8px;font-size:16.5px}
+.score{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:30px 0 0;padding:18px 20px;background:var(--card);border:1px solid var(--line);border-radius:12px}
+.score .stars{width:110px}
+.score b{font-stretch:112%;font-size:22px}
+.score a{margin-left:auto;font-weight:650;text-underline-offset:4px}
+@media (max-width:560px){.score a{margin-left:0}}
+
+.area{background:var(--ink);color:#fff}
+.area .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:center}
+@media (max-width:860px){.area .wrap{grid-template-columns:1fr}}
+.area h2.t{color:#fff}
+.area .intro{color:rgba(255,255,255,.78);margin-bottom:0}
+.cta-box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:24px;display:grid;gap:12px}
+.cta-box p{margin:0;color:rgba(255,255,255,.78);font-size:15px}
+.cta-box .btn{width:100%}
+.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5)}
+.btn.ghost:hover{box-shadow:inset 0 0 0 1.5px #fff}
+
+footer{padding:34px 0 110px;font-size:14.5px;color:var(--ink-soft)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 32px;justify-content:space-between}
+footer b{color:var(--ink)}
+
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:var(--ink);box-shadow:0 -8px 24px rgba(0,0,0,.18)}
+.bar .btn{flex:1;padding:15px 10px}
+@media (max-width:700px){.bar{display:flex}footer{padding-bottom:120px}}
 </style>
 </head>
 <body>
-<div class="concept"><b>Concept preview</b> made by Rawcoderz for Stay Dry Roofing. This is not Stay Dry Roofing's official website. Questions or removal: mukesh.kumar@rawcoderz.com</div>
+<div class="concept" role="note"><b>Concept preview</b> made by Rawcoderz for Stay Dry Roofing. This is not Stay Dry Roofing's official website. Questions or removal: mukesh.kumar@rawcoderz.com</div>
 
-<header class="top"><div class="in">
-  <div class="brand">Stay Dry Roofing</div>
-  <a class="call" href="tel:+18132329430">Call (813) 232-9430</a>
+<header class="top"><div class="wrap">
+  <a class="mark" href="#top">Stay Dry Roofing<small>Tampa, FL roofing</small></a>
+  <nav class="nav" aria-label="Sections"><a href="#services">Services</a><a href="#how">How quotes work</a><a href="#reviews">Reviews</a><a href="#area">Service area</a></nav>
+  <a class="btn call" href="tel:+18132329430"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 3.5h3.5l1.8 4.6-2.3 1.4a11 11 0 0 0 6.5 6.5l1.4-2.3 4.6 1.8V19a1.8 1.8 0 0 1-1.9 1.8A16.5 16.5 0 0 1 3.2 5.4 1.8 1.8 0 0 1 5 3.5z"/></svg><span>(813) 232-9430</span></a>
 </div></header>
 
-<div class="hero"><div class="in">
-  <div>
-    <div class="eyebrow">Tampa, FL roofing</div>
-    <h1>Roof repair &amp; replacement you can count on</h1>
-    <p class="lede">Get a free quote in about 30 seconds. Call (813) 232-9430 or send a request below.</p>
-    <div class="proof">
-      <span class="stars"><span>★★★★★</span>4.5 on Google · 205 reviews</span>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Stay%20Dry%20Roofing%20of%20Tampa%20Bay%20Inc.&amp;query_place_id=ChIJpXY6BRrEwogRE7aBWe2wXiw" target="_blank" rel="noopener">Read the reviews on Google</a>
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div class="copy">
+      <p class="place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Roofing in Tampa, FL</p>
+      <h1>Keeping Tampa Bay dry for over 30 years</h1>
+      <p class="lede">Tell us what's going on and get a quote, or call <a href="tel:+18132329430">(813) 232-9430</a>.</p>
     </div>
-  </div>
 
-  <form class="quote" id="q" novalidate>
-    <h2>Free roof quote</h2>
-    <p class="sub">Three quick steps. No obligation.</p>
-    <div class="steps" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+    <form class="quote" id="quote" novalidate aria-labelledby="q-h">
+      <div class="q-head"><h2 id="q-h">Get a free quote</h2><span class="q-step" id="q-step" aria-live="polite">Step 1 of 3</span></div>
+      <div class="q-bar" aria-hidden="true"><i id="q-bar"></i></div>
+      <div class="q-body">
 
-    <div data-step="1">
-      <div class="opts" role="group" aria-label="What do you need?">
-        <button class="opt" type="button" data-v="Roof repair">Roof repair</button>
-        <button class="opt" type="button" data-v="Full replacement">Full replacement</button>
-        <button class="opt" type="button" data-v="Storm or leak damage">Storm or leak damage</button>
-        <button class="opt" type="button" data-v="Inspection">Inspection</button>
+        <div data-step="1">
+          <fieldset>
+            <legend class="q-title" tabindex="-1">What do you need?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="need" value="Roof repair"><span>Roof repair</span></label>
+              <label class="choice"><input type="radio" name="need" value="Roof replacement"><span>Roof replacement</span></label>
+              <label class="choice"><input type="radio" name="need" value="Storm or leak damage"><span>Storm or leak damage</span></label>
+              <label class="choice"><input type="radio" name="need" value="Inspection"><span>Inspection</span></label>
+              <label class="choice wide"><input type="radio" name="need" value="Something else"><span>Something else</span></label>
+            </div>
+            <p class="err" id="e-need" role="alert"></p>
+          </fieldset>
+          <div class="q-actions"><button class="btn go" type="button" data-next="2">Next</button></div>
+        </div>
+
+        <div data-step="2" hidden>
+          <div class="field">
+            <label class="f q-title" for="q-zip" tabindex="-1">Property ZIP code</label>
+            <input id="q-zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="33602" aria-describedby="e-zip">
+            <p class="err" id="e-zip" role="alert"></p>
+          </div>
+          <fieldset>
+            <legend>Roof type</legend>
+            <div class="choices five">
+              <label class="choice"><input type="radio" name="roof" value="Shingle" checked><span>Shingle</span></label>
+              <label class="choice"><input type="radio" name="roof" value="Tile"><span>Tile</span></label>
+              <label class="choice"><input type="radio" name="roof" value="Metal"><span>Metal</span></label>
+              <label class="choice"><input type="radio" name="roof" value="Flat"><span>Flat</span></label>
+              <label class="choice"><input type="radio" name="roof" value="Not sure"><span>Not sure</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Is water coming in right now?</legend>
+            <div class="choices two">
+              <label class="choice"><input type="radio" name="leak" value="Yes"><span>Yes</span></label>
+              <label class="choice"><input type="radio" name="leak" value="No" checked><span>No</span></label>
+            </div>
+          </fieldset>
+          <div class="q-actions"><button class="btn back" type="button" data-back="1">Back</button><button class="btn go" type="button" data-next="3">Next</button></div>
+        </div>
+
+        <div data-step="3" hidden>
+          <div class="field">
+            <label class="f q-title" for="q-name" tabindex="-1">Your name</label>
+            <input id="q-name" name="name" autocomplete="name" aria-describedby="e-name">
+            <p class="err" id="e-name" role="alert"></p>
+          </div>
+          <div class="field">
+            <label class="f" for="q-phone">Mobile number</label>
+            <input id="q-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(813) 555-0100" aria-describedby="e-phone">
+            <p class="err" id="e-phone" role="alert"></p>
+          </div>
+          <fieldset>
+            <legend>Best time to call</legend>
+            <div class="choices five" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+              <label class="choice"><input type="radio" name="when" value="Morning" checked><span>Morning</span></label>
+              <label class="choice"><input type="radio" name="when" value="Afternoon"><span>Afternoon</span></label>
+              <label class="choice"><input type="radio" name="when" value="Evening"><span>Evening</span></label>
+            </div>
+          </fieldset>
+          <div class="q-actions"><button class="btn back" type="button" data-back="2">Back</button><button class="btn go" type="submit">Get my quote</button></div>
+          <p class="fine">This is a preview, so nothing is sent.</p>
+        </div>
+
+        <div data-step="4" class="done" hidden>
+          <div class="done-head"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><h3 tabindex="-1" id="q-done">Request sent</h3></div>
+          <p>On the live site, Stay Dry Roofing would get this text within seconds:</p>
+          <div class="sms"><p class="from">New quote request</p><div class="bubble" id="q-sms"></div></div>
+          <div class="q-actions"><button class="btn back" type="button" id="q-reset">Start a new request</button></div>
+        </div>
+
       </div>
-    </div>
+    </form>
 
-    <div data-step="2" hidden>
-      <label for="zip">Property ZIP code</label>
-      <input id="zip" inputmode="numeric" maxlength="5" placeholder="33602">
-      <label for="age">Roof age (approximate)</label>
-      <input id="age" placeholder="e.g. 15 years">
-      <button class="go" type="button" id="next2">Next</button>
-    </div>
+    <ul class="proof"><li><b><span class="stars" role="img" aria-label="4.5 out of 5 stars"><svg viewBox="0 0 110 20" fill="rgba(255,255,255,.25)" aria-hidden="true"><path transform="translate(0.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(22.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(45.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(67.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(90.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/></svg><span class="fill" style="width:90.0%"><svg viewBox="0 0 110 20" fill="var(--accent)" aria-hidden="true"><path transform="translate(0.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(22.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(45.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(67.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(90.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/></svg></span></span>4.5</b>From 205 Google reviews. <a href="https://www.google.com/maps/search/?api=1&amp;query=Stay%20Dry%20Roofing%20of%20Tampa%20Bay%20Inc.&amp;query_place_id=ChIJpXY6BRrEwogRE7aBWe2wXiw" target="_blank" rel="noopener">Read them</a></li><li><b>30+ years</b>Family owned and operated</li><li><b>GAF</b>Master Elite contractor</li><li><b>Licensed</b>Florida contractor license CCC1330343</li></ul>
+  </div>
+  <div class="roofs" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="xMidYMax slice" fill="currentColor">
+      <path d="M0 120V84l64-34 64 34v-8l92-52 92 52v18l40-22 40 22V64l104-50 104 50v24l54-28 54 28V76l80-40 80 40v14l56-30 56 30V54l106-46 106 46v30l58-28 58 28V72l62-32 62 32H1440V120z"/><rect x="156" y="40" width="12" height="24"/><rect x="428" y="26" width="14" height="26"/><rect x="1138" y="18" width="14" height="22"/>
+    </svg>
+  </div>
+</div>
 
-    <div data-step="3" hidden>
-      <label for="nm">Your name</label>
-      <input id="nm" autocomplete="name">
-      <label for="ph">Mobile number</label>
-      <input id="ph" type="tel" autocomplete="tel">
-      <button class="go" type="submit">Get my free quote</button>
-      <p class="fine">In this preview the form isn't connected. On a live site, requests go straight to your phone and email.</p>
-    </div>
+<section id="services"><div class="wrap">
+  <h2 class="t">What Stay Dry Roofing does</h2>
+  <p class="intro">The work Stay Dry Roofing takes on, from a single leak to a whole new roof.</p>
+  <ul class="svc"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12 12 4.5l9.5 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M10 19.5v-5h4v5"/></svg><div><h3>Residential roofing</h3><p>Repairs and replacements for single-family homes.</p></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20.5V5.5l8-2.5v17.5"/><path d="M12 9.5h8v11"/><path d="M2.5 20.5h19"/><path d="M7 8h2M7 11.5h2M7 15h2M15 13h2M15 16.5h2"/></svg><div><h3>Commercial roofing</h3><p>Flat and low-slope roofs for offices, retail and warehouses.</p></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 12 12 4.5l9.5 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M10 19.5v-5h4v5"/></svg><div><h3>Roof replacement</h3><p>Tear-off and a complete new roof system.</p></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3.6 17.4a1.4 1.4 0 0 0 2 2l5.7-5.7a4 4 0 0 0 5.4-5.4l-2.5 2.5-2-2z"/></svg><div><h3>Roof repair</h3><p>Leaks, lifted shingles, cracked tiles and worn flashing.</p></div></li></ul>
+</div></section>
 
-    <div class="done" data-step="4" hidden>
-      <div class="tick">✓</div>
-      <h2>Request received</h2>
-      <p class="sub">This is how your customers would finish. On the live site you'd get a text with their details within seconds.</p>
-    </div>
-  </form>
-</div></div>
+<section class="how" id="how"><div class="wrap">
+  <h2 class="t">How a quote works</h2>
+  <p class="intro">Three steps, and the first one takes about 30 seconds.</p>
+  <ol class="steps">
+    <li><h3>Tell us what's going on</h3><p>Pick the job, add your ZIP code and a number. It takes about 30 seconds.</p></li>
+    <li><h3>Stay Dry Roofing calls you</h3><p>Your request arrives as a text, so you hear back to set a time to look at the roof.</p></li>
+    <li><h3>You get a price</h3><p>After the visit you get a quote for the work, and you decide.</p></li>
+  </ol>
+</div></section>
 
-<section>
-  <h2 class="t">Services</h2>
-  <div class="grid"><div class="svc"><h3>Residential roofing</h3></div><div class="svc"><h3>Commercial roofing</h3></div><div class="svc"><h3>Roof replacement</h3></div><div class="svc"><h3>Roof repair</h3></div></div>
-</section>
+<section id="reviews"><div class="wrap"><h2 class="t">What customers say</h2><p class="intro">From reviews already published on their own website.</p><div class="revs"><blockquote class="lead-q"><p>“We used Stay Dry Roofing 21 years ago so naturally we chose them to replace that roof. … The roof was replaced in one day and looks great!”</p><cite>Daniel H.</cite></blockquote><div class="side-q"><blockquote><p>“We have had a total of two roofs replaced by Stay Dry. Each time, they handled things flawlessly. Highest quality workmanship, excellent price, totally professional.”</p><cite>Christopher C.</cite></blockquote><blockquote><p>“I am very pleased with my new roof from Stay Dry Roofing.”</p><cite>Alan B.</cite></blockquote></div></div><div class="score"><span class="stars" role="img" aria-label="4.5 out of 5 stars"><svg viewBox="0 0 110 20" fill="#D6DDDD" aria-hidden="true"><path transform="translate(0.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(22.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(45.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(67.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(90.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/></svg><span class="fill" style="width:90.0%"><svg viewBox="0 0 110 20" fill="var(--accent)" aria-hidden="true"><path transform="translate(0.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(22.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(45.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(67.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(90.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/></svg></span></span><b>4.5</b><span>from 205 Google reviews</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Stay%20Dry%20Roofing%20of%20Tampa%20Bay%20Inc.&amp;query_place_id=ChIJpXY6BRrEwogRE7aBWe2wXiw" target="_blank" rel="noopener">Read all 205 on Google</a></div></div></section>
 
-<section>
-  <h2 class="t">Why homeowners choose Stay Dry Roofing</h2>
-  <div class="why"><div><b>GAF</b>Master Elite contractor</div><div><b>4.5 ★</b>Average from 205 Google reviews</div><div><b>30 sec</b>To request a free quote, day or night</div><div><b>Local</b>Serving Tampa and nearby areas</div></div>
-</section>
+<section class="area" id="area"><div class="wrap">
+  <div>
+    <h2 class="t">Serving Tampa Bay</h2>
+    <p class="intro">Homes and businesses across Tampa and the surrounding area.</p>
+  </div>
+  <div class="cta-box">
+    <a class="btn call" href="tel:+18132329430"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 3.5h3.5l1.8 4.6-2.3 1.4a11 11 0 0 0 6.5 6.5l1.4-2.3 4.6 1.8V19a1.8 1.8 0 0 1-1.9 1.8A16.5 16.5 0 0 1 3.2 5.4 1.8 1.8 0 0 1 5 3.5z"/></svg>Call (813) 232-9430</a>
+    <a class="btn ghost" href="#quote">Get a free quote online</a>
+    <p>Open weekdays 9:30 AM to 6 PM.</p>
+  </div>
+</div></section>
+</main>
 
-<div class="band"><section>
-  <h2>Need a roofer in Tampa?</h2>
-  <a class="call" href="tel:+18132329430">Call (813) 232-9430</a>
-</section></div>
+<footer><div class="wrap">
+  <span><b>Stay Dry Roofing</b><br>4700 N Florida Ave, Tampa, FL 33603</span>
+  <span>(813) 232-9430<br>License CCC1330343</span>
+</div></footer>
 
-<footer>
-  <span>Stay Dry Roofing · 4700 N Florida Ave, Tampa, FL 33603</span>
-  <span>(813) 232-9430</span>
-</footer>
+<div class="bar"><a class="btn call" href="tel:+18132329430"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 3.5h3.5l1.8 4.6-2.3 1.4a11 11 0 0 0 6.5 6.5l1.4-2.3 4.6 1.8V19a1.8 1.8 0 0 1-1.9 1.8A16.5 16.5 0 0 1 3.2 5.4 1.8 1.8 0 0 1 5 3.5z"/></svg>Call</a><a class="btn" href="#quote" style="background:#fff;color:var(--ink)">Get a quote</a></div>
 
-<div class="mobilebar"><a class="b" href="tel:+18132329430">Call</a><a class="a" href="#q">Free quote</a></div>
-
+<script type="application/json" id="biz">{"name": "Stay Dry Roofing", "phone": "(813) 232-9430"}</script>
 <script>
 (function(){
-  var f=document.getElementById('q'),steps=f.querySelectorAll('[data-step]'),bars=f.querySelectorAll('.steps i');
-  function show(n){steps.forEach(function(s){s.hidden=s.getAttribute('data-step')!=String(n)});bars.forEach(function(b,i){b.className=i<n?'on':''});}
-  f.querySelectorAll('.opt').forEach(function(b){b.addEventListener('click',function(){show(2);document.getElementById('zip').focus();});});
-  document.getElementById('next2').addEventListener('click',function(){show(3);document.getElementById('nm').focus();});
-  f.addEventListener('submit',function(e){e.preventDefault();show(4);});
+  var biz = JSON.parse(document.getElementById('biz').textContent);
+  var f = document.getElementById('quote');
+  var steps = f.querySelectorAll('[data-step]');
+  var bar = document.getElementById('q-bar'), lbl = document.getElementById('q-step');
+  var cur = 1;
+  function val(n){ var el = f.querySelector('input[name="'+n+'"]:checked'); return el ? el.value : ''; }
+  function err(id, msg, input){ document.getElementById(id).textContent = msg || ''; if (input) input.setAttribute('aria-invalid', msg ? 'true' : 'false'); }
+  function show(n){
+    cur = n;
+    steps.forEach(function(s){ s.hidden = s.getAttribute('data-step') !== String(n); });
+    bar.style.width = (n >= 4 ? 100 : n * 33.34) + '%';
+    lbl.textContent = n >= 4 ? 'Done' : 'Step ' + n + ' of 3';
+    var t = f.querySelector('[data-step="'+n+'"] .q-title, [data-step="'+n+'"] h3');
+    if (t) t.focus({preventScroll:true});
+  }
+  function check(n){
+    if (n === 1){ var ok = !!val('need'); err('e-need', ok ? '' : 'Pick one to continue.'); return ok; }
+    if (n === 2){ var z = document.getElementById('q-zip'); var ok2 = /^\d{5}$/.test(z.value.trim()); err('e-zip', ok2 ? '' : 'Enter a 5-digit ZIP code.', z); if (!ok2) z.focus(); return ok2; }
+    if (n === 3){
+      var nm = document.getElementById('q-name'), ph = document.getElementById('q-phone');
+      var okn = nm.value.trim().length > 1, digits = ph.value.replace(/\D/g,'').replace(/^1(?=\d{10}$)/,''), okp = digits.length === 10;
+      err('e-name', okn ? '' : 'Add your name so they know who to ask for.', nm);
+      err('e-phone', okp ? '' : 'Enter a 10-digit phone number.', ph);
+      if (!okn) nm.focus(); else if (!okp) ph.focus();
+      return okn && okp;
+    }
+    return true;
+  }
+  f.addEventListener('change', function(e){ if (e.target.name === 'need') err('e-need',''); });
+  f.querySelectorAll('[data-next]').forEach(function(b){ b.addEventListener('click', function(){ if (check(cur)) show(+b.getAttribute('data-next')); }); });
+  f.querySelectorAll('[data-back]').forEach(function(b){ b.addEventListener('click', function(){ show(+b.getAttribute('data-back')); }); });
+  var zip = document.getElementById('q-zip');
+  zip.addEventListener('input', function(){ zip.value = zip.value.replace(/\D/g,'').slice(0,5); if (/^\d{5}$/.test(zip.value)) err('e-zip','',zip); });
+  var ph = document.getElementById('q-phone');
+  ph.addEventListener('input', function(){
+    var d = ph.value.replace(/\D/g,'').replace(/^1/,'').slice(0,10), o = d;
+    if (d.length > 6) o = '(' + d.slice(0,3) + ') ' + d.slice(3,6) + '-' + d.slice(6);
+    else if (d.length > 3) o = '(' + d.slice(0,3) + ') ' + d.slice(3);
+    ph.value = o; if (d.length === 10) err('e-phone','',ph);
+  });
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (cur !== 3) { if (check(cur)) show(cur + 1); return; }
+    if (!check(3)) return;
+    var leak = val('leak') === 'Yes';
+    document.getElementById('q-sms').textContent =
+      (leak ? 'Leaking now. ' : '') + val('need') + ' in ' + zip.value.trim() + ', ' + val('roof').toLowerCase() + ' roof.\n' +
+      document.getElementById('q-name').value.trim() + ', ' + ph.value + '\nBest time: ' + val('when').toLowerCase() + '.';
+    show(4);
+  });
+  document.getElementById('q-reset').addEventListener('click', function(){
+    f.reset(); ['e-need','e-zip','e-name','e-phone'].forEach(function(id){ err(id,''); });
+    f.querySelectorAll('[aria-invalid]').forEach(function(i){ i.removeAttribute('aria-invalid'); });
+    show(1);
+  });
+  document.querySelectorAll('a[href="#quote"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      f.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center'});
+      setTimeout(function(){ var t = f.querySelector('[data-step="'+cur+'"] .q-title, [data-step="'+cur+'"] input'); if (t) t.focus({preventScroll:true}); }, 350);
+    });
+  });
 })();
 </script>
 </body>
