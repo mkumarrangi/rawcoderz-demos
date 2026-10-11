@@ -1,0 +1,1133 @@
+[
+  {
+    "name": "The Messy Door Cafe",
+    "slug": "the-messy-door-cafe",
+    "layout": "collage",
+    "primary": "#e45480",
+    "bg": "#fff1ee",
+    "ink": "#402538",
+    "accent": "#d8ed9c",
+    "displayFont": "Fraunces",
+    "bodyFont": "DM Sans",
+    "title": "A little messy.<br>A lot to love.",
+    "kicker": "Pink moods. Big cravings. Your kind of corner.",
+    "description": "Bubble tea, pizza and those just-one-more-bite moments.",
+    "categories": [
+      "Bubble tea",
+      "Pizza",
+      "Pasta"
+    ],
+    "menuType": "cafe",
+    "storyTitle": "A mood worth staying for.",
+    "menuIntro": "Choose your favourites. Make room for a little more.",
+    "area": "Mansarovar",
+    "group": "cafe",
+    "address": "Mansarovar, Jaipur, Rajasthan. Full address to be confirmed.",
+    "phone": "+91 93510 57718",
+    "email": null,
+    "emailQuality": "Unconfirmed",
+    "maps": "https://www.google.com/maps/search/?api=1&query=The%20Messy%20Door%20Cafe%2C%20Mansarovar%2C%20Jaipur",
+    "sourceLinks": [],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Hold for qualification",
+    "index": 0
+  },
+  {
+    "name": "Cosmos Cafe",
+    "slug": "cosmos-cafe",
+    "layout": "orbit",
+    "primary": "#c58b5e",
+    "bg": "#142239",
+    "ink": "#f6eee3",
+    "accent": "#bdd0d7",
+    "displayFont": "Cormorant Garamond",
+    "bodyFont": "Manrope",
+    "title": "A pause.<br>In your orbit.",
+    "kicker": "Coffee, quietly extraordinary.",
+    "description": "For slow conversations, a good book and your next coffee ritual.",
+    "categories": [
+      "Coffee",
+      "Small plates",
+      "Sweet things"
+    ],
+    "menuType": "coffee",
+    "storyTitle": "Find your own little orbit.",
+    "menuIntro": "A thoughtful menu for unhurried moments.",
+    "area": "Mansarovar",
+    "group": "cafe",
+    "address": "Mansarovar, Jaipur, Rajasthan. Full address to be confirmed.",
+    "phone": "+91 94140 51795",
+    "email": null,
+    "emailQuality": "Unconfirmed",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Cosmos%20Cafe%2C%20Mansarovar%2C%20Jaipur",
+    "sourceLinks": [],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Hold for qualification",
+    "index": 1
+  },
+  {
+    "name": "The Rustic Spot Cafe",
+    "slug": "the-rustic-spot-cafe",
+    "layout": "workshop",
+    "primary": "#b55735",
+    "bg": "#f3eadb",
+    "ink": "#30281f",
+    "accent": "#7c8659",
+    "displayFont": "Barlow Condensed",
+    "bodyFont": "Work Sans",
+    "title": "FIRE. FLOUR.<br>GOOD COMPANY.",
+    "kicker": "Wood-fired moods, all day.",
+    "description": "Rustic textures, generous slices and a little time around the table.",
+    "categories": [
+      "Wood-fired pizza",
+      "Coffee",
+      "Small plates"
+    ],
+    "menuType": "pizza",
+    "storyTitle": "A little closer to the fire.",
+    "menuIntro": "Pick a slice of something good.",
+    "area": "Mansarovar",
+    "group": "cafe",
+    "address": "Mansarovar, Jaipur, Rajasthan. Full address to be confirmed.",
+    "phone": "+91 99824 52074",
+    "email": null,
+    "emailQuality": "Unconfirmed",
+    "maps": "https://www.google.com/maps/search/?api=1&query=The%20Rustic%20Spot%20Cafe%2C%20Mansarovar%2C%20Jaipur",
+    "sourceLinks": [],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Hold for qualification",
+    "index": 2
+  },
+  {
+    "name": "Bulb Cafe",
+    "slug": "bulb-cafe",
+    "layout": "garden",
+    "primary": "#e7b72e",
+    "bg": "#f9f5dd",
+    "ink": "#233e33",
+    "accent": "#8da36e",
+    "displayFont": "DM Serif Display",
+    "bodyFont": "Outfit",
+    "title": "Good ideas.<br>Better coffee.",
+    "kicker": "A bright little break in Jaipur.",
+    "description": "Find a green corner, settle in and follow your cravings.",
+    "categories": [
+      "Coffee",
+      "Quick bites",
+      "Coolers"
+    ],
+    "menuType": "cafe",
+    "storyTitle": "Let the afternoon linger.",
+    "menuIntro": "A bright menu for a bright little break.",
+    "area": "Mansarovar",
+    "group": "cafe",
+    "address": "Mansarovar, Jaipur, Rajasthan. Full address to be confirmed.",
+    "phone": "+91 97820 35098",
+    "email": null,
+    "emailQuality": "Unconfirmed",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Bulb%20Cafe%2C%20Mansarovar%2C%20Jaipur",
+    "sourceLinks": [],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Lower priority for this campaign",
+    "index": 3
+  },
+  {
+    "name": "C4 Chaska",
+    "slug": "c4-chaska",
+    "layout": "street",
+    "primary": "#dc4a32",
+    "bg": "#fff6e5",
+    "ink": "#244632",
+    "accent": "#edb637",
+    "displayFont": "Barlow Condensed",
+    "bodyFont": "DM Sans",
+    "title": "FULL-ON<br>CHASKA.",
+    "kicker": "Your next craving starts here.",
+    "description": "Chaat, snacks and a table full of flavour. Pick your favourites.",
+    "categories": [
+      "Chaat",
+      "Quick bites",
+      "Coolers"
+    ],
+    "menuType": "chaat",
+    "storyTitle": "Small bites. Big moods.",
+    "menuIntro": "A little tang, a little crunch, a lot to choose from.",
+    "area": "Jagatpura",
+    "group": "resto",
+    "address": "Jagatpura, Jaipur, Rajasthan. Full address to be confirmed.",
+    "phone": "+91 96600 90557",
+    "email": null,
+    "emailQuality": "Unconfirmed",
+    "maps": "https://www.google.com/maps/search/?api=1&query=C4%20Chaska%2C%20Jagatpura%2C%20Jaipur",
+    "sourceLinks": [],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Hold for qualification",
+    "index": 4
+  },
+  {
+    "name": "How About Coffee",
+    "slug": "how-about-coffee",
+    "layout": "postcard",
+    "primary": "#bb6445",
+    "bg": "#f8eee2",
+    "ink": "#35372e",
+    "accent": "#a4ad7c",
+    "displayFont": "Fraunces",
+    "bodyFont": "Manrope",
+    "title": "How about<br>one more?",
+    "kicker": "Coffee is always a good idea.",
+    "description": "A croissant, a cold brew and a little time to yourself.",
+    "categories": [
+      "Coffee",
+      "Bakery",
+      "Wraps"
+    ],
+    "menuType": "coffee",
+    "storyTitle": "Your next coffee moment.",
+    "menuIntro": "Find the coffee that fits your day.",
+    "area": "Jagatpura",
+    "group": "cafe",
+    "address": "Jagatpura, Jaipur, Rajasthan. Full address to be confirmed.",
+    "phone": "+91 90579 99922",
+    "email": null,
+    "emailQuality": "Unconfirmed",
+    "maps": "https://www.google.com/maps/search/?api=1&query=How%20About%20Coffee%2C%20Jagatpura%2C%20Jaipur",
+    "sourceLinks": [],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Hold for qualification",
+    "index": 5
+  },
+  {
+    "name": "The Social Belly",
+    "slug": "the-social-belly",
+    "layout": "conservatory",
+    "primary": "#576c46",
+    "bg": "#f3f1e5",
+    "ink": "#293b2b",
+    "accent": "#b9ba82",
+    "displayFont": "Cormorant Garamond",
+    "bodyFont": "Work Sans",
+    "title": "Gather here.<br>Grow closer.",
+    "kicker": "Good food, open skies, full conversations.",
+    "description": "An easy-going garden mood for breakfasts and long catch-ups.",
+    "categories": [
+      "Breakfast",
+      "Garden plates",
+      "Coolers"
+    ],
+    "menuType": "garden",
+    "storyTitle": "Room for one more.",
+    "menuIntro": "Fresh ideas for your next gathering.",
+    "area": "Jagatpura",
+    "group": "cafe",
+    "address": "Jagatpura, Jaipur, Rajasthan. Full address to be confirmed.",
+    "phone": "Not listed in the supplied response.",
+    "email": null,
+    "emailQuality": "Unconfirmed",
+    "maps": "https://www.google.com/maps/search/?api=1&query=The%20Social%20Belly%2C%20Jagatpura%2C%20Jaipur",
+    "sourceLinks": [],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Hold for qualification",
+    "index": 6
+  },
+  {
+    "name": "Pocket Beans",
+    "slug": "pocket-beans",
+    "layout": "pocket",
+    "primary": "#da6b30",
+    "bg": "#fff0d6",
+    "ink": "#274537",
+    "accent": "#dabd80",
+    "displayFont": "Syne",
+    "bodyFont": "Outfit",
+    "title": "LITTLE BREAK.<br>BIG ENERGY.",
+    "kicker": "Keep a good coffee in your pocket.",
+    "description": "Quick cravings, comforting bites and a menu made to explore.",
+    "categories": [
+      "Coffee",
+      "Burgers",
+      "Noodles"
+    ],
+    "menuType": "burger",
+    "storyTitle": "Take a little joy with you.",
+    "menuIntro": "Small treats for the everyday.",
+    "area": "Pratap Nagar",
+    "group": "cafe",
+    "address": "Pratap Nagar, Jaipur, Rajasthan. Full address to be confirmed.",
+    "phone": "+91 96022 83360",
+    "email": null,
+    "emailQuality": "Unconfirmed",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Pocket%20Beans%2C%20Pratap%20Nagar%2C%20Jaipur",
+    "sourceLinks": [],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Lower priority for this campaign",
+    "index": 7
+  },
+  {
+    "name": "Cheesy Crazy Cafe",
+    "slug": "cheesy-crazy-cafe",
+    "layout": "checker",
+    "primary": "#f5c82f",
+    "bg": "#202725",
+    "ink": "#fff8df",
+    "accent": "#e75e3b",
+    "displayFont": "Barlow Condensed",
+    "bodyFont": "DM Sans",
+    "title": "MORE CHEESE.<br>MORE PLEASE.",
+    "kicker": "For your very serious cheese cravings.",
+    "description": "Pizza, pasta and the good kind of extra. Let's make it cheesy.",
+    "categories": [
+      "Pizza",
+      "Pasta",
+      "Snacks"
+    ],
+    "menuType": "pizza",
+    "storyTitle": "Welcome to your cheesy era.",
+    "menuIntro": "Build the bite you're thinking about.",
+    "area": "Pratap Nagar",
+    "group": "cafe",
+    "address": "Pratap Nagar, Jaipur, Rajasthan. Full address to be confirmed.",
+    "phone": "+91 95095 52466",
+    "email": null,
+    "emailQuality": "Unconfirmed",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Cheesy%20Crazy%20Cafe%2C%20Pratap%20Nagar%2C%20Jaipur",
+    "sourceLinks": [],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Lower priority for this campaign",
+    "index": 8
+  },
+  {
+    "name": "Cafe Bluez",
+    "slug": "cafe-bluez",
+    "layout": "deco",
+    "primary": "#2b58a0",
+    "bg": "#eef2f8",
+    "ink": "#17345b",
+    "accent": "#ceaa5e",
+    "displayFont": "Cormorant Garamond",
+    "bodyFont": "Manrope",
+    "title": "A little blue.<br>A little beautiful.",
+    "kicker": "A Jaipur moment, in a different shade.",
+    "description": "Come for a coffee. Stay for a table full of conversation.",
+    "categories": [
+      "Coffee",
+      "Cafe plates",
+      "Desserts"
+    ],
+    "menuType": "cafe",
+    "storyTitle": "Find your shade of blue.",
+    "menuIntro": "A considered selection for your next cafe moment.",
+    "area": "Vidyadhar Nagar",
+    "group": "cafe",
+    "address": "Vidyadhar Nagar, Jaipur, Rajasthan. Full address to be confirmed.",
+    "phone": "+91 96600 62620",
+    "email": "cafebluezjaipur@gmail.com",
+    "emailQuality": "Claimed restaurant listing — confirm",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Cafe%20Bluez%2C%20Vidyadhar%20Nagar%2C%20Jaipur",
+    "sourceLinks": [],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Hold for qualification",
+    "index": 9
+  },
+  {
+    "name": "Brew & Bite",
+    "slug": "brew-and-bite",
+    "layout": "journal",
+    "primary": "#6b5d48",
+    "bg": "#efebe3",
+    "ink": "#38362e",
+    "accent": "#8b977c",
+    "displayFont": "DM Serif Display",
+    "bodyFont": "Work Sans",
+    "title": "Brew slowly.<br>Bite happily.",
+    "kicker": "The little things, done thoughtfully.",
+    "description": "Coffee, something sweet, and a moment that belongs to you.",
+    "categories": [
+      "Coffee",
+      "Bakery",
+      "Sandwiches"
+    ],
+    "menuType": "coffee",
+    "storyTitle": "A note to slow down.",
+    "menuIntro": "Find your new everyday favourite.",
+    "area": "Vidyadhar Nagar",
+    "group": "cafe",
+    "address": "Vidyadhar Nagar, Jaipur, Rajasthan. Full address to be confirmed.",
+    "phone": "+91 78774 99923",
+    "email": null,
+    "emailQuality": "Unconfirmed",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Brew%20%26%20Bite%2C%20Vidyadhar%20Nagar%2C%20Jaipur",
+    "sourceLinks": [],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Hold for qualification",
+    "index": 10
+  },
+  {
+    "name": "The Bhatura Project",
+    "slug": "the-bhatura-project",
+    "layout": "poster",
+    "primary": "#dd9d26",
+    "bg": "#fff3d7",
+    "ink": "#233d2e",
+    "accent": "#b9442e",
+    "displayFont": "Syne",
+    "bodyFont": "DM Sans",
+    "title": "BIG BHATURA<br>ENERGY.",
+    "kicker": "Comfort, with a little extra chole.",
+    "description": "Fluffy, hearty and full of the flavours that bring people together.",
+    "categories": [
+      "Bhature",
+      "Kulcha",
+      "Lassi & more"
+    ],
+    "menuType": "bhatura",
+    "storyTitle": "Your comfort-food project.",
+    "menuIntro": "Bring your appetite. We'll bring the inspiration.",
+    "area": "Raja Park",
+    "group": "resto",
+    "address": "Raja Park, Jaipur, Rajasthan. Full address to be confirmed.",
+    "phone": "Not listed in the supplied response.",
+    "email": null,
+    "emailQuality": "Unconfirmed",
+    "maps": "https://www.google.com/maps/search/?api=1&query=The%20Bhatura%20Project%2C%20Raja%20Park%2C%20Jaipur",
+    "sourceLinks": [],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Hold for qualification",
+    "index": 11
+  },
+  {
+    "name": "The karchi Restaurant",
+    "slug": "the-karchi-restaurant",
+    "layout": "engraved",
+    "primary": "#a14b37",
+    "bg": "#f0e5d3",
+    "ink": "#37322a",
+    "accent": "#b29864",
+    "displayFont": "DM Serif Display",
+    "bodyFont": "Work Sans",
+    "title": "A spoonful<br>of togetherness.",
+    "kicker": "Good meals begin around a table.",
+    "description": "Indian comfort-food inspiration for a meal shared with your people.",
+    "categories": [
+      "Indian plates",
+      "Breads",
+      "Desserts"
+    ],
+    "menuType": "indian",
+    "storyTitle": "Around the family table.",
+    "menuIntro": "Explore an illustrative Indian comfort-food menu.",
+    "area": "Raja Park",
+    "group": "resto",
+    "address": "Raja Park, Jaipur, Rajasthan. Full address to be confirmed.",
+    "phone": "Not provided; the pasted entry is incomplete.",
+    "email": null,
+    "emailQuality": "Unconfirmed",
+    "maps": "https://www.google.com/maps/search/?api=1&query=The%20karchi%20Restaurant%2C%20Raja%20Park%2C%20Jaipur",
+    "sourceLinks": [],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Hold for qualification",
+    "index": 12
+  },
+  {
+    "name": "Kanha",
+    "slug": "kanha",
+    "layout": "celebration",
+    "primary": "#1a507b",
+    "bg": "#fff6e5",
+    "ink": "#263b49",
+    "accent": "#d1aa50",
+    "displayFont": "Fraunces",
+    "bodyFont": "DM Sans",
+    "title": "A taste of joy.<br>For every day.",
+    "kicker": "Sweet moments. Savoury favourites.",
+    "description": "From mithai to a family meal, make room for everything you love.",
+    "categories": [
+      "Mithai",
+      "Quick bites",
+      "Family meals"
+    ],
+    "menuType": "sweets",
+    "storyTitle": "Every craving has a place.",
+    "menuIntro": "A sweeter way to choose your favourites.",
+    "area": "Gopalpura / multiple Jaipur outlets",
+    "group": "resto",
+    "address": "J-6, Sawai Mansingh Road, Himmat Nagar, Bajaj Nagar, Jaipur, Rajasthan 302015 (Gopalpura outlet).",
+    "phone": "+91 141 2712451 (Gopalpura outlet); +91 141 2719108 / +91 97854 01326 (corporate)",
+    "email": "info@kanha.co",
+    "emailQuality": "Official business website",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Kanha%2C%20J-6%2C%20Sawai%20Mansingh%20Road%2C%20Himmat%20Nagar%2C%20Bajaj%20Nagar%2C%20Jaipur%2C%20Rajasthan%20302015%20(Gopalpura%20outlet).",
+    "sourceLinks": [
+      [
+        "Official contact page",
+        "https://kanha.co/contact-us/"
+      ],
+      [
+        "Official Kanha outlet directory",
+        "https://kanha.co/locatios/"
+      ],
+      [
+        "Official page publishing the group email",
+        "https://kanha.co/cookies-biscuits/"
+      ]
+    ],
+    "branding": "Official group-logo blue and a warm dining interpretation; not a supplied consumer-brand guideline.",
+    "priority": "Strategic group account",
+    "index": 13,
+    "logo": "kanha-group-logo",
+    "hero": "kanha-food",
+    "brandingSource": "https://kanha.co/"
+  },
+  {
+    "name": "Tansukh / Tan-Sukh by Kanha",
+    "slug": "tansukh",
+    "layout": "royal",
+    "primary": "#b83222",
+    "bg": "#f7edde",
+    "ink": "#422825",
+    "accent": "#4f973e",
+    "displayFont": "Cormorant Garamond",
+    "bodyFont": "Manrope",
+    "title": "The pleasure<br>of a shared table.",
+    "kicker": "An invitation to linger.",
+    "description": "A refined vegetarian dining concept for meals that become occasions.",
+    "categories": [
+      "Indian classics",
+      "Thali",
+      "Desserts"
+    ],
+    "menuType": "indian",
+    "storyTitle": "A table for your favourite people.",
+    "menuIntro": "Discover a vegetarian dining experience, at your own pace.",
+    "area": "C Scheme / multiple Jaipur outlets",
+    "group": "resto",
+    "address": "E-62, Bhagat Singh Marg, Panch Batti, C Scheme, Ashok Nagar, Jaipur, Rajasthan 302001 (representative outlet).",
+    "phone": "+91 141 4008091 (C Scheme); +91 141 2719108 (group corporate)",
+    "email": "info@kanha.co",
+    "emailQuality": "Official business website",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Tansukh%20%2F%20Tan-Sukh%20by%20Kanha%2C%20E-62%2C%20Bhagat%20Singh%20Marg%2C%20Panch%20Batti%2C%20C%20Scheme%2C%20Ashok%20Nagar%2C%20Jaipur%2C%20Rajasthan%20302001%20(representative%20outlet).",
+    "sourceLinks": [
+      [
+        "Official Tansukh locations",
+        "https://kanha.co/tansukh-locations/"
+      ],
+      [
+        "Kanha group contact",
+        "https://kanha.co/contact-us/"
+      ],
+      [
+        "Official group email",
+        "https://kanha.co/cookies-biscuits/"
+      ],
+      [
+        "C Scheme platform listing",
+        "https://www.zomato.com/jaipur/tan-sukh-by-kanha-c-scheme"
+      ]
+    ],
+    "branding": "Red and green sampled visually from the official Tansukh logo; refined cream dining concept.",
+    "priority": "Strategic group account",
+    "index": 14,
+    "logo": "tansukh-logo",
+    "brandingSource": "https://kanha.co/tansukh-locations/"
+  },
+  {
+    "name": "La Fiamma",
+    "slug": "la-fiamma",
+    "layout": "oven",
+    "primary": "#d8412b",
+    "bg": "#faf0dc",
+    "ink": "#272c22",
+    "accent": "#a8ad69",
+    "displayFont": "Barlow Condensed",
+    "bodyFont": "Work Sans",
+    "title": "FIRE MAKES<br>THE DIFFERENCE.",
+    "kicker": "Pizza. Espresso. A little Italian soul.",
+    "description": "A slow moment, a hot slice and all the toppings you love.",
+    "categories": [
+      "Pizza",
+      "Small plates",
+      "Coffee"
+    ],
+    "menuType": "pizza",
+    "storyTitle": "Meet the fire behind the flavour.",
+    "menuIntro": "Find your slice. Make it yours.",
+    "area": "C Scheme / Malviya Nagar / Vaishali Nagar",
+    "group": "resto",
+    "address": "K-6, Ashok Marg, Patrakar Colony, C Scheme, Ashok Nagar, Jaipur, Rajasthan 302001.",
+    "phone": "+91 93525 24740 (Zomato listings); +91 90413 01638 (claimed C Scheme Tripadvisor listing — conflicting contact, confirm)",
+    "email": null,
+    "emailQuality": "Unconfirmed",
+    "maps": "https://www.google.com/maps/search/?api=1&query=La%20Fiamma%2C%20K-6%2C%20Ashok%20Marg%2C%20Patrakar%20Colony%2C%20C%20Scheme%2C%20Ashok%20Nagar%2C%20Jaipur%2C%20Rajasthan%20302001.",
+    "sourceLinks": [
+      [
+        "C Scheme menu and contact listing",
+        "https://www.zomato.com/jaipur/la-fiamma-c-scheme/order"
+      ],
+      [
+        "Claimed C Scheme Tripadvisor listing",
+        "https://www.tripadvisor.in/Restaurant_Review-g304555-d34567765-Reviews-La_Fiamma-Jaipur_Jaipur_District_Rajasthan.html"
+      ],
+      [
+        "Malviya Nagar listing",
+        "https://www.zomato.com/jaipur/la-fiamma-malviya-nagar"
+      ],
+      [
+        "Vaishali Nagar listing",
+        "https://www.zomato.com/jaipur/la-fiamma-vaishali-nagar"
+      ]
+    ],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Verify before demo",
+    "index": 15
+  },
+  {
+    "name": "Rawat Misthan Bhandar",
+    "slug": "rawat-misthan-bhandar",
+    "layout": "bazaar",
+    "primary": "#ba2d29",
+    "bg": "#fff2d7",
+    "ink": "#49351f",
+    "accent": "#e0bf38",
+    "displayFont": "DM Serif Display",
+    "bodyFont": "DM Sans",
+    "title": "Jaipur, in<br>every bite.",
+    "kicker": "Something sweet. Something unmistakably Jaipur.",
+    "description": "Kachori, mithai and the familiar joy of a well-chosen treat.",
+    "categories": [
+      "Kachori & snacks",
+      "Mithai",
+      "Meals"
+    ],
+    "menuType": "sweets",
+    "storyTitle": "A little taste of the Pink City.",
+    "menuIntro": "Explore a menu inspired by Jaipur's sweet and savoury traditions.",
+    "area": "Sindhi Camp / multiple Jaipur outlets",
+    "group": "resto",
+    "address": "B-9, Station Road, in front of Polo Victory Hotel, Lalpura Colony, Sindhi Camp, Jaipur, Rajasthan 302001.",
+    "phone": "+91 91191 14217",
+    "email": "rawatmisthanbhandar@gmail.com",
+    "emailQuality": "Official business website",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Rawat%20Misthan%20Bhandar%2C%20B-9%2C%20Station%20Road%2C%20in%20front%20of%20Polo%20Victory%20Hotel%2C%20Lalpura%20Colony%2C%20Sindhi%20Camp%2C%20Jaipur%2C%20Rajasthan%20302001.",
+    "sourceLinks": [
+      [
+        "Official contact page",
+        "https://rawatmisthanbhandar.in/contact.html"
+      ],
+      [
+        "Official locations",
+        "https://rawatmisthanbhandar.in/locations.html"
+      ],
+      [
+        "Official brand information",
+        "https://rawatmisthanbhandar.in/about.html"
+      ]
+    ],
+    "branding": "Red and yellow logo-led palette with warm bazaar styling.",
+    "priority": "Strategic group account",
+    "index": 16,
+    "logo": "rawat-logo",
+    "hero": "rawat-food",
+    "brandingSource": "https://rawatmisthanbhandar.in/"
+  },
+  {
+    "name": "LMB / Laxmi Misthan Bhandar",
+    "slug": "lmb",
+    "layout": "heritage",
+    "primary": "#872b37",
+    "bg": "#f6eddd",
+    "ink": "#432c2b",
+    "accent": "#bd9651",
+    "displayFont": "Cormorant Garamond",
+    "bodyFont": "Manrope",
+    "title": "For moments<br>worth savouring.",
+    "kicker": "A little Jaipur. A lasting memory.",
+    "description": "Traditional sweets, thoughtful gifting and the joy of a shared meal.",
+    "categories": [
+      "Mithai",
+      "Rajasthani plates",
+      "Gifting"
+    ],
+    "menuType": "sweets",
+    "storyTitle": "Take a little Jaipur with you.",
+    "menuIntro": "A considered collection of sweets and dining favourites.",
+    "area": "Johari Bazar / Vaishali Nagar",
+    "group": "resto",
+    "address": "Shop 98-99, Johari Bazar, Jaipur, Rajasthan 302003 (main location).",
+    "phone": "+91 90246 09609 (published website contact; confirm restaurant routing)",
+    "email": "contactus@hotellmb.com",
+    "emailQuality": "Official business website",
+    "maps": "https://www.google.com/maps/search/?api=1&query=LMB%20%2F%20Laxmi%20Misthan%20Bhandar%2C%20Shop%2098-99%2C%20Johari%20Bazar%2C%20Jaipur%2C%20Rajasthan%20302003%20(main%20location).",
+    "sourceLinks": [
+      [
+        "Official contact and locations",
+        "https://lmbsweets.com/contact-us/"
+      ],
+      [
+        "Existing gift-box ecommerce flow",
+        "https://lmbsweets.com/create-your-own-box/"
+      ]
+    ],
+    "branding": "Burgundy/red and antique-gold interpretation of the published LMB mark.",
+    "priority": "Strategic group account",
+    "index": 17,
+    "logo": "lmb-logo",
+    "hero": "sweets",
+    "brandingSource": "https://lmbsweets.com/"
+  },
+  {
+    "name": "Niros",
+    "slug": "niros",
+    "layout": "brasserie",
+    "primary": "#347c50",
+    "bg": "#f5ebdc",
+    "ink": "#292e31",
+    "accent": "#c3a774",
+    "displayFont": "DM Serif Display",
+    "bodyFont": "Work Sans",
+    "title": "Good taste.<br>Great company.",
+    "kicker": "At the heart of MI Road.",
+    "description": "A Jaipur dining institution, reimagined for an easy evening around the table.",
+    "categories": [
+      "Indian classics",
+      "Continental",
+      "Desserts"
+    ],
+    "menuType": "indian",
+    "storyTitle": "Make an evening of it.",
+    "menuIntro": "Explore at your own pace. Order when you're ready.",
+    "area": "MI Road",
+    "group": "resto",
+    "address": "Niros Restaurant, Mirza Ismail Road, Jaipur, Rajasthan 302001, India.",
+    "phone": "+91 141 2374493; +91 141 2218520",
+    "email": "nirosindia@gmail.com",
+    "emailQuality": "Official business website",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Niros%2C%20Niros%20Restaurant%2C%20Mirza%20Ismail%20Road%2C%20Jaipur%2C%20Rajasthan%20302001%2C%20India.",
+    "sourceLinks": [
+      [
+        "Official restaurant contact page",
+        "https://nirosindia.com/contact-us/"
+      ],
+      [
+        "Official restaurant website",
+        "https://nirosindia.com/"
+      ]
+    ],
+    "branding": "Green logo-led brasserie concept with warm neutrals.",
+    "priority": "First to qualify",
+    "index": 18,
+    "logo": "niros-logo",
+    "hero": "niros-room",
+    "brandingSource": "https://nirosindia.com/"
+  },
+  {
+    "name": "Chokhi Dhani Village Restaurant",
+    "slug": "chokhi-dhani",
+    "layout": "village",
+    "primary": "#943a20",
+    "bg": "#f5dfb7",
+    "ink": "#493426",
+    "accent": "#d09a40",
+    "displayFont": "Cormorant Garamond",
+    "bodyFont": "DM Sans",
+    "title": "Come hungry.<br>Leave with stories.",
+    "kicker": "A colourful taste of Rajasthan.",
+    "description": "Explore a village-dining concept filled with flavour, craft and togetherness.",
+    "categories": [
+      "Rajasthani plates",
+      "Village bites",
+      "Sweet finish"
+    ],
+    "menuType": "indian",
+    "storyTitle": "A little closer to Rajasthan.",
+    "menuIntro": "Discover a dining journey inspired by the village experience.",
+    "area": "Tonk Road / via Vatika",
+    "group": "resto",
+    "address": "12 Miles, Tonk Road, via Vatika, Jaipur, Rajasthan 303905.",
+    "phone": "+91 96672 22203; +91 141 3126000; +91 99823 22220",
+    "email": "cdrajasthani@chokhidhani.com",
+    "emailQuality": "Official business website",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Chokhi%20Dhani%20Village%20Restaurant%2C%2012%20Miles%2C%20Tonk%20Road%2C%20via%20Vatika%2C%20Jaipur%2C%20Rajasthan%20303905.",
+    "sourceLinks": [
+      [
+        "Official Jaipur reach-us page",
+        "https://chokhidhani.com/village-fair-restaurant-jaipur/reach-us/"
+      ],
+      [
+        "Official group contact page",
+        "https://chokhidhani.com/contact/"
+      ],
+      [
+        "Official village page publishing email",
+        "https://chokhidhani.com/village-fair-restaurant-jaipur/slider/the-puppet-show/"
+      ]
+    ],
+    "branding": "Earthy red from the official mark, warm gold and village-inspired pattern.",
+    "priority": "Strategic group account",
+    "index": 19,
+    "logo": "chokhi-dhani-logo",
+    "hero": "chokhi-food",
+    "brandingSource": "https://chokhidhani.com/village-fair-restaurant-jaipur/"
+  },
+  {
+    "name": "Thali and More",
+    "slug": "thali-and-more",
+    "layout": "thali",
+    "primary": "#73832d",
+    "bg": "#fff9ed",
+    "ink": "#3b4030",
+    "accent": "#c9733b",
+    "displayFont": "Fraunces",
+    "bodyFont": "Outfit",
+    "title": "A little of this.<br>A little more.",
+    "kicker": "Good things belong together.",
+    "description": "A thali, a family favourite and a little more to share.",
+    "categories": [
+      "Thali",
+      "Indian classics",
+      "Sweet finish"
+    ],
+    "menuType": "indian",
+    "storyTitle": "Many flavours. One table.",
+    "menuIntro": "An app-free menu concept to complement the existing brand experience.",
+    "area": "C Scheme",
+    "group": "resto",
+    "address": "1st Floor, Plot C-46, Sarojini Marg, Panch Batti, C Scheme, Ashok Nagar, Jaipur, Rajasthan 302001.",
+    "phone": "+91 76656 04777",
+    "email": "kccogroup.jpr@gmail.com",
+    "emailQuality": "Official business website",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Thali%20and%20More%2C%201st%20Floor%2C%20Plot%20C-46%2C%20Sarojini%20Marg%2C%20Panch%20Batti%2C%20C%20Scheme%2C%20Ashok%20Nagar%2C%20Jaipur%2C%20Rajasthan%20302001.",
+    "sourceLinks": [
+      [
+        "Official contact page",
+        "https://thaliandmore.co.in/contact"
+      ],
+      [
+        "Published ordering-app listing",
+        "https://play.google.com/store/apps/details?id=in.fudr.thaliandmore"
+      ]
+    ],
+    "branding": "Olive logo-led palette with warm cream and terracotta accents.",
+    "priority": "Specific technology gap required",
+    "index": 20,
+    "logo": "thali-and-more-logo",
+    "brandingSource": "https://thaliandmore.co.in/"
+  },
+  {
+    "name": "Spice Court",
+    "slug": "spice-court",
+    "layout": "courtyard",
+    "primary": "#31513f",
+    "bg": "#f3eddf",
+    "ink": "#263d31",
+    "accent": "#b6965b",
+    "displayFont": "Cormorant Garamond",
+    "bodyFont": "Manrope",
+    "title": "An evening<br>in good taste.",
+    "kicker": "Rajasthani flavours. Courtyard moods.",
+    "description": "Settle into a dining concept inspired by Jaipur's quieter, greener corners.",
+    "categories": [
+      "Rajasthani plates",
+      "Indian classics",
+      "Desserts"
+    ],
+    "menuType": "indian",
+    "storyTitle": "Let the evening unfold.",
+    "menuIntro": "A thoughtful menu for a leisurely meal.",
+    "area": "Civil Lines",
+    "group": "resto",
+    "address": "Achrol House, Hari Bhawan, Jacob Road, near Hari Mahal Palace Hotel, Civil Lines, Jaipur, Rajasthan 302006.",
+    "phone": "+91 141 2220202",
+    "email": "spice@spicecourtjaipur.com",
+    "emailQuality": "Public restaurant listing — confirm",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Spice%20Court%2C%20Achrol%20House%2C%20Hari%20Bhawan%2C%20Jacob%20Road%2C%20near%20Hari%20Mahal%20Palace%20Hotel%2C%20Civil%20Lines%2C%20Jaipur%2C%20Rajasthan%20302006.",
+    "sourceLinks": [
+      [
+        "Restaurant contact and address listing",
+        "https://www.tripadvisor.in/Restaurant_Review-g304555-d1091582-Reviews-Spice_Court_Restaurant-Jaipur_Jaipur_District_Rajasthan.html"
+      ]
+    ],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "First to qualify",
+    "index": 21
+  },
+  {
+    "name": "Handi Restaurant",
+    "slug": "handi",
+    "layout": "ember",
+    "primary": "#d16a35",
+    "bg": "#222722",
+    "ink": "#f7eedb",
+    "accent": "#b99756",
+    "displayFont": "Barlow Condensed",
+    "bodyFont": "DM Sans",
+    "title": "DEEP FLAVOUR.<br>SLOW MOMENTS.",
+    "kicker": "A table worth coming together for.",
+    "description": "Indian dining inspiration with earthy spices and generous plates.",
+    "categories": [
+      "Indian classics",
+      "Tandoor",
+      "Breads"
+    ],
+    "menuType": "indian",
+    "storyTitle": "A closer look at the craft.",
+    "menuIntro": "Find the flavours that feel like an occasion.",
+    "area": "MI Road / Vaishali Nagar",
+    "group": "resto",
+    "address": "Maya Mansion, opposite GPO, MI Road, Jaipur, Rajasthan 302001, India.",
+    "phone": "+91 98291 74873 (MI Road outlet)",
+    "email": "handijpr@gmail.com",
+    "emailQuality": "Public directory — confirm",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Handi%20Restaurant%2C%20Maya%20Mansion%2C%20opposite%20GPO%2C%20MI%20Road%2C%20Jaipur%2C%20Rajasthan%20302001%2C%20India.",
+    "sourceLinks": [
+      [
+        "MI Road outlet contact and menu",
+        "https://www.zomato.com/jaipur/handi-restaurant-mi-road"
+      ],
+      [
+        "MI Road District listing",
+        "https://www.district.in/dining/jaipur/handi-restaurant-mi-road"
+      ],
+      [
+        "Historical contact listing",
+        "https://www.tripadvisor.co.uk/Restaurant_Review-g304555-d952616-Reviews-Handi-Jaipur_Jaipur_District_Rajasthan.html"
+      ],
+      [
+        "Vaishali Nagar listing",
+        "https://www.zomato.com/jaipur/handi-restaurant-vaishali-nagar"
+      ]
+    ],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "Verify before demo",
+    "index": 22
+  },
+  {
+    "name": "Tapri (Central)",
+    "slug": "tapri",
+    "layout": "chai",
+    "primary": "#657f2e",
+    "bg": "#f6efd9",
+    "ink": "#333c31",
+    "accent": "#d5b13e",
+    "displayFont": "Syne",
+    "bodyFont": "Work Sans",
+    "title": "CHAI. CHAT.<br>REPEAT.",
+    "kicker": "Take your time. Take another sip.",
+    "description": "A cup, a snack and absolutely no hurry to leave.",
+    "categories": [
+      "Chai",
+      "Desi snacks",
+      "Coolers"
+    ],
+    "menuType": "chai",
+    "storyTitle": "Some conversations need another cup.",
+    "menuIntro": "Pick a chai. Add a little something.",
+    "area": "C Scheme",
+    "group": "cafe",
+    "address": "B4-E, 3rd Floor, Surana Jewelers, opposite Central Park Gate 4, Prithviraj Road, C Scheme, Ashok Nagar, Jaipur, Rajasthan 302001.",
+    "phone": "+91 141 4011713",
+    "email": "connect@tapri.net",
+    "emailQuality": "Official business website",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Tapri%20(Central)%2C%20B4-E%2C%203rd%20Floor%2C%20Surana%20Jewelers%2C%20opposite%20Central%20Park%20Gate%204%2C%20Prithviraj%20Road%2C%20C%20Scheme%2C%20Ashok%20Nagar%2C%20Jaipur%2C%20Rajasthan%20302001.",
+    "sourceLinks": [
+      [
+        "Official Tapri Central contact page",
+        "https://tapri.net/index.php?route=information/contact&type=2"
+      ],
+      [
+        "Official Tapri website",
+        "https://tapri.net/"
+      ]
+    ],
+    "branding": "Olive and mustard interpretation based on the official Tapri mark.",
+    "priority": "First to qualify",
+    "index": 23,
+    "logo": "tapri-logo",
+    "hero": "tea",
+    "brandingSource": "https://tapri.net/"
+  },
+  {
+    "name": "Curious Life Coffee Roasters",
+    "slug": "curious-life",
+    "layout": "roastery",
+    "primary": "#c36764",
+    "bg": "#ece9e0",
+    "ink": "#193441",
+    "accent": "#93a394",
+    "displayFont": "Syne",
+    "bodyFont": "Manrope",
+    "title": "Stay curious.<br>Drink better.",
+    "kicker": "Coffee with a point of view.",
+    "description": "Explore your next brew, from an espresso moment to a slower pour.",
+    "categories": [
+      "Espresso bar",
+      "Filter coffee",
+      "Cafe plates"
+    ],
+    "menuType": "coffee",
+    "storyTitle": "Follow your curiosity.",
+    "menuIntro": "Choose your brew. Find your own ritual.",
+    "area": "C Scheme",
+    "group": "cafe",
+    "address": "RED: C-54A, Sarojini Marg, Panch Batti, C Scheme, Ashok Nagar, Jaipur, Rajasthan 302001.",
+    "phone": "+91 141 4032456 (RED outlet)",
+    "email": "curiouslife.coffee@gmail.com",
+    "emailQuality": "Official business website",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Curious%20Life%20Coffee%20Roasters%2C%20RED%3A%20C-54A%2C%20Sarojini%20Marg%2C%20Panch%20Batti%2C%20C%20Scheme%2C%20Ashok%20Nagar%2C%20Jaipur%2C%20Rajasthan%20302001.",
+    "sourceLinks": [
+      [
+        "Official cafe contacts and locations",
+        "https://curiouslifecoffee.com/contact/"
+      ],
+      [
+        "Official coffee website",
+        "https://curiouslifecoffee.com/"
+      ]
+    ],
+    "branding": "Coral and deep-blue interpretation of the official roaster's mark.",
+    "priority": "First to qualify",
+    "index": 24,
+    "logo": "curious-life-logo",
+    "brandingSource": "https://curiouslifecoffee.com/"
+  },
+  {
+    "name": "Cafe LazyMojo",
+    "slug": "cafe-lazymojo",
+    "layout": "lazy",
+    "primary": "#265f57",
+    "bg": "#f7f0e4",
+    "ink": "#27413a",
+    "accent": "#dd8f6a",
+    "displayFont": "Fraunces",
+    "bodyFont": "Outfit",
+    "title": "Slow mornings.<br>Good mojo.",
+    "kicker": "Make a little room for lazy.",
+    "description": "Coffee, generous cafe plates and long conversations.",
+    "categories": [
+      "Coffee",
+      "Cafe plates",
+      "Desserts"
+    ],
+    "menuType": "cafe",
+    "storyTitle": "Less hurry. More mojo.",
+    "menuIntro": "Follow your mood, from coffee to comfort food.",
+    "area": "Malviya Nagar",
+    "group": "cafe",
+    "address": "H1-H2, S.L. Marg, opposite Genpact, Lal Bahadur Nagar, Malviya Nagar, Jaipur, Rajasthan 302018.",
+    "phone": "+91 98289 50999; +91 98285 46930 (Zomato-listed additional number)",
+    "email": "cafelazymojo@gmail.com",
+    "emailQuality": "Public restaurant listing — confirm",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Cafe%20LazyMojo%2C%20H1-H2%2C%20S.L.%20Marg%2C%20opposite%20Genpact%2C%20Lal%20Bahadur%20Nagar%2C%20Malviya%20Nagar%2C%20Jaipur%2C%20Rajasthan%20302018.",
+    "sourceLinks": [
+      [
+        "Claimed Tripadvisor contact listing",
+        "https://www.tripadvisor.com/Restaurant_Review-g304555-d8534825-Reviews-Cafe_LazyMojo-Jaipur_Jaipur_District_Rajasthan.html"
+      ],
+      [
+        "Zomato contact, address and seating",
+        "https://www.zomato.com/jaipur/cafe-lazymojo-malviya-nagar"
+      ],
+      [
+        "Swiggy listing and full address",
+        "https://www.swiggy.com/city/jaipur/cafe-lazymojo-malviya-nagar-rest45562"
+      ]
+    ],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "First to qualify",
+    "index": 25
+  },
+  {
+    "name": "On The House (OTH)",
+    "slug": "on-the-house",
+    "layout": "bistro",
+    "primary": "#294759",
+    "bg": "#f4eedf",
+    "ink": "#2e3f46",
+    "accent": "#c4a36a",
+    "displayFont": "DM Serif Display",
+    "bodyFont": "Manrope",
+    "title": "Your table.<br>Your time.",
+    "kicker": "A little bistro state of mind.",
+    "description": "Breakfast, coffee and something from the bakery. Settle right in.",
+    "categories": [
+      "Breakfast",
+      "Bistro plates",
+      "Bakery"
+    ],
+    "menuType": "cafe",
+    "storyTitle": "Every day deserves a little bistro.",
+    "menuIntro": "Start with a coffee. See where the menu takes you.",
+    "area": "C Scheme",
+    "group": "cafe",
+    "address": "E-145, Ramesh Marg, behind Talwalkars, C Scheme, Jaipur, Rajasthan 302001.",
+    "phone": "+91 141 4112232",
+    "email": "dushyant.indian@gmail.com",
+    "emailQuality": "Public restaurant listing — confirm",
+    "maps": "https://www.google.com/maps/search/?api=1&query=On%20The%20House%20(OTH)%2C%20E-145%2C%20Ramesh%20Marg%2C%20behind%20Talwalkars%2C%20C%20Scheme%2C%20Jaipur%2C%20Rajasthan%20302001.",
+    "sourceLinks": [
+      [
+        "Claimed Tripadvisor contact listing",
+        "https://www.tripadvisor.in/Restaurant_Review-g304555-d4082240-Reviews-On_The_House-Jaipur_Jaipur_District_Rajasthan.html"
+      ],
+      [
+        "Zomato outlet listing",
+        "https://www.zomato.com/jaipur/on-the-house-c-scheme"
+      ],
+      [
+        "Parent group's public company profile",
+        "https://in.linkedin.com/company/indwell-hotels-pvt-ltd-jaipur"
+      ]
+    ],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "First to qualify",
+    "index": 26
+  },
+  {
+    "name": "Anokhi Cafe",
+    "slug": "anokhi-cafe",
+    "layout": "blockprint",
+    "primary": "#334d76",
+    "bg": "#f4f1e7",
+    "ink": "#344436",
+    "accent": "#ad7159",
+    "displayFont": "Cormorant Garamond",
+    "bodyFont": "Work Sans",
+    "title": "Seasonal food.<br>Simple pleasures.",
+    "kicker": "A fresh perspective, beautifully served.",
+    "description": "Vegetarian cafe inspiration, seasonal ingredients and a slower kind of lunch.",
+    "categories": [
+      "Garden plates",
+      "Bakery",
+      "Refreshments"
+    ],
+    "menuType": "garden",
+    "storyTitle": "Good things, in their own season.",
+    "menuIntro": "A seasonal menu concept with room for everyday discoveries.",
+    "area": "C Scheme",
+    "group": "cafe",
+    "address": "2nd Floor, KK Square, C-11, Prithviraj Road, C Scheme, Jaipur, Rajasthan 302005 (official Jaipur location).",
+    "phone": "+91 141 4007244 (official Jaipur store contact; ask for the cafe)",
+    "email": "rowena@anokhi.net",
+    "emailQuality": "Public restaurant listing — confirm",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Anokhi%20Cafe%2C%202nd%20Floor%2C%20KK%20Square%2C%20C-11%2C%20Prithviraj%20Road%2C%20C%20Scheme%2C%20Jaipur%2C%20Rajasthan%20302005%20(official%20Jaipur%20location).",
+    "sourceLinks": [
+      [
+        "Official cafe page",
+        "https://www.anokhi.com/anokhi-cafe/"
+      ],
+      [
+        "Official Jaipur location and phone",
+        "https://www.anokhi.com/jaipur/"
+      ],
+      [
+        "Claimed cafe contact listing",
+        "https://www.tripadvisor.in/Restaurant_Review-g304555-d1116249-Reviews-Anokhi_Cafe-Jaipur_Jaipur_District_Rajasthan.html"
+      ],
+      [
+        "Official contact form",
+        "https://www.anokhi.com/contact-us/"
+      ]
+    ],
+    "branding": "Creative concept palette; official brand guidelines not supplied.",
+    "priority": "First to qualify",
+    "index": 27
+  }
+]
