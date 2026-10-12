@@ -97,3 +97,7 @@ The demo ideas are proposals based on menu and venue type. They do not establish
 ## Website demos
 
 [Browse the 28 website concepts](index.html) or read the [site index and deployment notes](WEBSITES.md). Every brand has a separate standalone folder with an interactive sample ordering experience.
+
+## Prepared outreach drafts
+
+[Open the outreach pack](outreach/README.md): 28 personalised email drafts, 14 addressed `.eml` files (Kanha and Tansukh combined), and 13 WhatsApp fallback messages. Each includes the corresponding live demo URL. [Phone follow-up](outreach/contact-routing.md) supplements the original records for The Social Belly, The Bhatura Project and The Karchi, and preserves La Fiamma's conflicting contact candidates. No outreach has been sent.

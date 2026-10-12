@@ -1,0 +1,508 @@
+{
+  "date": "2026-10-11",
+  "sent": false,
+  "sender": {
+    "name": "Mukesh Kumar",
+    "company": "Rawcoderz",
+    "email": "mukesh.kumar@rawcoderz.com",
+    "phone": "+91 86969 75043",
+    "website": "https://www.rawcoderz.com/"
+  },
+  "brands": [
+    {
+      "brand": "Curious Life Coffee Roasters",
+      "slug": "curious-life",
+      "recipient": "curiouslife.coffee@gmail.com",
+      "recipientStatus": "Official business website",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/curious-life/",
+      "subject": "A coffee ordering concept for Curious Life",
+      "emailBody": "Hi Curious Life team,\n\nWe’re Rawcoderz, and we built a coffee website concept for Curious Life, bringing espresso, filter coffee and café plates into a visual sample menu.\n\nGuests could choose their cup, customise items and build a table or pickup order without downloading an app. We can shape it around your actual menu and existing service process.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/curious-life/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "First to qualify",
+      "phones": []
+    },
+    {
+      "brand": "Tapri (Central)",
+      "slug": "tapri",
+      "recipient": "connect@tapri.net",
+      "recipientStatus": "Official business website",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/tapri/",
+      "subject": "More time for chai: a website concept for Tapri",
+      "emailBody": "Hi Tapri team,\n\nWe’re Rawcoderz, and we made a chai website concept for Tapri, bringing chai, desi snacks and coolers into a visual sample menu.\n\nGuests could choose their chai and snack pairing and build a table or pickup order on their phones. The idea is to make choosing easier while keeping the café experience relaxed.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/tapri/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "First to qualify",
+      "phones": []
+    },
+    {
+      "brand": "Cafe LazyMojo",
+      "slug": "cafe-lazymojo",
+      "recipient": "cafelazymojo@gmail.com",
+      "recipientStatus": "Public restaurant listing — confirm",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/cafe-lazymojo/",
+      "subject": "A relaxed website and ordering idea for Cafe LazyMojo",
+      "emailBody": "Hi Cafe LazyMojo team,\n\nWe’re Rawcoderz, and we made a relaxed website concept for Cafe LazyMojo, with coffee, café plates and desserts in a visual sample menu.\n\nGuests could browse at their own pace, choose preferences and build a table or pickup order. Your own café and kitchen photos could make the site a closer reflection of the LazyMojo experience.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/cafe-lazymojo/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "First to qualify",
+      "phones": []
+    },
+    {
+      "brand": "On The House (OTH)",
+      "slug": "on-the-house",
+      "recipient": "dushyant.indian@gmail.com",
+      "recipientStatus": "Public restaurant listing — confirm",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/on-the-house/",
+      "subject": "A breakfast-to-bistro ordering concept for On The House",
+      "emailBody": "Hi On The House team,\n\nWe’re Rawcoderz, and we created a bistro website concept for On The House, with breakfast, bistro plates and bakery items in a visual sample menu.\n\nGuests could explore their meal, customise items and build a table or pickup order on their phones. We’d adapt the concept to your actual menu and current service process.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/on-the-house/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "First to qualify",
+      "phones": []
+    },
+    {
+      "brand": "Anokhi Cafe",
+      "slug": "anokhi-cafe",
+      "recipient": "rowena@anokhi.net",
+      "recipientStatus": "Public restaurant listing — confirm",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/anokhi-cafe/",
+      "subject": "A fresh-food website and ordering idea for Anokhi Cafe",
+      "emailBody": "Hi Anokhi Cafe team,\n\nWe’re Rawcoderz, and we made a fresh food website concept for Anokhi Cafe, with garden plates, bakery items and refreshments in a visual sample menu.\n\nGuests could explore the choices and build a table or pickup order at their own pace. We can personalise the site with your actual menu and approved café or kitchen photos.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/anokhi-cafe/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "First to qualify",
+      "phones": []
+    },
+    {
+      "brand": "Niros",
+      "slug": "niros",
+      "recipient": "nirosindia@gmail.com",
+      "recipientStatus": "Official business website",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/niros/",
+      "subject": "A dining and table-ordering concept for Niros",
+      "emailBody": "Hi Niros team,\n\nWe’re Rawcoderz, and we built a dining-focused website concept for Niros, with a sample Indian and continental menu and a table or pickup ordering flow.\n\nIt’s an idea to explore alongside your existing website: guests could browse dishes and add preferences on their phones, while your team continues to guide the dining experience.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/niros/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "First to qualify",
+      "phones": []
+    },
+    {
+      "brand": "Spice Court",
+      "slug": "spice-court",
+      "recipient": "spice@spicecourtjaipur.com",
+      "recipientStatus": "Public restaurant listing — confirm",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/spice-court/",
+      "subject": "A Rajasthani menu and table-ordering idea for Spice Court",
+      "emailBody": "Hi Spice Court team,\n\nWe’re Rawcoderz, and we made a Rajasthani website concept for Spice Court, with a visual sample menu and a relaxed dining feel.\n\nGuests could explore dishes, choose spice preferences and build a table order on their phones. We can add approved venue and kitchen photos to make the experience feel more like Spice Court.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/spice-court/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "First to qualify",
+      "phones": []
+    },
+    {
+      "brand": "Kanha",
+      "slug": "kanha",
+      "recipient": "info@kanha.co",
+      "recipientStatus": "Official business website",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/kanha/",
+      "subject": "A visual menu and ordering pilot idea for Kanha",
+      "emailBody": "Hi Kanha team,\n\nWe’re Rawcoderz, and we built a Kanha website concept that brings mithai, quick bites and family meals into one visual sample menu.\n\nThe idea is to let guests browse and build a table or pickup order on their phones. We’d start with one outlet and shape the flow around your existing operations.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/kanha/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould your operations team be open to a 10-minute walkthrough of a pilot at one outlet?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Strategic group account",
+      "phones": []
+    },
+    {
+      "brand": "Tansukh / Tan-Sukh by Kanha",
+      "slug": "tansukh",
+      "recipient": "info@kanha.co",
+      "recipientStatus": "Official business website",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/tansukh/",
+      "subject": "A calmer table-ordering experience for Tansukh",
+      "emailBody": "Hi Tansukh team,\n\nWe’re Rawcoderz, and we made a dining website concept for Tansukh, with Indian classics, thalis and desserts in a visual sample menu.\n\nGuests could explore the choices and note their preferences from the table, with staff still available for hospitality and assistance. We’d scope any pilot around your existing service process.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/tansukh/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould your operations team be open to a 10-minute walkthrough for one outlet?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Strategic group account",
+      "phones": []
+    },
+    {
+      "brand": "Rawat Misthan Bhandar",
+      "slug": "rawat-misthan-bhandar",
+      "recipient": "rawatmisthanbhandar@gmail.com",
+      "recipientStatus": "Official business website",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/rawat-misthan-bhandar/",
+      "subject": "A sweets and snacks ordering concept for Rawat",
+      "emailBody": "Hi Rawat Misthan Bhandar team,\n\nWe’re Rawcoderz, and we made a Rawat Misthan Bhandar website concept, bringing snacks, mithai and meals into one visual sample menu.\n\nCustomers could explore their choices and build a pickup or table order on their phones. We’d begin with one outlet and agree how the flow should fit your team’s process.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/rawat-misthan-bhandar/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould the operations team be open to a 10-minute walkthrough of the concept?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Strategic group account",
+      "phones": []
+    },
+    {
+      "brand": "LMB / Laxmi Misthan Bhandar",
+      "slug": "lmb",
+      "recipient": "contactus@hotellmb.com",
+      "recipientStatus": "Official business website",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/lmb/",
+      "subject": "A dining and sweet-gifting website concept for LMB",
+      "emailBody": "Hi LMB team,\n\nWe’re Rawcoderz, and we created an LMB website concept that brings together mithai, Rajasthani dining and sweet gifting in a visual sample menu.\n\nCustomers could explore those choices and build a sample table or pickup order. We’d discuss a focused pilot alongside your current website and ordering arrangements.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/lmb/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould your team be open to a 10-minute walkthrough with the relevant operations or digital contact?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Strategic group account",
+      "phones": []
+    },
+    {
+      "brand": "Chokhi Dhani Village Restaurant",
+      "slug": "chokhi-dhani",
+      "recipient": "cdrajasthani@chokhidhani.com",
+      "recipientStatus": "Official business website",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/chokhi-dhani/",
+      "subject": "A Rajasthani dining-menu concept for Chokhi Dhani",
+      "emailBody": "Hi Chokhi Dhani team,\n\nWe’re Rawcoderz, and we made a Chokhi Dhani dining website concept, with a visual sample menu centred on Rajasthani food.\n\nThe idea is a focused food-ordering pilot for one dining area: guests could explore dishes and add preferences on their phones. We’d first understand how it should fit your team’s service flow.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/chokhi-dhani/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould your dining operations team be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Strategic group account",
+      "phones": []
+    },
+    {
+      "brand": "Handi Restaurant",
+      "slug": "handi",
+      "recipient": "handijpr@gmail.com",
+      "recipientStatus": "Public directory — confirm",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/handi/",
+      "subject": "A visual Indian-menu and ordering concept for Handi",
+      "emailBody": "Hi Handi Restaurant team,\n\nWe’re Rawcoderz, and we built a Indian dining website concept for Handi, with Indian dishes and breads in a visual sample menu.\n\nGuests could browse, choose spice preferences and build a table or pickup order. We can also develop a kitchen story with approved preparation photos and adapt the flow to your team’s process.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/handi/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Verify before demo",
+      "phones": []
+    },
+    {
+      "brand": "Thali and More",
+      "slug": "thali-and-more",
+      "recipient": "kccogroup.jpr@gmail.com",
+      "recipientStatus": "Official business website",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/thali-and-more/",
+      "subject": "A web menu companion idea for Thali and More",
+      "emailBody": "Hi Thali and More team,\n\nWe’re Rawcoderz, and we created a Thali and More website concept as a possible web companion to your existing ordering app.\n\nIt shows a visual thali and Indian-food menu, item preferences and a table or pickup ordering demo. We’d first check whether a route in the browser for guests would add something useful to your current setup.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/thali-and-more/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould a 10-minute discussion about that specific use case be useful?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Specific technology gap required",
+      "phones": []
+    },
+    {
+      "brand": "Cafe Bluez",
+      "slug": "cafe-bluez",
+      "recipient": "cafebluezjaipur@gmail.com",
+      "recipientStatus": "Claimed restaurant listing — confirm",
+      "channel": "email",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/cafe-bluez/",
+      "subject": "A blue website concept for Cafe Bluez",
+      "emailBody": "Hi Cafe Bluez team,\n\nWe’re Rawcoderz, and we made a blue website concept for Cafe Bluez, bringing coffee, café plates and desserts into a visual sample menu.\n\nGuests could explore their options, customise items and build a table or pickup order. We can personalise it further with your real menu and approved café photos.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/cafe-bluez/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Hold for qualification",
+      "phones": []
+    },
+    {
+      "brand": "The Messy Door Cafe",
+      "slug": "the-messy-door-cafe",
+      "recipient": null,
+      "recipientStatus": "Unconfirmed",
+      "channel": "WhatsApp",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/the-messy-door-cafe/",
+      "subject": "A website and ordering idea for The Messy Door Cafe",
+      "emailBody": "Hi The Messy Door Cafe team,\n\nWe’re Rawcoderz, and we made a playful website concept for The Messy Door Cafe, with a visual bubble tea, pizza and pasta menu.\n\nThe idea is to let guests browse, choose extras and build their order at their own pace, leaving more time to enjoy the café.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/the-messy-door-cafe/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Hold for qualification",
+      "phones": [
+        {
+          "number": "919351057718",
+          "label": "+91 93510 57718",
+          "sourceLabel": "Original supplied prospect response",
+          "source": "../source-response.md",
+          "status": "Supplied number; business match and WhatsApp availability unconfirmed",
+          "chatUrl": "https://wa.me/919351057718?text=Hi%20The%20Messy%20Door%20Cafe%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20made%20a%20playful%20website%20concept%20for%20The%20Messy%20Door%20Cafe%2C%20with%20a%20sample%20bubble%20tea%2C%20pizza%20and%20pasta%20menu%20and%20an%20easy%20ordering%20flow.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fthe-messy-door-cafe%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        }
+      ],
+      "whatsappBody": "Hi The Messy Door Cafe team, we’re Rawcoderz. We made a playful website concept for The Messy Door Cafe, with a sample bubble tea, pizza and pasta menu and an easy ordering flow.\n\nDemo: https://demo.rawcoderz.com/rawcoderz/jaipur/the-messy-door-cafe/\n\nIt uses sample content; no real orders are taken. Would the owner or manager be open to a quick 10-minute walkthrough?\n\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043"
+    },
+    {
+      "brand": "Cosmos Cafe",
+      "slug": "cosmos-cafe",
+      "recipient": null,
+      "recipientStatus": "Unconfirmed",
+      "channel": "WhatsApp",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/cosmos-cafe/",
+      "subject": "A coffee website concept for Cosmos Cafe",
+      "emailBody": "Hi Cosmos Cafe team,\n\nWe’re Rawcoderz, and we built a calm, coffee website concept for Cosmos Cafe, bringing coffee, small plates and sweet treats into one visual menu.\n\nGuests could choose their cup, add something to eat and try table or pickup ordering without downloading an app.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/cosmos-cafe/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Hold for qualification",
+      "phones": [
+        {
+          "number": "919414051795",
+          "label": "+91 94140 51795",
+          "sourceLabel": "Original supplied prospect response",
+          "source": "../source-response.md",
+          "status": "Supplied number; business match and WhatsApp availability unconfirmed",
+          "chatUrl": "https://wa.me/919414051795?text=Hi%20Cosmos%20Cafe%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20built%20a%20coffee%20website%20concept%20for%20Cosmos%20Cafe%2C%20with%20a%20sample%20visual%20menu%20and%20table%20or%20pickup%20ordering%E2%80%94an%20idea%20for%20making%20the%20coffee%20break%20a%20little%20easier.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fcosmos-cafe%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        }
+      ],
+      "whatsappBody": "Hi Cosmos Cafe team, we’re Rawcoderz. We built a coffee website concept for Cosmos Cafe, with a sample visual menu and table or pickup ordering—an idea for making the coffee break a little easier.\n\nDemo: https://demo.rawcoderz.com/rawcoderz/jaipur/cosmos-cafe/\n\nIt uses sample content; no real orders are taken. Would the owner or manager be open to a quick 10-minute walkthrough?\n\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043"
+    },
+    {
+      "brand": "The Rustic Spot Cafe",
+      "slug": "the-rustic-spot-cafe",
+      "recipient": null,
+      "recipientStatus": "Unconfirmed",
+      "channel": "WhatsApp",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/the-rustic-spot-cafe/",
+      "subject": "Pizza, coffee and easier ordering: a Rustic Spot demo",
+      "emailBody": "Hi The Rustic Spot Cafe team,\n\nWe’re Rawcoderz, and we made a rustic website concept for The Rustic Spot Cafe, centred on pizza, coffee and small plates.\n\nThe sample flow lets guests browse visually, customise their dishes and put together a table or pickup order. We can also build a kitchen story using your approved photos.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/the-rustic-spot-cafe/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Hold for qualification",
+      "phones": [
+        {
+          "number": "919982452074",
+          "label": "+91 99824 52074",
+          "sourceLabel": "Original supplied prospect response",
+          "source": "../source-response.md",
+          "status": "Supplied number; business match and WhatsApp availability unconfirmed",
+          "chatUrl": "https://wa.me/919982452074?text=Hi%20The%20Rustic%20Spot%20Cafe%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20made%20a%20rustic%20website%20concept%20for%20The%20Rustic%20Spot%20Cafe%2C%20with%20pizza%20and%20coffee%20on%20a%20visual%20sample%20menu%2C%20plus%20dish%20customisation%20and%20table%20or%20pickup%20ordering.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fthe-rustic-spot-cafe%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        }
+      ],
+      "whatsappBody": "Hi The Rustic Spot Cafe team, we’re Rawcoderz. We made a rustic website concept for The Rustic Spot Cafe, with pizza and coffee on a visual sample menu, plus dish customisation and table or pickup ordering.\n\nDemo: https://demo.rawcoderz.com/rawcoderz/jaipur/the-rustic-spot-cafe/\n\nIt uses sample content; no real orders are taken. Would the owner or manager be open to a quick 10-minute walkthrough?\n\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043"
+    },
+    {
+      "brand": "Bulb Cafe",
+      "slug": "bulb-cafe",
+      "recipient": null,
+      "recipientStatus": "Unconfirmed",
+      "channel": "WhatsApp",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/bulb-cafe/",
+      "subject": "A bright website idea for Bulb Cafe",
+      "emailBody": "Hi Bulb Cafe team,\n\nWe’re Rawcoderz, and we created a bright, welcoming website concept for Bulb Cafe, featuring a sample menu of coffee, quick bites and coolers.\n\nGuests could explore the choices on their phones, customise items and build a table or pickup order with fewer back-and-forth questions.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/bulb-cafe/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Lower priority for this campaign",
+      "phones": [
+        {
+          "number": "919782035098",
+          "label": "+91 97820 35098",
+          "sourceLabel": "Original supplied prospect response",
+          "source": "../source-response.md",
+          "status": "Supplied number; business match and WhatsApp availability unconfirmed",
+          "chatUrl": "https://wa.me/919782035098?text=Hi%20Bulb%20Cafe%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20created%20a%20bright%20website%20concept%20for%20Bulb%20Cafe%2C%20with%20coffee%2C%20quick%20bites%20and%20coolers%20on%20a%20sample%20visual%20menu%20and%20a%20simple%20ordering%20walkthrough.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fbulb-cafe%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        }
+      ],
+      "whatsappBody": "Hi Bulb Cafe team, we’re Rawcoderz. We created a bright website concept for Bulb Cafe, with coffee, quick bites and coolers on a sample visual menu and a simple ordering walkthrough.\n\nDemo: https://demo.rawcoderz.com/rawcoderz/jaipur/bulb-cafe/\n\nIt uses sample content; no real orders are taken. Would the owner or manager be open to a quick 10-minute walkthrough?\n\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043"
+    },
+    {
+      "brand": "C4 Chaska",
+      "slug": "c4-chaska",
+      "recipient": null,
+      "recipientStatus": "Unconfirmed",
+      "channel": "WhatsApp",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/c4-chaska/",
+      "subject": "An ordering website concept made for C4 Chaska",
+      "emailBody": "Hi C4 Chaska team,\n\nWe’re Rawcoderz, and we put together a lively website concept for C4 Chaska, with a sample chaat, quick-bites and coolers menu.\n\nGuests could choose their snacks, set preferences and build a table or pickup order on their phones. It’s an idea worth testing around your busiest service periods.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/c4-chaska/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Hold for qualification",
+      "phones": [
+        {
+          "number": "919660090557",
+          "label": "+91 96600 90557",
+          "sourceLabel": "Original supplied prospect response",
+          "source": "../source-response.md",
+          "status": "Supplied number; business match and WhatsApp availability unconfirmed",
+          "chatUrl": "https://wa.me/919660090557?text=Hi%20C4%20Chaska%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20put%20together%20a%20lively%20website%20concept%20for%20C4%20Chaska%2C%20with%20sample%20chaat%2C%20quick%20bites%20and%20coolers%2C%20plus%20a%20mobile%20ordering%20flow.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fc4-chaska%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        }
+      ],
+      "whatsappBody": "Hi C4 Chaska team, we’re Rawcoderz. We put together a lively website concept for C4 Chaska, with sample chaat, quick bites and coolers, plus a mobile ordering flow.\n\nDemo: https://demo.rawcoderz.com/rawcoderz/jaipur/c4-chaska/\n\nIt uses sample content; no real orders are taken. Would the owner or manager be open to a quick 10-minute walkthrough?\n\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043"
+    },
+    {
+      "brand": "How About Coffee",
+      "slug": "how-about-coffee",
+      "recipient": null,
+      "recipientStatus": "Unconfirmed",
+      "channel": "WhatsApp",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/how-about-coffee/",
+      "subject": "How about an easier way to order at How About Coffee?",
+      "emailBody": "Hi How About Coffee team,\n\nWe’re Rawcoderz, and we made a warm, coffee website concept for How About Coffee, with coffee, bakery picks and wraps in a visual menu.\n\nGuests could pair a drink with something to eat, choose their preferences and build a table or pickup order without downloading an app.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/how-about-coffee/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Hold for qualification",
+      "phones": [
+        {
+          "number": "919057999922",
+          "label": "+91 90579 99922",
+          "sourceLabel": "Original supplied prospect response",
+          "source": "../source-response.md",
+          "status": "Supplied number; business match and WhatsApp availability unconfirmed",
+          "chatUrl": "https://wa.me/919057999922?text=Hi%20How%20About%20Coffee%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20made%20a%20warm%20website%20concept%20for%20How%20About%20Coffee%2C%20with%20a%20sample%20coffee%2C%20bakery%20and%20wraps%20menu%20and%20an%20easy%20way%20to%20build%20a%20table%20or%20pickup%20order.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fhow-about-coffee%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        }
+      ],
+      "whatsappBody": "Hi How About Coffee team, we’re Rawcoderz. We made a warm website concept for How About Coffee, with a sample coffee, bakery and wraps menu and an easy way to build a table or pickup order.\n\nDemo: https://demo.rawcoderz.com/rawcoderz/jaipur/how-about-coffee/\n\nIt uses sample content; no real orders are taken. Would the owner or manager be open to a quick 10-minute walkthrough?\n\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043"
+    },
+    {
+      "brand": "The Social Belly",
+      "slug": "the-social-belly",
+      "recipient": null,
+      "recipientStatus": "Unconfirmed",
+      "channel": "WhatsApp",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/the-social-belly/",
+      "subject": "A relaxed ordering experience for The Social Belly",
+      "emailBody": "Hi The Social Belly team,\n\nWe’re Rawcoderz, and we made a fresh, relaxed website concept for The Social Belly, with a visual sample menu and space to tell the café’s story.\n\nGuests could browse, choose their preferences and build an order from their table, keeping the experience unhurried while making their choices clearer.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/the-social-belly/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Hold for qualification",
+      "phones": [
+        {
+          "number": "919929936808",
+          "label": "+91 99299 36808",
+          "sourceLabel": "District business listing",
+          "source": "https://www.district.in/dining/jaipur/the-social-belly-jagatpura",
+          "status": "Public listing; WhatsApp availability unconfirmed",
+          "chatUrl": "https://wa.me/919929936808?text=Hi%20The%20Social%20Belly%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20made%20a%20relaxed%20website%20concept%20for%20The%20Social%20Belly%2C%20with%20a%20visual%20sample%20menu%2C%20space%20for%20the%20caf%C3%A9%E2%80%99s%20story%20and%20an%20easy%20table-ordering%20walkthrough.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fthe-social-belly%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        }
+      ],
+      "whatsappBody": "Hi The Social Belly team, we’re Rawcoderz. We made a relaxed website concept for The Social Belly, with a visual sample menu, space for the café’s story and an easy table-ordering walkthrough.\n\nDemo: https://demo.rawcoderz.com/rawcoderz/jaipur/the-social-belly/\n\nIt uses sample content; no real orders are taken. Would the owner or manager be open to a quick 10-minute walkthrough?\n\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043"
+    },
+    {
+      "brand": "Pocket Beans",
+      "slug": "pocket-beans",
+      "recipient": null,
+      "recipientStatus": "Unconfirmed",
+      "channel": "WhatsApp",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/pocket-beans/",
+      "subject": "A coffee and café ordering demo for Pocket Beans",
+      "emailBody": "Hi Pocket Beans team,\n\nWe’re Rawcoderz, and we built an energetic website concept for Pocket Beans, bringing a sample coffee, burgers and noodles menu together on mobile.\n\nGuests could explore the menu, add preferences and build a table or pickup order. We can adapt the concept around the way your team currently handles orders.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/pocket-beans/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Lower priority for this campaign",
+      "phones": [
+        {
+          "number": "919602283360",
+          "label": "+91 96022 83360",
+          "sourceLabel": "Original supplied prospect response",
+          "source": "../source-response.md",
+          "status": "Supplied number; business match and WhatsApp availability unconfirmed",
+          "chatUrl": "https://wa.me/919602283360?text=Hi%20Pocket%20Beans%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20built%20an%20energetic%20website%20concept%20for%20Pocket%20Beans%2C%20with%20a%20sample%20coffee%2C%20burgers%20and%20noodles%20menu%2C%20item%20preferences%20and%20table%20or%20pickup%20ordering.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fpocket-beans%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        }
+      ],
+      "whatsappBody": "Hi Pocket Beans team, we’re Rawcoderz. We built an energetic website concept for Pocket Beans, with a sample coffee, burgers and noodles menu, item preferences and table or pickup ordering.\n\nDemo: https://demo.rawcoderz.com/rawcoderz/jaipur/pocket-beans/\n\nIt uses sample content; no real orders are taken. Would the owner or manager be open to a quick 10-minute walkthrough?\n\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043"
+    },
+    {
+      "brand": "Cheesy Crazy Cafe",
+      "slug": "cheesy-crazy-cafe",
+      "recipient": null,
+      "recipientStatus": "Unconfirmed",
+      "channel": "WhatsApp",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/cheesy-crazy-cafe/",
+      "subject": "A bold pizza and pasta demo for Cheesy Crazy Cafe",
+      "emailBody": "Hi Cheesy Crazy Cafe team,\n\nWe’re Rawcoderz, and we created a bold website concept for Cheesy Crazy Cafe, with a sample pizza, pasta and snacks menu.\n\nGuests could browse the dishes visually, add extras such as cheese and build their order on their phones. The idea is to make choices easier before the order reaches your team.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/cheesy-crazy-cafe/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Lower priority for this campaign",
+      "phones": [
+        {
+          "number": "919509552466",
+          "label": "+91 95095 52466",
+          "sourceLabel": "Original supplied prospect response",
+          "source": "../source-response.md",
+          "status": "Supplied number; business match and WhatsApp availability unconfirmed",
+          "chatUrl": "https://wa.me/919509552466?text=Hi%20Cheesy%20Crazy%20Cafe%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20created%20a%20bold%20website%20concept%20for%20Cheesy%20Crazy%20Cafe%2C%20with%20a%20sample%20pizza%20and%20pasta%20menu%2C%20extra-cheese%20options%20and%20an%20easy%20ordering%20flow.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fcheesy-crazy-cafe%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        }
+      ],
+      "whatsappBody": "Hi Cheesy Crazy Cafe team, we’re Rawcoderz. We created a bold website concept for Cheesy Crazy Cafe, with a sample pizza and pasta menu, extra-cheese options and an easy ordering flow.\n\nDemo: https://demo.rawcoderz.com/rawcoderz/jaipur/cheesy-crazy-cafe/\n\nIt uses sample content; no real orders are taken. Would the owner or manager be open to a quick 10-minute walkthrough?\n\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043"
+    },
+    {
+      "brand": "Brew & Bite",
+      "slug": "brew-and-bite",
+      "recipient": null,
+      "recipientStatus": "Unconfirmed",
+      "channel": "WhatsApp",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/brew-and-bite/",
+      "subject": "A coffee and bakery website idea for Brew & Bite",
+      "emailBody": "Hi Brew & Bite team,\n\nWe’re Rawcoderz, and we built a warm, editorial website concept for Brew & Bite, with coffee, bakery items and sandwiches in a visual menu.\n\nGuests could put together their coffee and food pairing, choose preferences and build a table or pickup order in one place.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/brew-and-bite/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Hold for qualification",
+      "phones": [
+        {
+          "number": "917877499923",
+          "label": "+91 78774 99923",
+          "sourceLabel": "Original supplied prospect response",
+          "source": "../source-response.md",
+          "status": "Supplied number; business match and WhatsApp availability unconfirmed",
+          "chatUrl": "https://wa.me/917877499923?text=Hi%20Brew%20%26%20Bite%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20built%20a%20warm%20website%20concept%20for%20Brew%20%26%20Bite%2C%20with%20a%20sample%20coffee%2C%20bakery%20and%20sandwiches%20menu%20and%20a%20simple%20table%20or%20pickup%20ordering%20walkthrough.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fbrew-and-bite%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        }
+      ],
+      "whatsappBody": "Hi Brew & Bite team, we’re Rawcoderz. We built a warm website concept for Brew & Bite, with a sample coffee, bakery and sandwiches menu and a simple table or pickup ordering walkthrough.\n\nDemo: https://demo.rawcoderz.com/rawcoderz/jaipur/brew-and-bite/\n\nIt uses sample content; no real orders are taken. Would the owner or manager be open to a quick 10-minute walkthrough?\n\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043"
+    },
+    {
+      "brand": "The Bhatura Project",
+      "slug": "the-bhatura-project",
+      "recipient": null,
+      "recipientStatus": "Unconfirmed",
+      "channel": "WhatsApp",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/the-bhatura-project/",
+      "subject": "A bhatura, kulcha and lassi ordering demo for you",
+      "emailBody": "Hi The Bhatura Project team,\n\nWe’re Rawcoderz, and we made a bold website concept for The Bhatura Project, with a sample bhatura, kulcha and lassi menu.\n\nGuests could choose their meal, add preferences and build a table or pickup order on their phones. It could be a useful pilot for making busy meal periods easier to manage.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/the-bhatura-project/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Hold for qualification",
+      "phones": [
+        {
+          "number": "919928333300",
+          "label": "+91 99283 33300",
+          "sourceLabel": "District business listing",
+          "source": "https://www.district.in/dining/jaipur/the-bhatura-project-raja-park",
+          "status": "Public listing; WhatsApp availability unconfirmed",
+          "chatUrl": "https://wa.me/919928333300?text=Hi%20The%20Bhatura%20Project%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20made%20a%20website%20concept%20for%20The%20Bhatura%20Project%2C%20with%20a%20sample%20bhatura%2C%20kulcha%20and%20lassi%20menu%20and%20a%20simple%20table%20or%20pickup%20ordering%20flow.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fthe-bhatura-project%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        },
+        {
+          "number": "919414072370",
+          "label": "+91 94140 72370",
+          "sourceLabel": "District alternative contact",
+          "source": "https://www.district.in/dining/jaipur/the-bhatura-project-raja-park",
+          "status": "Alternative on the same listing; WhatsApp availability unconfirmed",
+          "chatUrl": "https://wa.me/919414072370?text=Hi%20The%20Bhatura%20Project%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20made%20a%20website%20concept%20for%20The%20Bhatura%20Project%2C%20with%20a%20sample%20bhatura%2C%20kulcha%20and%20lassi%20menu%20and%20a%20simple%20table%20or%20pickup%20ordering%20flow.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fthe-bhatura-project%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        }
+      ],
+      "whatsappBody": "Hi The Bhatura Project team, we’re Rawcoderz. We made a website concept for The Bhatura Project, with a sample bhatura, kulcha and lassi menu and a simple table or pickup ordering flow.\n\nDemo: https://demo.rawcoderz.com/rawcoderz/jaipur/the-bhatura-project/\n\nIt uses sample content; no real orders are taken. Would the owner or manager be open to a quick 10-minute walkthrough?\n\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043"
+    },
+    {
+      "brand": "The karchi Restaurant",
+      "slug": "the-karchi-restaurant",
+      "recipient": null,
+      "recipientStatus": "Unconfirmed",
+      "channel": "WhatsApp",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/the-karchi-restaurant/",
+      "subject": "A table-ordering website concept for The Karchi",
+      "emailBody": "Hi The Karchi team,\n\nWe’re Rawcoderz, and we created a welcoming website concept for The Karchi, featuring Indian plates, breads and desserts in a sample visual menu.\n\nGuests could choose dishes, set spice preferences and assemble an order from their table. We can shape the flow around your staff’s current service process.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/the-karchi-restaurant/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Hold for qualification",
+      "phones": [
+        {
+          "number": "918440800404",
+          "label": "+91 84408 00404",
+          "sourceLabel": "District business listing",
+          "source": "https://www.district.in/dining/jaipur/the-karchi-raja-park",
+          "status": "Conflicting listing numbers; confirm the venue",
+          "chatUrl": "https://wa.me/918440800404?text=Hi%20The%20Karchi%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20created%20a%20website%20concept%20for%20The%20Karchi%2C%20with%20a%20sample%20Indian%20menu%2C%20spice%20preferences%20and%20a%20simple%20table%20or%20pickup%20ordering%20walkthrough.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fthe-karchi-restaurant%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        },
+        {
+          "number": "918949601506",
+          "label": "+91 89496 01506",
+          "sourceLabel": "Magicpin conflicting contact",
+          "source": "https://magicpin.in/Jaipur/Raja-Park/Restaurant/The-Karchi/store/1b6a181",
+          "status": "Conflicts with District; confirm the venue",
+          "chatUrl": "https://wa.me/918949601506?text=Hi%20The%20Karchi%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20created%20a%20website%20concept%20for%20The%20Karchi%2C%20with%20a%20sample%20Indian%20menu%2C%20spice%20preferences%20and%20a%20simple%20table%20or%20pickup%20ordering%20walkthrough.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fthe-karchi-restaurant%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        }
+      ],
+      "whatsappBody": "Hi The Karchi team, we’re Rawcoderz. We created a website concept for The Karchi, with a sample Indian menu, spice preferences and a simple table or pickup ordering walkthrough.\n\nDemo: https://demo.rawcoderz.com/rawcoderz/jaipur/the-karchi-restaurant/\n\nIt uses sample content; no real orders are taken. Would the owner or manager be open to a quick 10-minute walkthrough?\n\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043"
+    },
+    {
+      "brand": "La Fiamma",
+      "slug": "la-fiamma",
+      "recipient": null,
+      "recipientStatus": "Unconfirmed",
+      "channel": "WhatsApp",
+      "demoUrl": "https://demo.rawcoderz.com/rawcoderz/jaipur/la-fiamma/",
+      "subject": "A pizza website and ordering idea for La Fiamma",
+      "emailBody": "Hi La Fiamma team,\n\nWe’re Rawcoderz, and we built a pizza website concept for La Fiamma, with a bold visual menu and a simple ordering walkthrough.\n\nGuests could browse pizzas, choose extras and build a table or pickup order on their phones. We can also use approved pizza-making and kitchen photos to tell your story.\n\nView your demo: https://demo.rawcoderz.com/rawcoderz/jaipur/la-fiamma/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould you be open to a 10-minute walkthrough?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043",
+      "priority": "Verify before demo",
+      "phones": [
+        {
+          "number": "919352524740",
+          "label": "+91 93525 24740",
+          "sourceLabel": "C Scheme Zomato contact listing",
+          "source": "https://www.zomato.com/jaipur/la-fiamma-c-scheme/order",
+          "status": "Conflicting listing numbers; confirm the intended outlet",
+          "chatUrl": "https://wa.me/919352524740?text=Hi%20La%20Fiamma%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20built%20a%20pizza%20website%20concept%20for%20La%20Fiamma%2C%20with%20a%20sample%20visual%20menu%2C%20extra-cheese%20options%20and%20an%20easy%20table%20or%20pickup%20ordering%20flow.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fla-fiamma%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        },
+        {
+          "number": "919041301638",
+          "label": "+91 90413 01638",
+          "sourceLabel": "Claimed C Scheme Tripadvisor listing",
+          "source": "https://www.tripadvisor.in/Restaurant_Review-g304555-d34567765-Reviews-La_Fiamma-Jaipur_Jaipur_District_Rajasthan.html",
+          "status": "Conflicts with Zomato; confirm the intended outlet",
+          "chatUrl": "https://wa.me/919041301638?text=Hi%20La%20Fiamma%20team%2C%20we%E2%80%99re%20Rawcoderz.%20We%20built%20a%20pizza%20website%20concept%20for%20La%20Fiamma%2C%20with%20a%20sample%20visual%20menu%2C%20extra-cheese%20options%20and%20an%20easy%20table%20or%20pickup%20ordering%20flow.%0A%0ADemo%3A%20https%3A%2F%2Fdemo.rawcoderz.com%2Frawcoderz%2Fjaipur%2Fla-fiamma%2F%0A%0AIt%20uses%20sample%20content%3B%20no%20real%20orders%20are%20taken.%20Would%20the%20owner%20or%20manager%20be%20open%20to%20a%20quick%2010-minute%20walkthrough%3F%0A%0AMukesh%20Kumar%0ARawcoderz%20%7C%20https%3A%2F%2Fwww.rawcoderz.com%2F%0Amukesh.kumar%40rawcoderz.com%20%7C%20%2B91%2086969%2075043"
+        }
+      ],
+      "whatsappBody": "Hi La Fiamma team, we’re Rawcoderz. We built a pizza website concept for La Fiamma, with a sample visual menu, extra-cheese options and an easy table or pickup ordering flow.\n\nDemo: https://demo.rawcoderz.com/rawcoderz/jaipur/la-fiamma/\n\nIt uses sample content; no real orders are taken. Would the owner or manager be open to a quick 10-minute walkthrough?\n\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043"
+    }
+  ],
+  "recommendedGroupEmail": {
+    "recipient": "info@kanha.co",
+    "subject": "Two visual-menu concepts for Kanha and Tansukh",
+    "body": "Hi Kanha team,\n\nWe’re Rawcoderz, and we built two website concepts: one for Kanha’s sweets, quick bites and meals, and one for Tansukh’s dining experience.\n\nBoth show how guests could browse a visual menu, choose preferences and build a table or pickup order on their phones.\n\nKanha demo: https://demo.rawcoderz.com/rawcoderz/jaipur/kanha/\nTansukh demo: https://demo.rawcoderz.com/rawcoderz/jaipur/tansukh/\n\nThe menu and prices are samples; ordering is a demo.\n\nWould your operations team be open to a 10-minute walkthrough of a one-outlet pilot alongside your current setup?\n\nBest,\nMukesh Kumar\nRawcoderz | https://www.rawcoderz.com/\nmukesh.kumar@rawcoderz.com | +91 86969 75043"
+  }
+}
