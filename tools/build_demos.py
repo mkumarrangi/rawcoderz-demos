@@ -14,6 +14,9 @@ reviews, maps_url, city, state. Optional (leave out anything you can't verify):
   hours        sentence with their Google hours, e.g. "Open weekdays 7 AM to 5:30 PM."
   quotes       up to 3 verbatim testimonials from their own website: [{"text": "...", "name": "John S."}]
                (trim with an ellipsis if needed; first name plus last initial)
+  niche        roofing (default) | moving. Sets the quote-form questions, default copy and
+               service descriptions. For moving, `license` is the Florida mover registration
+               number (e.g. "IM1234"), shown only if they publish it.
 """
 import html
 import json
@@ -45,6 +48,8 @@ ICONS = {
     "window": '<rect x="5" y="4" width="14" height="16" rx="1.5"/><path d="M12 4v16M5 12h14"/>',
     "wind": '<path d="M3 9h11a3 3 0 1 0-3-3"/><path d="M3 14h15a3 3 0 1 1-3 3"/><path d="M3 11.5h7"/>',
     "money": '<rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v5M18 9.5v5"/>',
+    "truck": '<path d="M2.5 6.5h11v10h-11z"/><path d="M13.5 10h4l3 3.5v3h-7z"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/>',
+    "box": '<path d="M3.5 7.5 12 3.5l8.5 4v9L12 20.5l-8.5-4z"/><path d="M3.5 7.5 12 11.5l8.5-4M12 11.5v9"/>',
     "build": '<path d="M13.5 5.5 18.5 10.5"/><path d="m11 8 5 5-8.5 8.5-5-5z"/><path d="M14.5 4.5l2-2 5 5-2 2"/>',
 }
 
@@ -78,6 +83,62 @@ SERVICE_COPY = [
 ]
 DEFAULT_SERVICES = ["Roof repair", "Roof replacement", "Storm damage", "Roof inspections"]
 
+MOVING_COPY = [
+    ("long distance", "truck", "Moves to another city or state, loaded and delivered by the same crew."),
+    ("long-distance", "truck", "Moves to another city or state, loaded and delivered by the same crew."),
+    ("interstate", "truck", "Moves to another city or state, loaded and delivered by the same crew."),
+    ("local", "truck", "Moves across town, priced by the hour or by the job."),
+    ("residential", "truck", "Apartments, condos and houses, from one room to the whole home."),
+    ("apartment", "truck", "Apartments and condos, including stairs and elevator buildings."),
+    ("commercial", "commercial", "Offices and businesses moved with as little downtime as possible."),
+    ("office", "commercial", "Offices and businesses moved with as little downtime as possible."),
+    ("unpack", "box", "Boxes unpacked and set up in your new place."),
+    ("packing", "box", "Packing materials and careful packing, for a few rooms or the whole home."),
+    ("storage", "box", "Short and long-term storage between moves."),
+    ("piano", "measure", "Pianos and other heavy items moved with the right equipment."),
+    ("senior", "truck", "Unhurried moves for seniors downsizing or moving closer to family."),
+    ("labor", "build", "Loading and unloading help for your rental truck or container."),
+    ("loading", "build", "Loading and unloading help for your rental truck or container."),
+    ("junk", "tarp", "Hauling away what you don't want to move."),
+    ("furniture", "build", "Furniture taken apart, wrapped and reassembled."),
+]
+
+NICHES = {
+    "roofing": dict(
+        copy=SERVICE_COPY, default_icon="roof", default_services=DEFAULT_SERVICES,
+        trade="roofing", place="Roofing in {city}, {state}", headline="Roof repair and replacement in {city}",
+        services_intro="The work {short} takes on, from a single leak to a whole new roof.",
+        needs=["Roof repair", "Roof replacement", "Storm or leak damage", "Inspection"],
+        zip_label="Property ZIP code", kind_legend="Roof type",
+        kinds=["Shingle", "Tile", "Metal", "Flat", "Not sure"],
+        urgent_legend="Is water coming in right now?",
+        visit_line="to set a time to look at the roof.",
+        price_line="After the visit you get a quote for the work, and you decide.",
+        license_big="Licensed", license_label="Florida contractor license", license_short="License",
+        sms=dict(urgent="Leaking now. ", join=" in ", kind="%s roof", lower=True)),
+    "moving": dict(
+        copy=MOVING_COPY, default_icon="truck",
+        default_services=["Local moving", "Long-distance moving", "Packing", "Commercial moving"],
+        trade="movers", place="Movers in {city}, {state}", headline="Local and long-distance moving in {city}",
+        services_intro="The moves {short} handles, from a studio apartment to a whole house.",
+        needs=["Local move", "Long-distance move", "Packing help", "Office move"],
+        zip_label="Moving from ZIP code", kind_legend="Home size",
+        kinds=["Studio or 1 BR", "2 BR", "3 BR", "4+ BR", "Not sure"],
+        urgent_legend="Moving in the next 2 weeks?",
+        visit_line="to go over the details and pick a date.",
+        price_line="You get a price for the move, and you decide.",
+        license_big="Registered", license_label="Florida mover registration", license_short="Mover reg.",
+        sms=dict(urgent="Moving soon. ", join=" from ZIP ", kind="home size: %s", lower=False)),
+}
+
+
+def radios(name, values, first_checked=False):
+    out = []
+    for i, v in enumerate(values):
+        chk = " checked" if first_checked and i == 0 else ""
+        out.append(f'              <label class="choice"><input type="radio" name="{name}" value="{e(v)}"{chk}><span>{e(v)}</span></label>')
+    return "\n".join(out)
+
 
 def e(v):
     return html.escape(str(v), quote=True)
@@ -90,10 +151,10 @@ def tel(phone):
     return "+" + digits if digits else ""
 
 
-def svc_row(name):
+def svc_row(name, niche):
     low = name.lower()
-    icon, text = "roof", ""
-    for key, ic, copy in SERVICE_COPY:
+    icon, text = niche["default_icon"], ""
+    for key, ic, copy in niche["copy"]:
         if key in low:
             icon, text = ic, copy
             break
@@ -115,6 +176,7 @@ def stars(rating, on_dark):
 
 def build(p):
     name = p["business"]
+    nk = NICHES[p.get("niche") or "roofing"]
     short = p.get("short") or name
     phone = p.get("phone") or ""
     t = THEMES.get(p.get("theme") or "storm", THEMES["storm"])
@@ -134,9 +196,9 @@ def build(p):
     for big, small in p.get("why_extra") or []:
         proof.append(f"<li><b>{e(big)}</b>{e(small)}</li>")
     if p.get("license"):
-        proof.append(f'<li><b>Licensed</b>Florida contractor license {e(p["license"])}</li>')
+        proof.append(f'<li><b>{e(nk["license_big"])}</b>{e(nk["license_label"])} {e(p["license"])}</li>')
 
-    services = p.get("services") or DEFAULT_SERVICES
+    services = p.get("services") or nk["default_services"]
     quotes = [q for q in (p.get("quotes") or []) if q.get("text") and q.get("name")][:3]
     if quotes:
         lead, rest = quotes[0], quotes[1:]
@@ -167,27 +229,34 @@ def build(p):
         "{{name}}": e(name),
         "{{short}}": e(short),
         "{{contact_email}}": e(CONTACT),
-        "{{mark_sub}}": f"<small>{e(city)}, {e(state)} roofing</small>",
+        "{{mark_sub}}": f"<small>{e(city)}, {e(state)} {e(nk['trade'])}</small>",
         "{{nav_reviews}}": nav_reviews,
         "{{call_button}}": call,
         "{{call_big}}": call_big,
         "{{bar_call}}": bar_call,
-        "{{place_line}}": e(p.get("place_line") or f"Roofing in {city}, {state}"),
-        "{{headline}}": e(p.get("headline") or f"Roof repair and replacement in {city}"),
+        "{{place_line}}": e(p.get("place_line") or nk["place"].format(city=city, state=state)),
+        "{{headline}}": e(p.get("headline") or nk["headline"].format(city=city)),
         "{{lede}}": (e(p.get("lede")) if p.get("lede") else
                      "Tell us what's going on and get a quote" + (f', or call <a href="tel:{e(tel(phone))}">{e(phone)}</a>.' if phone else ".")),
         "{{proof}}": "".join(proof),
         "{{zip_hint}}": zip_hint,
-        "{{services_intro}}": e(p.get("services_intro") or f"The work {short} takes on, from a single leak to a whole new roof."),
-        "{{services}}": "".join(svc_row(s) for s in services[:6]),
+        "{{services_intro}}": e(p.get("services_intro") or nk["services_intro"].format(short=short)),
+        "{{services}}": "".join(svc_row(s, nk) for s in services[:6]),
         "{{reviews_section}}": reviews_section,
+        "{{need_choices}}": radios("need", nk["needs"] + ["Something else"]).replace('class="choice"><input type="radio" name="need" value="Something else"', 'class="choice wide"><input type="radio" name="need" value="Something else"'),
+        "{{zip_label}}": e(nk["zip_label"]),
+        "{{kind_legend}}": e(nk["kind_legend"]),
+        "{{kind_choices}}": radios("roof", nk["kinds"], first_checked=True),
+        "{{urgent_legend}}": e(nk["urgent_legend"]),
+        "{{visit_line}}": e(nk["visit_line"]),
+        "{{price_line}}": e(nk["price_line"]),
         "{{area_title}}": e(p.get("area_title") or f"Serving {city} and nearby"),
         "{{area_text}}": e(p.get("area_text") or (f"Including {areas}." if areas else f"Homes and businesses across {city} and the surrounding area.")),
         "{{hours_line}}": e(p.get("hours") or ""),
         "{{address_line}}": f"<br>{e(p['address'])}" if p.get("address") else "",
         "{{phone_text}}": e(phone),
-        "{{license_line}}": f"<br>License {e(p['license'])}" if p.get("license") else "",
-        "{{biz_json}}": json.dumps({"name": name, "phone": phone}).replace("</", "<\\/"),
+        "{{license_line}}": f"<br>{e(nk['license_short'])} {e(p['license'])}" if p.get("license") else "",
+        "{{biz_json}}": json.dumps({"name": name, "phone": phone, "sms": nk["sms"]}).replace("</", "<\\/"),
         "{{c_ink}}": t["ink"], "{{c_ink2}}": t["ink2"], "{{c_accent}}": t["accent"],
         "{{c_accent_ink}}": t["accent_ink"], "{{c_accent_deep}}": t["accent_deep"],
     }

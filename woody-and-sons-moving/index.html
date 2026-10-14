@@ -2,387 +2,997 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="color-scheme" content="light">
 <title>Woody &amp; Sons Moving · Concept homepage by Rawcoderz</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Work+Sans:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#F1F4F3;--card:#FFFFFF;--line:#D6DDDD;--ink-soft:#46525C;--ok:#1E7A4C;--err:#B42318;
-  --ink:#0C3638;--ink-2:#145052;--accent:#FF8A3D;--accent-ink:#1B1206;--accent-deep:#B04A14;
-  --wrap:1160px;--gut:20px;
+  --cream:#f6efe2;--paper:#fbf7ef;--sand:#ecdfc6;--kraft:#c9a170;--kraft-d:#a97f4e;
+  --walnut:#5a3a22;--walnut-d:#3b2414;--walnut-l:#8a5e3b;
+  --forest:#2f5d46;--forest-d:#1f4332;--forest-l:#e3ece5;
+  --ink:#2a1d13;--muted:#6b5643;--line:#e0d2b8;--rust:#a3542f;
+  --radius:18px;--shadow:0 1px 0 rgba(59,36,20,.06),0 18px 40px -22px rgba(59,36,20,.45);
+  --display:"Fraunces",Georgia,serif;--sans:"Work Sans",system-ui,sans-serif;--hand:"Caveat","Segoe Print",cursive;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:17px;line-height:1.55;font-stretch:100%}
-a{color:inherit}
-img,svg{display:block}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;overflow-x:hidden;
+  background-image:radial-gradient(rgba(90,58,34,.05) 1px,transparent 1.2px);background-size:22px 22px}
+img,svg{max-width:100%}
+a{color:var(--forest)}
+:focus-visible{outline:3px solid var(--rust);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.08;letter-spacing:-.01em;margin:0;color:var(--walnut-d)}
+h2{font-size:clamp(2rem,4.2vw,3.2rem)}
+h3{font-size:1.28rem}
+p{margin:0}
+.wrap{width:min(1200px,100% - 32px);margin-inline:auto}
+.eyebrow{font:600 .78rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--forest);display:inline-flex;align-items:center;gap:.6em}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor;border-radius:2px}
+.hand{font-family:var(--hand)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;font:600 1rem/1 var(--sans);padding:1rem 1.35rem;border-radius:999px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s,color .2s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-primary{background:var(--forest);color:#fff;box-shadow:0 10px 22px -12px rgba(31,67,50,.9)}
+.btn-primary:hover{background:var(--forest-d);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--walnut);color:var(--walnut-d);background:transparent}
+.btn-ghost:hover{background:var(--walnut);color:var(--paper);transform:translateY(-2px)}
 
-/* honest preview banner */
-.concept{background:#FFF4CC;color:#4A3B00;font-size:13.5px;line-height:1.4;padding:9px var(--gut);text-align:center;border-bottom:1px solid #EBD98F}
-.concept b{font-weight:650}
+/* honesty banner */
+.concept{background:var(--walnut-d);color:#f3e6cf;font-size:.8rem;line-height:1.45;text-align:center;padding:.5rem 16px}
+.concept b{color:#fff}
 
 /* header */
-.top{background:var(--ink);color:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(255,255,255,.08)}
-.top .wrap{display:flex;align-items:center;gap:24px;min-height:68px}
-.mark{font-stretch:118%;font-weight:800;font-size:21px;letter-spacing:-.01em;line-height:1.05;text-decoration:none;margin-right:auto}
-.mark small{display:block;font-stretch:100%;font-weight:450;font-size:12.5px;letter-spacing:0;color:rgba(255,255,255,.66);margin-top:3px}
-.nav{display:flex;gap:22px;font-size:15px}
-.nav a{text-decoration:none;color:rgba(255,255,255,.82)}
-.nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:5px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:10px;font:inherit;font-weight:700;font-size:16px;line-height:1;padding:14px 18px;cursor:pointer;text-decoration:none;white-space:nowrap}
-.btn svg{width:18px;height:18px;flex:none}
-.btn.call{background:var(--accent);color:var(--accent-ink)}
-.btn.call:hover{filter:brightness(1.06)}
-@media (max-width:880px){.nav{display:none}}
-@media (max-width:560px){.top .btn.call span{display:none}.top .btn.call{padding:12px}}
+.site-head{position:sticky;top:0;z-index:50;background:rgba(246,239,226,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--walnut-d);min-width:0}
+.brand-mark{width:46px;height:46px;flex:none}
+.brand-name{font:800 1.32rem/1 var(--display);letter-spacing:-.01em;white-space:nowrap}
+.brand-name i{font-style:italic;font-weight:400;color:var(--forest)}
+.brand-sub{display:block;font:600 .62rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+.nav{display:flex;gap:1.6rem}
+.nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-4px;height:2px;background:var(--forest);transition:right .25s}
+.nav a:hover::after{right:0}
+.head-call{padding:.72rem 1.1rem;font-size:.95rem}
+.head-call .num{white-space:nowrap}
 
 /* hero */
-.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
-.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);grid-template-areas:"copy form" "proof form";grid-template-rows:auto 1fr;column-gap:56px;row-gap:28px;align-items:start;padding-top:56px;padding-bottom:128px}
-.copy{grid-area:copy}.quote{grid-area:form}.proof{grid-area:proof}
-@media (max-width:940px){.hero .wrap{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "form" "proof";grid-template-rows:auto;row-gap:28px;padding-top:32px;padding-bottom:104px}}
-.place{display:flex;align-items:center;gap:8px;font-size:15px;color:rgba(255,255,255,.72);margin:0 0 18px}
-.place svg{width:16px;height:16px;color:var(--accent)}
-h1{font-stretch:122%;font-weight:800;font-size:clamp(40px,6.4vw,78px);line-height:.96;letter-spacing:-.022em;margin:0 0 22px;text-wrap:balance;max-width:13ch}
-.lede{font-size:clamp(17px,1.6vw,20px);color:rgba(255,255,255,.82);max-width:40ch;margin:0}
-.lede a{color:#fff;font-weight:650;text-underline-offset:4px;white-space:nowrap}
-.proof{list-style:none;margin:0;padding:22px 0 0;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:18px 34px}
-.proof li{font-size:15px;color:rgba(255,255,255,.74);max-width:24ch;line-height:1.35}
-.proof b{display:block;font-stretch:112%;font-weight:750;font-size:22px;color:#fff;letter-spacing:-.01em;margin-bottom:3px}
-.stars{position:relative;display:inline-block;width:110px;height:20px;vertical-align:-3px;margin-right:8px}
-.stars svg{position:absolute;inset:0;width:110px;height:20px}
-.stars .fill{position:absolute;inset:0;overflow:hidden}
-.proof a{color:rgba(255,255,255,.9);text-underline-offset:3px}
+.hero{position:relative;padding:56px 0 40px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:48px;align-items:center}
+.hero-copy{position:relative;z-index:2}
+.hero h1{font-size:clamp(2.5rem,5.4vw,4.55rem);font-weight:600;margin:.55rem 0 1.1rem;font-variation-settings:"opsz" 144}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--forest);position:relative;white-space:nowrap}
+.hero h1 em svg{position:absolute;left:-2%;bottom:-.12em;width:104%;height:.3em;overflow:visible}
+.lede{font-size:1.14rem;color:var(--muted);max-width:34rem}
+.rating{display:inline-flex;align-items:center;gap:.75rem;margin:1.5rem 0 1.6rem;padding:.6rem 1rem .6rem .7rem;background:var(--paper);border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);flex-wrap:wrap}
+.rating .score{font:800 1.4rem/1 var(--display);color:var(--walnut-d);background:var(--sand);border-radius:999px;padding:.35rem .6rem}
+.stars{display:inline-flex;gap:2px;color:#d69a2d}
+.stars svg{width:18px;height:18px}
+.rating small{color:var(--muted);font-size:.9rem}
+.rating:hover{border-color:var(--kraft)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.seals{display:flex;gap:18px;margin-top:2rem;flex-wrap:wrap}
+.seal{width:104px;height:104px;transition:transform .4s}
+.seal:nth-child(1){transform:rotate(-8deg)}
+.seal:nth-child(2){transform:rotate(5deg)}
+.seal:nth-child(3){transform:rotate(-3deg)}
+.seal:hover{transform:rotate(0) scale(1.06)}
+.hero-art{position:relative}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 30px 40px rgba(59,36,20,.22))}
+.hero-art .note{position:absolute;right:2%;bottom:-6px;background:var(--paper);border:1px solid var(--line);padding:.55rem .9rem;border-radius:12px;font:600 .82rem/1.3 var(--sans);color:var(--walnut-d);box-shadow:var(--shadow);display:flex;gap:.55rem;align-items:center}
+.hero-art .note .dot{width:9px;height:9px;border-radius:50%;background:#3fae6a;box-shadow:0 0 0 4px rgba(63,174,106,.2);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(63,174,106,0)}}
 
-/* the rooftops */
-.roofs{position:absolute;left:0;right:0;bottom:-1px;height:110px;z-index:1;color:var(--paper)}
-.roofs svg{width:100%;height:100%}
-@media (max-width:940px){.roofs{height:76px}}
+/* svg anims */
+.swing{transform-box:fill-box;transform-origin:50% 0;animation:swing 4s ease-in-out infinite}
+.sign-swing{transform-box:fill-box;transform-origin:50% 0;animation:swing 6s ease-in-out infinite}
+@keyframes swing{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
+.palm{transform-box:fill-box;transform-origin:50% 100%;animation:sway 5s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(3deg)}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.mote{animation:float 7s ease-in-out infinite}
+.mote:nth-of-type(2){animation-delay:-2s}.mote:nth-of-type(3){animation-delay:-4s}
+@keyframes float{0%,100%{transform:translateY(0);opacity:.2}50%{transform:translateY(-16px);opacity:.75}}
 
-/* quote form */
-.quote{background:var(--card);color:var(--ink);border-radius:16px;box-shadow:0 30px 60px -28px rgba(0,0,0,.55),0 0 0 1px rgba(0,0,0,.04);overflow:hidden}
-.q-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:20px 22px 0}
-.q-head h2{font-stretch:112%;font-weight:780;font-size:22px;letter-spacing:-.01em;margin:0}
-.q-step{font-size:13.5px;color:var(--ink-soft);white-space:nowrap}
-.q-bar{height:4px;background:var(--line);margin:14px 22px 0;border-radius:2px;overflow:hidden}
-.q-bar i{display:block;height:100%;width:33.33%;background:var(--accent-deep);border-radius:2px;transition:width .35s ease}
-.q-body{padding:18px 22px 22px}
-fieldset{border:0;margin:0 0 16px;padding:0;min-width:0}
-legend{font-weight:650;font-size:16px;padding:0;margin:0 0 10px}
-.q-title{font-weight:650;font-size:16px;margin:0 0 10px;outline:none}
-.choices{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.choices.five{grid-template-columns:repeat(5,minmax(0,1fr))}
-.choices.two{grid-template-columns:1fr 1fr}
-@media (max-width:420px){.choices.five{grid-template-columns:repeat(3,minmax(0,1fr))}}
-.choice{position:relative}
-.choice input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
-.choice span{display:flex;align-items:center;min-height:50px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;font-weight:600;font-size:15px;line-height:1.25;background:#fff;transition:border-color .15s,background .15s}
-.choices.five .choice span,.choices.two .choice span{justify-content:center;text-align:center;min-height:44px;padding:8px 6px;font-size:14.5px}
-.choice input:hover+span{border-color:var(--ink-soft)}
-.choice input:checked+span{border-color:var(--ink);background:color-mix(in srgb,var(--accent) 16%,#fff);box-shadow:inset 0 0 0 1px var(--ink)}
-.choice input:focus-visible+span{outline:3px solid var(--accent);outline-offset:2px}
-.choice.wide{grid-column:1/-1}
-label.f{display:block;font-weight:600;font-size:15px;margin:0 0 6px}
-.field{margin:0 0 14px}
-.field input{width:100%;font:inherit;font-size:17px;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
-.field input:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 45%,transparent)}
-.field input[aria-invalid="true"]{border-color:var(--err)}
-.err{color:var(--err);font-size:14px;margin:6px 0 0;min-height:0}
-.err:empty{display:none}
-.q-actions{display:flex;gap:10px;align-items:center;margin-top:6px}
-.go{flex:1;background:var(--accent);color:var(--accent-ink);font-size:17px;padding:16px}
-.go:hover{filter:brightness(1.05)}
-.back{background:transparent;color:var(--ink-soft);padding:16px 8px;font-weight:600}
-.back:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
-.fine{font-size:13px;color:var(--ink-soft);margin:12px 0 0;line-height:1.4}
-[hidden]{display:none!important}
-.done-head{display:flex;gap:12px;align-items:center;margin:0 0 6px}
-.done-head .tick{width:40px;height:40px;border-radius:50%;background:#E3F3EA;color:var(--ok);display:grid;place-items:center;flex:none}
-.done-head .tick svg{width:22px;height:22px}
-.done-head h3{margin:0;font-stretch:112%;font-size:21px;font-weight:780;outline:none}
-.done p{margin:0 0 12px;color:var(--ink-soft);font-size:15px}
-.sms{background:#EEF1F1;border-radius:14px;padding:14px;margin:4px 0 12px}
-.sms .from{font-size:12.5px;color:var(--ink-soft);margin:0 0 8px;text-align:center}
-.bubble{background:#fff;border:1px solid var(--line);border-radius:16px 16px 16px 4px;padding:11px 13px;font-size:15px;line-height:1.45;max-width:94%;white-space:pre-line}
+/* quote section */
+.quote{padding:36px 0 80px}
+.quote .wrap{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:28px;align-items:stretch}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow)}
+.form-card{padding:34px;position:relative;overflow:hidden}
+.form-card::before{content:"";position:absolute;inset:0 0 auto 0;height:8px;background:repeating-linear-gradient(90deg,var(--forest) 0 28px,var(--kraft) 28px 56px)}
+.form-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.form-head h2{font-size:clamp(1.7rem,3vw,2.3rem)}
+.form-head p{color:var(--muted);margin-top:.35rem}
+.progress{min-width:150px}
+.progress-label{font:600 .8rem/1 var(--sans);color:var(--forest);letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;text-align:right}
+.progress-bar{height:8px;border-radius:9px;background:var(--sand);overflow:hidden}
+.progress-bar span{display:block;height:100%;width:33.3%;background:var(--forest);border-radius:9px;transition:width .4s}
+fieldset{border:0;margin:0 0 18px;padding:0;min-width:0}
+legend{font:600 1rem/1.3 var(--sans);color:var(--walnut-d);margin-bottom:10px;padding:0}
+.choices{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.choices.small{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
+.choice{position:relative;display:block;cursor:pointer}
+.choice input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.choice span{display:flex;align-items:center;gap:.6rem;min-height:56px;padding:.75rem .9rem;border:1.5px solid var(--line);border-radius:14px;background:#fff;font-weight:500;line-height:1.25;transition:border-color .2s,background .2s,transform .2s}
+.choices.small .choice span{min-height:46px;justify-content:center;text-align:center}
+.choice span svg{width:26px;height:26px;flex:none;color:var(--walnut)}
+.choice:hover span{border-color:var(--kraft);transform:translateY(-1px)}
+.choice input:checked + span{border-color:var(--forest);background:var(--forest-l);box-shadow:inset 0 0 0 1px var(--forest)}
+.choice input:checked + span svg{color:var(--forest)}
+.choice input:focus-visible + span{outline:3px solid var(--rust);outline-offset:2px}
+.field{margin-bottom:18px}
+.field label{display:block;font-weight:600;color:var(--walnut-d);margin-bottom:6px}
+.field input{width:100%;font:500 1.05rem var(--sans);padding:.9rem 1rem;border:1.5px solid var(--line);border-radius:14px;background:#fff;color:var(--ink)}
+.field input:focus{outline:none;border-color:var(--forest);box-shadow:0 0 0 4px rgba(47,93,70,.15)}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.err{color:#a3311f;font-size:.9rem;font-weight:600;min-height:1.3em;margin:-4px 0 10px}
+.err:empty{min-height:0;margin:0}
+.step-actions{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:8px;flex-wrap:wrap}
+.step-actions .btn{min-width:130px}
+.fine{font-size:.85rem;color:var(--muted);margin-top:12px}
+.done{text-align:center;padding:10px 0}
+.done h3{font-size:2rem;margin:.5rem 0 1rem}
+.done .check{width:58px;height:58px;margin:0 auto;border-radius:50%;background:var(--forest);display:grid;place-items:center;color:#fff}
+.phone-mock{max-width:360px;margin:0 auto 18px;background:#f1ece4;border-radius:26px;padding:16px;border:1px solid var(--line);text-align:left}
+.phone-mock .from{font-size:.78rem;color:var(--muted);text-align:center;margin-bottom:10px}
+.sms{background:#e5e5ea;color:#111;padding:.75rem 1rem;border-radius:20px 20px 20px 6px;font-size:.98rem;line-height:1.45;overflow-wrap:anywhere}
+.done p{color:var(--muted);margin-bottom:16px}
+
+.text-card{background:var(--forest);color:#eef4ef;border-radius:26px;padding:34px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;box-shadow:var(--shadow)}
+.text-card::after{content:"";position:absolute;inset:auto -60px -80px auto;width:240px;height:240px;border-radius:50%;border:30px solid rgba(255,255,255,.06)}
+.text-card h2{color:#fff;font-size:clamp(1.7rem,3vw,2.3rem)}
+.text-card h2 i{font-weight:400;color:#f2d29e}
+.text-card p{color:#d5e3d9}
+.thread{display:flex;flex-direction:column;gap:8px;background:rgba(0,0,0,.14);border-radius:20px;padding:16px;position:relative;z-index:1}
+.bub{max-width:88%;padding:.6rem .9rem;border-radius:18px;font-size:.92rem;line-height:1.4}
+.bub.me{align-self:flex-end;background:#f2d29e;color:var(--walnut-d);border-bottom-right-radius:5px}
+.bub.them{background:#fff;color:var(--ink);border-bottom-left-radius:5px}
+.bub.typing{display:inline-flex;gap:4px;align-items:center;padding:.7rem .9rem}
+.bub.typing i{width:7px;height:7px;border-radius:50%;background:#9aa;animation:blink 1.2s infinite}
+.bub.typing i:nth-child(2){animation-delay:.2s}.bub.typing i:nth-child(3){animation-delay:.4s}
+@keyframes blink{50%{opacity:.25}}
+.thread small{font-size:.72rem;color:#b9cfc0;text-align:center}
+.text-card .btn{background:#fff;color:var(--forest-d);position:relative;z-index:1}
+.text-card .btn:hover{background:#f2d29e;transform:translateY(-2px)}
+.alt-lines{font-size:.92rem;position:relative;z-index:1}
+.alt-lines a{color:#fff;font-weight:600}
 
 /* sections */
-main section{padding:84px 0}
-@media (max-width:700px){main section{padding:60px 0}}
-h2.t{font-stretch:116%;font-weight:800;font-size:clamp(30px,3.6vw,44px);line-height:1.02;letter-spacing:-.018em;margin:0 0 14px;max-width:20ch;text-wrap:balance}
-.intro{color:var(--ink-soft);max-width:56ch;margin:0 0 36px;font-size:18px}
+section{position:relative}
+.sec{padding:96px 0}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:end;margin-bottom:48px}
+.sec-head p{color:var(--muted);font-size:1.08rem}
 
-.svc{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;margin:0;padding:0;list-style:none;border-top:2px solid var(--ink)}
-@media (max-width:760px){.svc{grid-template-columns:1fr}}
-.svc li{display:grid;grid-template-columns:34px minmax(0,1fr);gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
-.svc svg{width:30px;height:30px;color:var(--accent-deep);margin-top:2px}
-.svc h3{margin:0 0 4px;font-size:19px;font-weight:700;font-stretch:106%}
-.svc p{margin:0;color:var(--ink-soft);font-size:16px;max-width:42ch}
+/* services: pegboard of tags */
+.services{background:var(--paper);border-block:1px solid var(--line)}
+.tags{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.tag{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px 16px 16px 16px;padding:30px 22px 24px;transition:transform .3s,box-shadow .3s,border-color .3s;overflow:hidden}
+.tag::before{content:"";position:absolute;top:14px;right:16px;width:12px;height:12px;border-radius:50%;background:var(--cream);box-shadow:inset 0 1px 2px rgba(0,0,0,.25);border:1px solid var(--line)}
+.tag:hover{transform:translateY(-6px) rotate(-.6deg);box-shadow:var(--shadow);border-color:var(--kraft)}
+.tag .num{font:italic 400 .95rem/1 var(--display);color:var(--kraft-d)}
+.tag .ico{width:58px;height:58px;margin:12px 0 16px;color:var(--walnut)}
+.tag h3{font-size:1.2rem;margin-bottom:.45rem}
+.tag p{font-size:.95rem;color:var(--muted)}
+.tag.feature{background:var(--forest-l);border-color:#c5d6ca}
+.tag.feature .ico{color:var(--forest)}
 
-.how{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;counter-reset:s}
-@media (max-width:760px){.steps{grid-template-columns:1fr;gap:26px}}
-.steps li{counter-increment:s;position:relative;padding-top:58px}
-.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:800;font-stretch:112%;font-size:19px}
-.steps li:not(:last-child)::after{content:"";position:absolute;top:21px;left:54px;right:-20px;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 8px,transparent 8px 14px)}
-@media (max-width:760px){.steps li:not(:last-child)::after{display:none}}
-.steps h3{margin:0 0 6px;font-size:20px;font-weight:720;font-stretch:108%}
-.steps p{margin:0;color:var(--ink-soft);font-size:16px;max-width:34ch}
+/* specialties */
+.special{background:var(--walnut-d);color:#efe2cc;overflow:hidden}
+.special::before{content:"";position:absolute;inset:0;opacity:.18;background:
+  repeating-linear-gradient(100deg,transparent 0 22px,rgba(255,220,170,.25) 22px 23px,transparent 23px 51px),
+  repeating-linear-gradient(97deg,transparent 0 9px,rgba(0,0,0,.35) 9px 10px,transparent 10px 37px)}
+.special .wrap{position:relative}
+.special h2{color:#fff}
+.special h2 i{font-weight:400;color:#f2d29e}
+.special .sec-head p{color:#d6c3a6}
+.special .eyebrow{color:#f2d29e}
+.spec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.spec{background:rgba(255,248,235,.06);border:1px solid rgba(242,210,158,.22);border-radius:22px;padding:28px;transition:background .3s,transform .3s}
+.spec:hover{background:rgba(255,248,235,.1);transform:translateY(-4px)}
+.spec svg{width:100%;height:150px;display:block;margin-bottom:18px}
+.spec h3{color:#fff;font-size:1.5rem;margin-bottom:.5rem}
+.spec p{color:#d6c3a6}
+.spec blockquote{margin:14px 0 0;font:500 1.35rem/1.2 var(--hand);color:#f2d29e}
 
-.revs{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px 48px;align-items:start}
-@media (max-width:860px){.revs{grid-template-columns:1fr}}
-blockquote{margin:0}
-.lead-q{font-stretch:104%;font-size:clamp(22px,2.4vw,29px);line-height:1.32;font-weight:520;letter-spacing:-.005em;padding-left:24px;border-left:5px solid var(--accent)}
-.lead-q p{margin:0 0 16px}
-cite{font-style:normal;font-size:15px;color:var(--ink-soft);font-weight:600}
-.side-q{display:grid;gap:22px}
-.side-q blockquote{padding:0 0 22px;border-bottom:1px solid var(--line)}
-.side-q blockquote:last-child{border-bottom:0;padding-bottom:0}
-.side-q p{margin:0 0 8px;font-size:16.5px}
-.score{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:30px 0 0;padding:18px 20px;background:var(--card);border:1px solid var(--line);border-radius:12px}
-.score .stars{width:110px}
-.score b{font-stretch:112%;font-size:22px}
-.score a{margin-left:auto;font-weight:650;text-underline-offset:4px}
-@media (max-width:560px){.score a{margin-left:0}}
+/* why */
+.why .wrap{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:64px;align-items:start}
+.bignum{font:800 clamp(6rem,15vw,11rem)/.85 var(--display);color:var(--walnut);letter-spacing:-.04em;font-variation-settings:"opsz" 144}
+.bignum sup{font-size:.4em;color:var(--forest);vertical-align:top;position:relative;top:.15em}
+.bignum-cap{font:italic 400 1.5rem/1.2 var(--display);color:var(--walnut-d);margin:.7rem 0 1.4rem}
+.story p{color:var(--muted);margin-bottom:1rem;max-width:32rem}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:1.6rem}
+.fact{border-top:3px solid var(--forest);padding-top:.7rem}
+.fact b{display:block;font:600 1.05rem/1.2 var(--display);color:var(--walnut-d)}
+.fact span{font-size:.88rem;color:var(--muted)}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;position:relative}
+.steps::before{content:"";position:absolute;left:27px;top:20px;bottom:20px;border-left:2px dashed var(--kraft)}
+.steps li{position:relative;display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;padding:0 0 30px}
+.steps li:last-child{padding-bottom:0}
+.steps .n{width:56px;height:56px;border-radius:50%;background:var(--paper);border:2px solid var(--walnut);display:grid;place-items:center;font:600 1.3rem/1 var(--display);color:var(--walnut-d);position:relative;z-index:1}
+.steps li:first-child .n{background:var(--forest);border-color:var(--forest);color:#fff}
+.steps h3{margin:.55rem 0 .3rem}
+.steps p{color:var(--muted)}
+.steps-card{padding:36px}
+.steps-card > h3{font-size:1.7rem;margin-bottom:1.6rem}
 
-.area{background:var(--ink);color:#fff}
-.area .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:center}
-@media (max-width:860px){.area .wrap{grid-template-columns:1fr}}
-.area h2.t{color:#fff}
-.area .intro{color:rgba(255,255,255,.78);margin-bottom:0}
-.cta-box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:24px;display:grid;gap:12px}
-.cta-box p{margin:0;color:rgba(255,255,255,.78);font-size:15px}
-.cta-box .btn{width:100%}
-.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5)}
-.btn.ghost:hover{box-shadow:inset 0 0 0 1.5px #fff}
+/* reviews */
+.reviews{background:linear-gradient(180deg,var(--cream),var(--sand))}
+.rev-top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end;margin-bottom:56px}
+.rate-block{display:flex;align-items:center;gap:20px;background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:18px 24px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow);transition:transform .2s}
+.rate-block:hover{transform:translateY(-3px)}
+.rate-block .big{font:800 3.4rem/1 var(--display);color:var(--walnut-d)}
+.rate-block .stars svg{width:22px;height:22px}
+.rate-block small{display:block;color:var(--muted);font-size:.92rem;margin-top:4px}
+.rate-block .go{font-weight:600;color:var(--forest);font-size:.92rem}
+.notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;padding:0 10px}
+.notecard{position:relative;margin:0;padding:38px 30px 28px;background:#fffdf6;border-radius:4px;box-shadow:0 2px 0 rgba(0,0,0,.04),0 22px 30px -18px rgba(59,36,20,.5);
+  background-image:repeating-linear-gradient(180deg,transparent 0 33px,rgba(47,93,70,.16) 33px 34px);background-position:0 26px;transition:transform .35s}
+.notecard::before{content:"";position:absolute;top:-14px;left:50%;width:110px;height:30px;transform:translateX(-50%) rotate(-3deg);background:rgba(201,161,112,.55);border-left:2px dashed rgba(255,255,255,.4);border-right:2px dashed rgba(255,255,255,.4)}
+.notecard::after{content:"";position:absolute;top:0;bottom:0;left:22px;border-left:1.5px solid rgba(163,84,47,.3)}
+.notecard:nth-child(1){transform:rotate(-2deg)}
+.notecard:nth-child(2){transform:rotate(1.5deg) translateY(18px)}
+.notecard:nth-child(3){transform:rotate(-1deg)}
+.notecard:hover{transform:rotate(0) translateY(-6px)}
+.notecard .stars svg{width:16px;height:16px}
+.notecard blockquote{margin:12px 0 18px;font:500 1.6rem/34px var(--hand);color:#2c3e57}
+.notecard figcaption{font:700 1.45rem/1 var(--hand);color:var(--rust);text-align:right}
+.notecard figcaption small{display:block;font:500 .78rem/1.4 var(--sans);color:var(--muted);margin-top:4px}
 
-footer{padding:34px 0 110px;font-size:14.5px;color:var(--ink-soft)}
-footer .wrap{display:flex;flex-wrap:wrap;gap:10px 32px;justify-content:space-between}
-footer b{color:var(--ink)}
+/* areas */
+.areas .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.map-wrap{position:relative;background:#dfe9e6;border-radius:28px;padding:20px;border:1px solid #cbdad5;overflow:hidden}
+.map-wrap svg{width:100%;height:auto;display:block}
+.county{fill:#f3ead7;stroke:#fff;stroke-width:3;transition:fill .25s}
+.county.on{fill:var(--forest)}
+.county-label{font:600 13px var(--sans);fill:var(--walnut-d);pointer-events:none;transition:fill .25s}
+.county-label.on{fill:#fff}
+.county-list{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:10px}
+.county-list li button{all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:grid;grid-template-columns:40px minmax(0,1fr) auto;align-items:center;gap:14px;padding:14px 18px;background:var(--paper);border:1px solid var(--line);border-radius:16px;transition:border-color .2s,background .2s,transform .2s}
+.county-list li button:hover,.county-list li button.on{border-color:var(--forest);background:var(--forest-l);transform:translateX(4px)}
+.county-list li button:focus-visible{outline:3px solid var(--rust);outline-offset:2px}
+.county-list .n{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--sand);font:600 1rem var(--display);color:var(--walnut-d)}
+.county-list button.on .n{background:var(--forest);color:#fff}
+.county-list b{font:600 1.15rem/1.2 var(--display);color:var(--walnut-d)}
+.county-list em{font-style:normal;font-size:.85rem;color:var(--muted)}
 
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:var(--ink);box-shadow:0 -8px 24px rgba(0,0,0,.18)}
-.bar .btn{flex:1;padding:15px 10px}
-@media (max-width:700px){.bar{display:flex}footer{padding-bottom:120px}}
+/* contact */
+.contact{padding-top:0}
+.contact-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:0;overflow:hidden}
+.contact-info{padding:40px;display:flex;flex-direction:column;gap:22px}
+.clock{display:flex;align-items:center;gap:18px;background:var(--forest);color:#fff;border-radius:18px;padding:18px 20px}
+.clock svg{width:62px;height:62px;flex:none}
+.clock b{display:block;font:600 1.5rem/1.1 var(--display)}
+.clock span{font-size:.92rem;color:#d5e3d9}
+.cline{display:grid;grid-template-columns:42px minmax(0,1fr);gap:14px;align-items:start}
+.cline .ci{width:42px;height:42px;border-radius:12px;background:var(--sand);display:grid;place-items:center;color:var(--walnut)}
+.cline .ci svg{width:20px;height:20px}
+.cline small{display:block;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.cline a,.cline address{font-style:normal;color:var(--walnut-d);font-weight:600;text-decoration:none;overflow-wrap:anywhere}
+.cline a:hover{color:var(--forest);text-decoration:underline}
+.map-frame{min-height:420px;background:var(--sand)}
+.map-frame iframe{width:100%;height:100%;min-height:420px;border:0;display:block;filter:sepia(.25) saturate(.9)}
+
+/* footer */
+footer{background:var(--walnut-d);color:#d6c3a6;padding:64px 0 110px;margin-top:96px}
+footer .wrap{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:36px}
+footer .brand{color:#fff}
+footer .brand-sub{color:#bba383}
+footer h4{font:600 .78rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#f2d29e;margin:0 0 14px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:.95rem}
+footer a{color:#efe2cc;text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+footer p{font-size:.95rem;margin-top:14px;max-width:24rem}
+.legal{grid-column:1/-1;border-top:1px solid rgba(242,210,158,.18);padding-top:20px;font-size:.82rem;color:#a99071}
+
+/* mobile bar */
+.mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(251,247,239,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);gap:10px}
+.mbar .btn{flex:1;padding:.9rem .6rem}
+
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+@media (max-width:1060px){
+  .nav{display:none}
+  .tags{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:900px){
+  .hero .wrap,.quote .wrap,.why .wrap,.areas .wrap,.contact-grid,.sec-head,.rev-top{grid-template-columns:minmax(0,1fr)}
+  .hero{padding-top:36px}
+  .hero-art{max-width:620px;margin:0 auto;width:100%}
+  .spec-grid,.notes{grid-template-columns:minmax(0,1fr)}
+  .notes{gap:44px;max-width:520px;margin:0 auto}
+  .notecard:nth-child(2){transform:rotate(1.5deg)}
+  footer .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  footer .wrap > div:first-child{grid-column:1/-1}
+  .sec{padding:72px 0}
+  .sec-head{margin-bottom:32px;gap:14px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .mbar{display:flex}
+  .head-call .num{display:none}
+  .head-call{padding:.7rem}
+  .brand-name{font-size:1.12rem}
+  .brand-mark{width:40px;height:40px}
+  .site-head .wrap{height:64px}
+  .hero h1{font-size:clamp(2.2rem,10vw,2.8rem)}
+  .hero h1 em{white-space:normal}
+  .hero h1 em svg{display:none}
+  .seals{gap:10px;justify-content:space-between}
+  .seal{width:92px;height:92px}
+  .cta-row .btn{flex:1 1 100%}
+  .form-card,.text-card,.steps-card,.contact-info{padding:24px 18px}
+  .two{grid-template-columns:minmax(0,1fr)}
+  .choices{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .choices.small{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .choice span{font-size:.93rem;padding:.65rem .7rem;gap:.45rem}
+  .choice span svg{width:22px;height:22px}
+  .progress{min-width:0;width:100%}
+  .progress-label{text-align:left}
+  .tags{grid-template-columns:minmax(0,1fr)}
+  .facts{grid-template-columns:minmax(0,1fr)}
+  .rate-block{flex-wrap:wrap;gap:12px}
+  .hero-art .note{position:relative;right:auto;bottom:auto;margin:14px auto 0;width:max-content;max-width:100%}
+  .step-actions .btn{min-width:0;flex:1}
+  .map-frame,.map-frame iframe{min-height:300px}
+  footer .wrap{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .reveal{opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 <div class="concept" role="note"><b>Concept preview</b> made by Rawcoderz for Woody &amp; Sons Moving. This is not Woody &amp; Sons Moving's official website. Questions or removal: mukesh.kumar@rawcoderz.com</div>
 
-<header class="top"><div class="wrap">
-  <a class="mark" href="#top">Woody &amp; Sons Moving<small>Tampa, FL movers</small></a>
-  <nav class="nav" aria-label="Sections"><a href="#services">Services</a><a href="#how">How quotes work</a><a href="#reviews">Reviews</a><a href="#area">Service area</a></nav>
-  <a class="btn call" href="tel:+18133842303"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 3.5h3.5l1.8 4.6-2.3 1.4a11 11 0 0 0 6.5 6.5l1.4-2.3 4.6 1.8V19a1.8 1.8 0 0 1-1.9 1.8A16.5 16.5 0 0 1 3.2 5.4 1.8 1.8 0 0 1 5 3.5z"/></svg><span>(813) 384-2303</span></a>
-</div></header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="star" viewBox="0 0 20 20"><path fill="currentColor" d="M10 1.5l2.6 5.5 6 .8-4.4 4.1 1.1 5.9L10 15l-5.3 2.8 1.1-5.9L1.4 7.8l6-.8z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.9-.9L3 21l1.9-4.6A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Woody &amp; Sons Moving, home">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="#3b2414"/>
+        <circle cx="24" cy="24" r="19.5" fill="none" stroke="#c9a170" stroke-width="1" stroke-dasharray="2 2.4"/>
+        <text x="24" y="30.5" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="17" font-weight="800" fill="#fbf7ef">W<tspan font-style="italic" font-weight="400" fill="#f2d29e" font-size="14">&amp;</tspan>S</text>
+      </svg>
+      <span><span class="brand-name">Woody <i>&amp;</i> Sons</span><span class="brand-sub">Moving · Tampa Bay</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#specialties">Pianos &amp; safes</a>
+      <a href="#why">Our family</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#areas">Areas</a>
+    </nav>
+    <a class="btn btn-primary head-call" href="tel:+18133842303" aria-label="Call Woody &amp; Sons at (813) 384-2303"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="num">(813) 384-2303</span></a>
+  </div>
+</header>
 
 <main id="top">
-<div class="hero">
+<section class="hero">
   <div class="wrap">
-    <div class="copy">
-      <p class="place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Movers in Tampa, FL</p>
-      <h1>Family-owned Tampa Bay movers with over 20 years of experience</h1>
-      <p class="lede">Tell us what's going on and get a quote, or call <a href="tel:+18133842303">(813) 384-2303</a>.</p>
+    <div class="hero-copy">
+      <span class="eyebrow">Family-owned · Tampa Bay · Open 24 hours</span>
+      <h1>Family-owned Tampa Bay movers with <em>over 20 years<svg viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 50 2, 110 2, 198 7" fill="none" stroke="#c9a170" stroke-width="4" stroke-linecap="round"/></svg></em> of experience.</h1>
+      <p class="lede">Couches and cribs, an upright piano, a safe nobody else wants to touch. Woody &amp; Sons wraps it, carries it and sets it down like it's going into our own family's home.</p>
+      <a class="rating" href="https://www.google.com/maps/search/?api=1&amp;query=Woody%20%26%20Sons%20Moving&amp;query_place_id=ChIJI9ZmriLDwogRZ5J9SmaSmG4" target="_blank" rel="noopener">
+        <span class="score">4.8</span>
+        <span class="stars" aria-label="4.8 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+        <small><b>230 Google reviews</b> · Read them</small>
+      </a>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#quote">Get a quote in 30 seconds <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="tel:+18133842303"><svg aria-hidden="true"><use href="#i-phone"/></svg> Call (813) 384-2303</a>
+      </div>
+      <div class="seals" aria-label="Badges">
+        <svg class="seal" viewBox="0 0 120 120" role="img" aria-label="Insured">
+          <defs><path id="sp1" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/></defs>
+          <circle cx="60" cy="60" r="57" fill="#2f5d46"/>
+          <circle cx="60" cy="60" r="52" fill="none" stroke="#f2d29e" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <circle cx="60" cy="60" r="31" fill="none" stroke="#f2d29e" stroke-width="1.5"/>
+          <text font-family="Work Sans, sans-serif" font-size="11.5" font-weight="700" letter-spacing="3.2" fill="#fbf7ef"><textPath href="#sp1">INSURED ★ WOODY &amp; SONS ★ INSURED ★</textPath></text>
+          <path d="M60 41 l15 6 v10 c0 10-6.5 17-15 20 c-8.5-3-15-10-15-20 v-10z" fill="none" stroke="#fbf7ef" stroke-width="2.6" stroke-linejoin="round"/>
+          <path d="M53 59 l5 5 9-10" fill="none" stroke="#f2d29e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <svg class="seal" viewBox="0 0 120 120" role="img" aria-label="Family owned">
+          <defs><path id="sp2" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/></defs>
+          <circle cx="60" cy="60" r="57" fill="#5a3a22"/>
+          <circle cx="60" cy="60" r="52" fill="none" stroke="#f2d29e" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <circle cx="60" cy="60" r="31" fill="none" stroke="#f2d29e" stroke-width="1.5"/>
+          <text font-family="Work Sans, sans-serif" font-size="11.5" font-weight="700" letter-spacing="2.6" fill="#fbf7ef"><textPath href="#sp2">FAMILY OWNED ★ WOODY &amp; SONS ★</textPath></text>
+          <path d="M42 62 l18-15 18 15" fill="none" stroke="#fbf7ef" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M47 58 v16 h26 v-16" fill="none" stroke="#fbf7ef" stroke-width="2.6" stroke-linejoin="round"/>
+          <path d="M60 71 c-6-4-7-8-4-10 c2-1.4 3.4 0 4 1 c.6-1 2-2.4 4-1 c3 2 2 6-4 10z" fill="#f2d29e"/>
+        </svg>
+        <svg class="seal" viewBox="0 0 120 120" role="img" aria-label="Locally owned">
+          <defs><path id="sp3" d="M60,60 m-42,0 a42,42 0 1,1 84,0 a42,42 0 1,1 -84,0"/></defs>
+          <circle cx="60" cy="60" r="57" fill="#a3542f"/>
+          <circle cx="60" cy="60" r="52" fill="none" stroke="#f6e3c1" stroke-width="1.5" stroke-dasharray="3 3"/>
+          <circle cx="60" cy="60" r="31" fill="none" stroke="#f6e3c1" stroke-width="1.5"/>
+          <text font-family="Work Sans, sans-serif" font-size="11.5" font-weight="700" letter-spacing="2.6" fill="#fbf7ef"><textPath href="#sp3">LOCALLY OWNED ★ TAMPA BAY ★</textPath></text>
+          <path d="M60 78 c-9-10-13-16-13-22 a13 13 0 0 1 26 0 c0 6-4 12-13 22z" fill="none" stroke="#fbf7ef" stroke-width="2.6" stroke-linejoin="round"/>
+          <circle cx="60" cy="56" r="4.5" fill="#f6e3c1"/>
+        </svg>
+      </div>
     </div>
 
-    <form class="quote" id="quote" novalidate aria-labelledby="q-h">
-      <div class="q-head"><h2 id="q-h">Get a free quote</h2><span class="q-step" id="q-step" aria-live="polite">Step 1 of 3</span></div>
-      <div class="q-bar" aria-hidden="true"><i id="q-bar"></i></div>
-      <div class="q-body">
+    <div class="hero-art">
+      <svg viewBox="0 0 640 600" role="img" aria-label="Illustration: blanket-wrapped furniture and boxes, an upright piano, and a heavy safe strapped to a hand dolly">
+        <defs>
+          <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4ead8"/><stop offset="1" stop-color="#e8d6b6"/></linearGradient>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fd0d6"/><stop offset=".65" stop-color="#f6d6a3"/><stop offset="1" stop-color="#f2b47f"/></linearGradient>
+          <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3c5248"/><stop offset="1" stop-color="#1e2b25"/></linearGradient>
+          <linearGradient id="pianoG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4a2c18"/><stop offset=".5" stop-color="#5e3a20"/><stop offset="1" stop-color="#3d2212"/></linearGradient>
+          <pattern id="quilt" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <rect width="26" height="26" fill="#2f5d46"/>
+            <path d="M0 0H26M0 0V26" stroke="#4d7f64" stroke-width="2" stroke-dasharray="3 3"/>
+          </pattern>
+          <pattern id="quilt2" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <rect width="22" height="22" fill="#a3542f"/>
+            <path d="M0 0H22M0 0V22" stroke="#c4774f" stroke-width="2" stroke-dasharray="3 3"/>
+          </pattern>
+          <pattern id="planks" width="160" height="34" patternUnits="userSpaceOnUse">
+            <rect width="160" height="34" fill="#7a4f2e"/>
+            <path d="M0 33.5H160M60 0V34" stroke="#5e3b20" stroke-width="2"/>
+            <path d="M8 12 C 30 8, 45 16, 56 12M70 20 C 100 15, 130 25, 156 18" stroke="#8b5e39" stroke-width="1.5" fill="none"/>
+          </pattern>
+          <clipPath id="win"><rect x="432" y="72" width="140" height="132" rx="6"/></clipPath>
+          <clipPath id="room"><rect x="20" y="20" width="600" height="560" rx="30"/></clipPath>
+        </defs>
+        <g clip-path="url(#room)">
+          <rect x="20" y="20" width="600" height="560" fill="url(#wall)"/>
+          <!-- wainscot -->
+          <rect x="20" y="380" width="600" height="104" fill="#e3cfa9"/>
+          <path d="M20 380H620" stroke="#c9a170" stroke-width="5"/>
+          <g stroke="#d4bc93" stroke-width="2"><path d="M80 392v80M160 392v80M240 392v80M320 392v80M400 392v80M480 392v80M560 392v80"/></g>
+          <!-- window -->
+          <rect x="424" y="64" width="156" height="148" rx="10" fill="#8a5e3b"/>
+          <g clip-path="url(#win)">
+            <rect x="432" y="72" width="140" height="132" fill="url(#sky)"/>
+            <circle cx="520" cy="168" r="26" fill="#fbe2b0" opacity=".95"/>
+            <path d="M432 186 C 470 176, 520 182, 572 174 V204 H432z" fill="#5a8f86" opacity=".6"/>
+            <g class="palm">
+              <path d="M470 204 C 472 170, 466 145, 474 118" stroke="#3b4a36" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <g fill="#3b5a40">
+                <path d="M474 118 C 452 104, 436 110, 428 122 C 446 112, 460 114, 474 120z"/>
+                <path d="M474 118 C 494 100, 512 104, 522 116 C 504 108, 490 110, 474 121z"/>
+                <path d="M474 118 C 468 96, 478 84, 492 80 C 482 92, 478 104, 476 120z"/>
+                <path d="M474 118 C 456 120, 446 136, 448 150 C 456 136, 464 128, 475 121z"/>
+                <path d="M474 118 C 494 120, 506 134, 504 150 C 496 136, 486 128, 473 121z"/>
+              </g>
+            </g>
+          </g>
+          <path d="M502 72V204M432 138H572" stroke="#8a5e3b" stroke-width="6"/>
+          <rect x="416" y="208" width="172" height="12" rx="4" fill="#5a3a22"/>
+          <!-- hanging sign -->
+          <g class="sign-swing">
+            <path d="M92 20 L120 66 M268 20 L240 66" stroke="#5a3a22" stroke-width="2"/>
+            <rect x="74" y="64" width="212" height="74" rx="10" fill="#5a3a22"/>
+            <rect x="82" y="72" width="196" height="58" rx="6" fill="none" stroke="#c9a170" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <text x="180" y="104" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="25" font-weight="800" fill="#fbf7ef">Woody <tspan font-style="italic" font-weight="400" fill="#f2d29e">&amp;</tspan> Sons</text>
+            <text x="180" y="122" text-anchor="middle" font-family="Work Sans, sans-serif" font-size="9.5" font-weight="700" letter-spacing="2.4" fill="#e3cfa9">FAMILY OWNED · TAMPA BAY</text>
+          </g>
+          <!-- floor -->
+          <rect x="20" y="484" width="600" height="100" fill="url(#planks)"/>
+          <rect x="20" y="480" width="600" height="8" fill="#4a2c18"/>
+          <!-- shadows -->
+          <g fill="#3b2414" opacity=".35">
+            <ellipse cx="140" cy="490" rx="110" ry="9"/>
+            <ellipse cx="305" cy="490" rx="120" ry="9"/>
+            <ellipse cx="492" cy="506" rx="92" ry="10"/>
+          </g>
+          <!-- wrapped wardrobe -->
+          <g>
+            <path d="M66 182 C 90 168, 120 176, 140 170 C 165 164, 190 172, 214 180 L218 486 L62 486z" fill="url(#quilt)"/>
+            <path d="M66 182 C 90 168, 120 176, 140 170 C 165 164, 190 172, 214 180 L214 196 C 190 188, 160 182, 140 188 C 115 194, 90 186, 66 198z" fill="#245039"/>
+            <path d="M196 196 C 206 260, 200 360, 212 486" stroke="#1f4332" stroke-width="3" fill="none" opacity=".6"/>
+            <path d="M92 200 C 84 300, 92 400, 84 486" stroke="#4d7f64" stroke-width="2" fill="none" opacity=".7"/>
+            <rect x="62" y="252" width="156" height="15" fill="#c9a170"/>
+            <rect x="62" y="252" width="156" height="3" fill="#e2c08f"/>
+            <rect x="130" y="248" width="20" height="23" rx="3" fill="#7d6247"/>
+            <rect x="62" y="420" width="156" height="15" fill="#c9a170"/>
+            <rect x="62" y="420" width="156" height="3" fill="#e2c08f"/>
+            <rect x="130" y="416" width="20" height="23" rx="3" fill="#7d6247"/>
+          </g>
+          <!-- piano -->
+          <g>
+            <rect x="214" y="250" width="196" height="236" fill="url(#pianoG)"/>
+            <rect x="204" y="238" width="216" height="18" rx="4" fill="#3b2414"/>
+            <rect x="230" y="268" width="164" height="64" rx="4" fill="none" stroke="#7a4f2e" stroke-width="2"/>
+            <rect x="240" y="276" width="144" height="48" rx="3" fill="#4a2c18"/>
+            <!-- sheet music -->
+            <g transform="rotate(-4 300 300)">
+              <rect x="268" y="280" width="46" height="40" fill="#fbf7ef"/>
+              <rect x="316" y="282" width="46" height="40" fill="#f3ead7"/>
+              <g stroke="#8a7a66" stroke-width="1"><path d="M273 290h36M273 296h36M273 302h36M273 308h36M321 292h36M321 298h36M321 304h36M321 310h36"/></g>
+              <circle cx="284" cy="296" r="2.2" fill="#2a1d13"/><circle cx="298" cy="302" r="2.2" fill="#2a1d13"/><circle cx="334" cy="298" r="2.2" fill="#2a1d13"/>
+            </g>
+            <!-- keyboard -->
+            <rect x="200" y="346" width="224" height="12" rx="3" fill="#3b2414"/>
+            <rect x="206" y="358" width="212" height="22" fill="#fbf7ef"/>
+            <g stroke="#c9b99e" stroke-width="1"><path d="M219 358v22M232 358v22M245 358v22M258 358v22M271 358v22M284 358v22M297 358v22M310 358v22M323 358v22M336 358v22M349 358v22M362 358v22M375 358v22M388 358v22M401 358v22"/></g>
+            <g fill="#2a1d13"><rect x="215" y="358" width="7" height="13"/><rect x="228" y="358" width="7" height="13"/><rect x="254" y="358" width="7" height="13"/><rect x="267" y="358" width="7" height="13"/><rect x="280" y="358" width="7" height="13"/><rect x="306" y="358" width="7" height="13"/><rect x="319" y="358" width="7" height="13"/><rect x="345" y="358" width="7" height="13"/><rect x="358" y="358" width="7" height="13"/><rect x="371" y="358" width="7" height="13"/><rect x="397" y="358" width="7" height="13"/></g>
+            <rect x="200" y="380" width="224" height="10" rx="2" fill="#3b2414"/>
+            <rect x="232" y="400" width="160" height="70" rx="4" fill="none" stroke="#7a4f2e" stroke-width="2"/>
+            <path d="M262 430 c10-14 20 14 30 0 s20 14 30 0 s20 14 30 0" stroke="#7a4f2e" stroke-width="2" fill="none"/>
+            <rect x="204" y="380" width="14" height="100" fill="#3b2414"/>
+            <rect x="406" y="380" width="14" height="100" fill="#3b2414"/>
+            <circle cx="211" cy="482" r="5" fill="#c9a170"/><circle cx="413" cy="482" r="5" fill="#c9a170"/>
+            <!-- pedals -->
+            <g fill="#c9a170"><rect x="290" y="472" width="12" height="6" rx="2"/><rect x="310" y="472" width="12" height="6" rx="2"/><rect x="330" y="472" width="12" height="6" rx="2"/></g>
+            <!-- blanket draped on top -->
+            <path d="M300 234 C 330 226, 380 228, 424 236 C 432 260, 430 300, 436 330 C 420 336, 410 320, 402 330 C 396 300, 398 270, 392 256 C 370 252, 330 254, 300 250z" fill="url(#quilt2)"/>
+            <path d="M300 250 C 330 254, 370 252, 392 256" stroke="#7d3d20" stroke-width="2" fill="none"/>
+          </g>
+          <!-- boxes -->
+          <g>
+            <rect x="34" y="396" width="132" height="90" rx="3" fill="#c99a62"/>
+            <path d="M34 396h132v12H34z" fill="#b5864f"/>
+            <rect x="92" y="396" width="16" height="90" fill="#e2c08f"/>
+            <rect x="44" y="430" width="38" height="24" rx="2" fill="#fbf7ef"/>
+            <text x="63" y="446" text-anchor="middle" font-family="Work Sans, sans-serif" font-size="8.5" font-weight="700" fill="#a3542f">FRAGILE</text>
+            <g stroke="#7a4f2e" stroke-width="2" fill="none" stroke-linecap="round"><path d="M128 462v-16l-5 5M128 446l5 5M144 462v-16l-5 5M144 446l5 5"/></g>
+            <rect x="52" y="330" width="98" height="66" rx="3" fill="#d6a96f"/>
+            <path d="M52 330h98v10H52z" fill="#c2935a"/>
+            <rect x="94" y="330" width="14" height="66" fill="#ead0a3"/>
+            <text x="74" y="372" text-anchor="middle" font-family="Caveat, cursive" font-size="17" font-weight="700" fill="#5a3a22">Kitchen</text>
+            <rect x="66" y="288" width="72" height="42" rx="3" fill="#c99a62"/>
+            <rect x="96" y="288" width="12" height="42" fill="#e2c08f"/>
+            <text x="81" y="314" text-anchor="middle" font-family="Caveat, cursive" font-size="13" font-weight="700" fill="#5a3a22">Books</text>
+          </g>
+          <!-- tape roll -->
+          <g transform="translate(184 470)"><circle r="14" fill="#c9a170"/><circle r="6" fill="#7a4f2e"/><path d="M14 0 h22" stroke="#e2c08f" stroke-width="6"/></g>
+          <!-- dolly + safe -->
+          <g>
+            <path d="M432 168 C 432 150, 446 146, 452 160 L452 486 M552 168 C 552 150, 538 146, 532 160 L532 486" stroke="#2a2a2a" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <path d="M440 154 H544" stroke="#2a2a2a" stroke-width="8" stroke-linecap="round"/>
+            <path d="M452 240H532M452 330H532" stroke="#2a2a2a" stroke-width="5"/>
+            <rect x="434" y="476" width="116" height="10" rx="2" fill="#3a3a3a"/>
+            <rect x="446" y="268" width="92" height="210" rx="9" fill="url(#steel)"/>
+            <rect x="454" y="278" width="76" height="190" rx="6" fill="none" stroke="#5a7468" stroke-width="2.5"/>
+            <rect x="447" y="300" width="7" height="22" rx="2" fill="#c9a170"/><rect x="447" y="420" width="7" height="22" rx="2" fill="#c9a170"/>
+            <circle cx="492" cy="335" r="20" fill="#cdbb95"/>
+            <circle cx="492" cy="335" r="15" fill="#2a2a2a"/>
+            <g stroke="#cdbb95" stroke-width="1.6"><path d="M492 321v5M492 344v5M478 335h5M501 335h5"/></g>
+            <circle cx="492" cy="335" r="3.5" fill="#cdbb95"/>
+            <g stroke="#cdbb95" stroke-width="4" stroke-linecap="round"><path d="M492 398v-14M492 398l12 8M492 398l-12 8"/></g>
+            <circle cx="492" cy="398" r="4.5" fill="#cdbb95"/>
+            <!-- straps -->
+            <path d="M440 300 L544 300" stroke="#c9a170" stroke-width="10"/>
+            <path d="M440 300 L544 300" stroke="#e2c08f" stroke-width="2"/>
+            <rect x="484" y="293" width="16" height="15" rx="2" fill="#7d6247"/>
+            <!-- wheels -->
+            <g class="spin"><circle cx="436" cy="500" r="20" fill="#2a2a2a"/><circle cx="436" cy="500" r="9" fill="#9a9a9a"/><path d="M436 482v36M418 500h36" stroke="#555" stroke-width="2.5"/></g>
+            <g class="spin"><circle cx="548" cy="500" r="20" fill="#2a2a2a"/><circle cx="548" cy="500" r="9" fill="#9a9a9a"/><path d="M548 482v36M530 500h36" stroke="#555" stroke-width="2.5"/></g>
+            <!-- tag -->
+            <g class="swing">
+              <path d="M492 154 C 494 172, 506 182, 510 196" stroke="#5a3a22" stroke-width="1.8" fill="none"/>
+              <g transform="rotate(10 520 230)">
+                <path d="M494 196 h44 l10 12 v52 h-54z" fill="#fbf7ef" stroke="#c9a170" stroke-width="1.5"/>
+                <circle cx="510" cy="206" r="3" fill="#c9a170"/>
+                <text x="520" y="228" text-anchor="middle" font-family="Work Sans, sans-serif" font-size="10" font-weight="700" fill="#a3542f">HEAVY</text>
+                <text x="520" y="242" text-anchor="middle" font-family="Caveat, cursive" font-size="12" font-weight="700" fill="#2f5d46">with care</text>
+              </g>
+            </g>
+          </g>
+          <!-- dust motes -->
+          <g fill="#fff">
+            <circle class="mote" cx="360" cy="150" r="2.5"/>
+            <circle class="mote" cx="330" cy="190" r="1.8"/>
+            <circle class="mote" cx="395" cy="120" r="2"/>
+          </g>
+        </g>
+        <!-- annotation -->
+        <g>
+          <text x="248" y="196" font-family="Caveat, cursive" font-size="26" font-weight="700" fill="#2f5d46" transform="rotate(-5 300 196)">pianos &amp; safes = our thing</text>
+          <path d="M392 204 C 410 214, 418 226, 420 244" stroke="#2f5d46" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <path d="M412 238 L420 247 L426 236" stroke="#2f5d46" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </svg>
+      <div class="note"><span class="dot" aria-hidden="true"></span>Open 24 hours, every day</div>
+    </div>
+  </div>
+</section>
 
+<section class="quote" id="quote" aria-labelledby="quote-title">
+  <div class="wrap">
+    <div class="card form-card reveal">
+      <div class="form-head">
+        <div>
+          <span class="eyebrow">30-second quote</span>
+          <h2 id="quote-title">Tell us what's moving.</h2>
+          <p>Three quick taps. No account, no spam.</p>
+        </div>
+        <div class="progress" aria-live="polite">
+          <div class="progress-label" id="q-progress">Step 1 of 3</div>
+          <div class="progress-bar"><span id="q-bar"></span></div>
+        </div>
+      </div>
+
+      <form id="quote-form" novalidate>
         <div data-step="1">
           <fieldset>
-            <legend class="q-title" tabindex="-1">What do you need?</legend>
+            <legend>What do you need help with?</legend>
             <div class="choices">
-              <label class="choice"><input type="radio" name="need" value="Local move"><span>Local move</span></label>
-              <label class="choice"><input type="radio" name="need" value="Long-distance move"><span>Long-distance move</span></label>
-              <label class="choice"><input type="radio" name="need" value="Packing help"><span>Packing help</span></label>
-              <label class="choice"><input type="radio" name="need" value="Office move"><span>Office move</span></label>
-              <label class="choice wide"><input type="radio" name="need" value="Something else"><span>Something else</span></label>
+              <label class="choice"><input type="radio" name="need" value="Local move"><span><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 22V10h14v12M18 14h6l4 5v3h-24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="10" cy="23" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="23" cy="23" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></svg>Local move</span></label>
+              <label class="choice"><input type="radio" name="need" value="Long-distance move"><span><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="7" cy="23" r="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M25 5c-3 0-5 2-5 5 0 4 5 9 5 9s5-5 5-9c0-3-2-5-5-5z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 22c6-1 6-6 11-8" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="2.5 2.5"/></svg>Long-distance move</span></label>
+              <label class="choice"><input type="radio" name="need" value="Packing help"><span><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 11l12-6 12 6v12l-12 6-12-6z M4 11l12 6 12-6M16 17v12" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Packing help</span></label>
+              <label class="choice"><input type="radio" name="need" value="Office move"><span><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="9" width="22" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 9V6h8v3M5 16h22" fill="none" stroke="currentColor" stroke-width="2"/></svg>Office move</span></label>
+              <label class="choice"><input type="radio" name="need" value="Piano or safe move"><span><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="5" width="20" height="22" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="14" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 20v3" stroke="currentColor" stroke-width="2"/></svg>Piano or safe move</span></label>
             </div>
-            <p class="err" id="e-need" role="alert"></p>
           </fieldset>
-          <div class="q-actions"><button class="btn go" type="button" data-next="2">Next</button></div>
+          <p class="err" id="e1" role="alert"></p>
+          <div class="step-actions"><span></span><button class="btn btn-primary" type="button" data-next="2">Next <svg aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
         </div>
 
         <div data-step="2" hidden>
           <div class="field">
-            <label class="f q-title" for="q-zip" tabindex="-1">Moving from ZIP code</label>
-            <input id="q-zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="33602" aria-describedby="e-zip">
-            <p class="err" id="e-zip" role="alert"></p>
+            <label for="q-zip">Moving from ZIP code</label>
+            <input id="q-zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="e.g. 33629">
           </div>
+          <p class="err" id="e2" role="alert"></p>
           <fieldset>
             <legend>Home size</legend>
-            <div class="choices five">
-              <label class="choice"><input type="radio" name="roof" value="Studio or 1 BR" checked><span>Studio or 1 BR</span></label>
-              <label class="choice"><input type="radio" name="roof" value="2 BR"><span>2 BR</span></label>
-              <label class="choice"><input type="radio" name="roof" value="3 BR"><span>3 BR</span></label>
-              <label class="choice"><input type="radio" name="roof" value="4+ BR"><span>4+ BR</span></label>
-              <label class="choice"><input type="radio" name="roof" value="Not sure"><span>Not sure</span></label>
+            <div class="choices small">
+              <label class="choice"><input type="radio" name="size" value="Studio or 1 BR"><span>Studio or 1 BR</span></label>
+              <label class="choice"><input type="radio" name="size" value="2 BR" checked><span>2 BR</span></label>
+              <label class="choice"><input type="radio" name="size" value="3 BR"><span>3 BR</span></label>
+              <label class="choice"><input type="radio" name="size" value="4+ BR"><span>4+ BR</span></label>
+              <label class="choice"><input type="radio" name="size" value="Not sure"><span>Not sure</span></label>
             </div>
           </fieldset>
           <fieldset>
             <legend>Moving in the next 2 weeks?</legend>
-            <div class="choices two">
-              <label class="choice"><input type="radio" name="leak" value="Yes"><span>Yes</span></label>
-              <label class="choice"><input type="radio" name="leak" value="No" checked><span>No</span></label>
+            <div class="choices small">
+              <label class="choice"><input type="radio" name="soon" value="Yes"><span>Yes</span></label>
+              <label class="choice"><input type="radio" name="soon" value="No" checked><span>No</span></label>
             </div>
           </fieldset>
-          <div class="q-actions"><button class="btn back" type="button" data-back="1">Back</button><button class="btn go" type="button" data-next="3">Next</button></div>
+          <div class="step-actions"><button class="btn btn-ghost" type="button" data-back="1">Back</button><button class="btn btn-primary" type="button" data-next="3">Next <svg aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
         </div>
 
         <div data-step="3" hidden>
-          <div class="field">
-            <label class="f q-title" for="q-name" tabindex="-1">Your name</label>
-            <input id="q-name" name="name" autocomplete="name" aria-describedby="e-name">
-            <p class="err" id="e-name" role="alert"></p>
+          <div class="two">
+            <div class="field"><label for="q-name">Your name</label><input id="q-name" name="name" autocomplete="name" placeholder="Jane Doe"></div>
+            <div class="field"><label for="q-phone">Mobile number</label><input id="q-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(813) 555-0100"></div>
           </div>
-          <div class="field">
-            <label class="f" for="q-phone">Mobile number</label>
-            <input id="q-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(813) 555-0100" aria-describedby="e-phone">
-            <p class="err" id="e-phone" role="alert"></p>
-          </div>
+          <p class="err" id="e3" role="alert"></p>
           <fieldset>
-            <legend>Best time to call</legend>
-            <div class="choices five" style="grid-template-columns:repeat(3,minmax(0,1fr))">
-              <label class="choice"><input type="radio" name="when" value="Morning" checked><span>Morning</span></label>
-              <label class="choice"><input type="radio" name="when" value="Afternoon"><span>Afternoon</span></label>
-              <label class="choice"><input type="radio" name="when" value="Evening"><span>Evening</span></label>
+            <legend>Best time to reach you</legend>
+            <div class="choices small">
+              <label class="choice"><input type="radio" name="time" value="Morning" checked><span>Morning</span></label>
+              <label class="choice"><input type="radio" name="time" value="Afternoon"><span>Afternoon</span></label>
+              <label class="choice"><input type="radio" name="time" value="Evening"><span>Evening</span></label>
             </div>
           </fieldset>
-          <div class="q-actions"><button class="btn back" type="button" data-back="2">Back</button><button class="btn go" type="submit">Get my quote</button></div>
+          <div class="step-actions"><button class="btn btn-ghost" type="button" data-back="2">Back</button><button class="btn btn-primary" type="submit">Get my quote <svg aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
           <p class="fine">This is a preview, so nothing is sent.</p>
         </div>
 
-        <div data-step="4" class="done" hidden>
-          <div class="done-head"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><h3 tabindex="-1" id="q-done">Request sent</h3></div>
-          <p>On the live site, Woody &amp; Sons Moving would get this text within seconds:</p>
-          <div class="sms"><p class="from">New quote request</p><div class="bubble" id="q-sms"></div></div>
-          <div class="q-actions"><button class="btn back" type="button" id="q-reset">Start a new request</button></div>
+        <div data-step="4" id="q-done" hidden>
+          <div class="done">
+            <div class="check"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Request sent</h3>
+            <div class="phone-mock">
+              <div class="from">New text · Woody &amp; Sons quote line</div>
+              <div class="sms" id="q-sms"></div>
+            </div>
+            <p>On the live site, Woody &amp; Sons Moving would get this text within seconds.</p>
+            <button class="btn btn-ghost" type="button" id="q-reset">Start a new request</button>
+          </div>
         </div>
+      </form>
+    </div>
 
+    <aside class="text-card reveal" aria-labelledby="text-title">
+      <span class="eyebrow" style="color:#f2d29e">Prefer texting?</span>
+      <h2 id="text-title">Text us for a quote, <i>anytime.</i></h2>
+      <p>Snap a few photos of the big stuff, send a text, and we'll get back to you. We're open 24 hours, every day.</p>
+      <div class="thread" aria-label="Example text conversation">
+        <div class="bub me">Hi! 3 BR in South Tampa, plus an upright piano. Can I get a quote?</div>
+        <div class="bub me">📷 4 photos</div>
+        <div class="bub them typing" aria-label="Typing"><i></i><i></i><i></i></div>
+        <small>Example message</small>
       </div>
-    </form>
-
-    <ul class="proof"><li><b><span class="stars" role="img" aria-label="4.8 out of 5 stars"><svg viewBox="0 0 110 20" fill="rgba(255,255,255,.25)" aria-hidden="true"><path transform="translate(0.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(22.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(45.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(67.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(90.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/></svg><span class="fill" style="width:96.0%"><svg viewBox="0 0 110 20" fill="var(--accent)" aria-hidden="true"><path transform="translate(0.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(22.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(45.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(67.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(90.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/></svg></span></span>4.8</b>From 230 Google reviews. <a href="https://www.google.com/maps/search/?api=1&amp;query=Woody%20%26%20Sons%20Moving&amp;query_place_id=ChIJI9ZmriLDwogRZ5J9SmaSmG4" target="_blank" rel="noopener">Read them</a></li><li><b>20+ years</b>Over 20 years of moving experience</li><li><b>Family owned</b>Family-owned and locally owned</li></ul>
+      <a class="btn" href="sms:+18133842303"><svg aria-hidden="true"><use href="#i-chat"/></svg> Text (813) 384-2303</a>
+      <p class="alt-lines">Or call: <a href="tel:+18133842303">(813) 384-2303</a> · <a href="tel:+17279002826">(727) 900-2826</a></p>
+    </aside>
   </div>
-  <div class="roofs" aria-hidden="true">
-    <svg viewBox="0 0 1440 120" preserveAspectRatio="xMidYMax slice" fill="currentColor">
-      <path d="M0 120V84l64-34 64 34v-8l92-52 92 52v18l40-22 40 22V64l104-50 104 50v24l54-28 54 28V76l80-40 80 40v14l56-30 56 30V54l106-46 106 46v30l58-28 58 28V72l62-32 62 32H1440V120z"/><rect x="156" y="40" width="12" height="24"/><rect x="428" y="26" width="14" height="26"/><rect x="1138" y="18" width="14" height="22"/>
-    </svg>
+</section>
+
+<section class="sec services" id="services" aria-labelledby="svc-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">What we move</span><h2 id="svc-title">Eight ways we carry the load.</h2></div>
+      <p>Whether it's a whole house, an office, or just a strong back for your rental truck, the same family standard goes with every job.</p>
+    </div>
+    <div class="tags">
+      <article class="tag reveal"><span class="num">No. 01</span>
+        <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 30L32 12l22 18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 26v26h32V26" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><rect x="27" y="36" width="10" height="16" fill="none" stroke="currentColor" stroke-width="3"/><path d="M40 18v-6h5v10" fill="none" stroke="currentColor" stroke-width="3"/></svg>
+        <h3>Residential Moving</h3><p>Houses, condos and apartments, wrapped, carried and set up with family-business care.</p></article>
+      <article class="tag reveal"><span class="num">No. 02</span>
+        <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="12" y="10" width="26" height="44" fill="none" stroke="currentColor" stroke-width="3"/><path d="M38 24h14v30H38" fill="none" stroke="currentColor" stroke-width="3"/><path d="M19 18h4M27 18h4M19 26h4M27 26h4M19 34h4M27 34h4M44 32h3M44 40h3M22 54v-9h6v9" stroke="currentColor" stroke-width="3"/></svg>
+        <h3>Commercial Moving</h3><p>Offices and businesses relocated across Tampa Bay, desks, files and equipment included.</p></article>
+      <article class="tag reveal"><span class="num">No. 03</span>
+        <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><circle cx="14" cy="46" r="5" fill="none" stroke="currentColor" stroke-width="3"/><path d="M48 8c-6 0-10 4-10 10 0 8 10 18 10 18s10-10 10-18c0-6-4-10-10-10z" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="48" cy="18" r="3.5" fill="currentColor"/><path d="M19 44c10-2 8-12 18-14" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="4 4"/></svg>
+        <h3>Long-Distance Moving</h3><p>Leaving the Bay? Your move is planned and handled with the same care as one across town.</p></article>
+      <article class="tag reveal"><span class="num">No. 04</span>
+        <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 42V18h30v24M36 26h12l8 10v6H6" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><circle cx="18" cy="44" r="5" fill="var(--paper)" stroke="currentColor" stroke-width="3"/><circle cx="46" cy="44" r="5" fill="var(--paper)" stroke="currentColor" stroke-width="3"/><path d="M4 56h56" stroke="currentColor" stroke-width="3" stroke-dasharray="6 5"/></svg>
+        <h3>Local Moving</h3><p>Across town or across the bridge, anywhere in Hillsborough, Pinellas, Manatee, Sarasota and Pasco.</p></article>
+      <article class="tag reveal"><span class="num">No. 05</span>
+        <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 22l24-10 24 10v24L32 56 8 46z M8 22l24 10 24-10M32 32v24" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M20 17l24 10v8" fill="none" stroke="currentColor" stroke-width="3"/></svg>
+        <h3>Packing and Unpacking</h3><p>We box, wrap and label on the way out, then unpack at the other end so you're home faster.</p></article>
+      <article class="tag reveal"><span class="num">No. 06</span>
+        <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 24L32 10l26 14v30H6z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><rect x="16" y="30" width="32" height="24" fill="none" stroke="currentColor" stroke-width="3"/><path d="M16 38h32M16 46h32" stroke="currentColor" stroke-width="3"/></svg>
+        <h3>Storage Services</h3><p>A safe place for your things when move-out and move-in dates don't line up.</p></article>
+      <article class="tag feature reveal"><span class="num">No. 07 · Specialty</span>
+        <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="12" y="8" width="40" height="46" rx="4" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="32" cy="28" r="9" fill="none" stroke="currentColor" stroke-width="3"/><path d="M32 19v3M32 34v3M23 28h3M38 28h3M26 44h12M16 54v4M48 54v4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+        <h3>Large Safe Moving</h3><p>Heavy and valuable safes moved securely, strapped, dollied and placed right where they belong.</p></article>
+      <article class="tag reveal"><span class="num">No. 08</span>
+        <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M4 46V16h34v30M38 24h12l10 10v12H4" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M14 38l6-12 6 12M17 32h6" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><circle cx="14" cy="48" r="5" fill="var(--paper)" stroke="currentColor" stroke-width="3"/><circle cx="48" cy="48" r="5" fill="var(--paper)" stroke="currentColor" stroke-width="3"/></svg>
+        <h3>Loading/Unloading Labor</h3><p>You've got the rental truck, PODS or trailer. We bring the muscle and pack it tight.</p></article>
+    </div>
   </div>
-</div>
+</section>
 
-<section id="services"><div class="wrap">
-  <h2 class="t">What Woody &amp; Sons does</h2>
-  <p class="intro">The moves Woody &amp; Sons handles, from a studio apartment to a whole house.</p>
-  <ul class="svc"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v10h-11z"/><path d="M13.5 10h4l3 3.5v3h-7z"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg><div><h3>Residential Moving</h3><p>Apartments, condos and houses, from one room to the whole home.</p></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20.5V5.5l8-2.5v17.5"/><path d="M12 9.5h8v11"/><path d="M2.5 20.5h19"/><path d="M7 8h2M7 11.5h2M7 15h2M15 13h2M15 16.5h2"/></svg><div><h3>Commercial Moving</h3><p>Offices and businesses moved with as little downtime as possible.</p></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v10h-11z"/><path d="M13.5 10h4l3 3.5v3h-7z"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg><div><h3>Long-Distance Moving</h3><p>Moves to another city or state, loaded and delivered by the same crew.</p></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v10h-11z"/><path d="M13.5 10h4l3 3.5v3h-7z"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg><div><h3>Local Moving</h3><p>Moves across town, priced by the hour or by the job.</p></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 7.5 12 3.5l8.5 4v9L12 20.5l-8.5-4z"/><path d="M3.5 7.5 12 11.5l8.5-4M12 11.5v9"/></svg><div><h3>Packing and Unpacking</h3><p>Boxes unpacked and set up in your new place.</p></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 7.5 12 3.5l8.5 4v9L12 20.5l-8.5-4z"/><path d="M3.5 7.5 12 11.5l8.5-4M12 11.5v9"/></svg><div><h3>Storage Services</h3><p>Short and long-term storage between moves.</p></div></li></ul>
-</div></section>
-
-<section class="how" id="how"><div class="wrap">
-  <h2 class="t">How a quote works</h2>
-  <p class="intro">Three steps, and the first one takes about 30 seconds.</p>
-  <ol class="steps">
-    <li><h3>Tell us what's going on</h3><p>Pick the job, add your ZIP code and a number. It takes about 30 seconds.</p></li>
-    <li><h3>Woody &amp; Sons calls you</h3><p>Your request arrives as a text, so you hear back to go over the details and pick a date.</p></li>
-    <li><h3>You get a price</h3><p>You get a price for the move, and you decide.</p></li>
-  </ol>
-</div></section>
-
-<section id="reviews"><div class="wrap"><h2 class="t">What customers say</h2><p class="intro">From reviews already published on their own website.</p><div class="revs"><blockquote class="lead-q"><p>“Everything arrived safely with no damage. Excellent job—I would definitely recommend them!”</p><cite>Rachel F.</cite></blockquote><div class="side-q"><blockquote><p>“Great guys, very careful and considerate and they know exactly how to move a piano.”</p><cite>Bob H.</cite></blockquote><blockquote><p>“I’ve used Woody &amp; Sons Moving twice! Wonderful experience both times. Everyone is super nice and took great care when moving our items.”</p><cite>Riley E.</cite></blockquote></div></div><div class="score"><span class="stars" role="img" aria-label="4.8 out of 5 stars"><svg viewBox="0 0 110 20" fill="#D6DDDD" aria-hidden="true"><path transform="translate(0.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(22.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(45.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(67.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(90.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/></svg><span class="fill" style="width:96.0%"><svg viewBox="0 0 110 20" fill="var(--accent)" aria-hidden="true"><path transform="translate(0.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(22.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(45.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(67.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(90.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/></svg></span></span><b>4.8</b><span>from 230 Google reviews</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Woody%20%26%20Sons%20Moving&amp;query_place_id=ChIJI9ZmriLDwogRZ5J9SmaSmG4" target="_blank" rel="noopener">Read all 230 on Google</a></div></div></section>
-
-<section class="area" id="area"><div class="wrap">
-  <div>
-    <h2 class="t">Serving Tampa and nearby</h2>
-    <p class="intro">Including Hillsborough, Pinellas, Manatee, Sarasota and Pasco counties.</p>
+<section class="sec special" id="specialties" aria-labelledby="spec-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">Our specialties</span><h2 id="spec-title">The heavy, the delicate, <i>the irreplaceable.</i></h2></div>
+      <p>Some pieces need more than a strong back. These are the jobs other movers call tricky, and the ones we take the most pride in.</p>
+    </div>
+    <div class="spec-grid">
+      <article class="spec reveal">
+        <svg viewBox="0 0 300 150" aria-hidden="true">
+          <rect x="70" y="20" width="160" height="16" rx="3" fill="#8a5e3b"/>
+          <rect x="78" y="36" width="144" height="54" fill="#6b4428"/>
+          <rect x="66" y="88" width="168" height="10" rx="2" fill="#3b2414"/>
+          <rect x="72" y="98" width="156" height="22" fill="#fbf7ef"/>
+          <g fill="#2a1d13"><rect x="80" y="98" width="6" height="13"/><rect x="92" y="98" width="6" height="13"/><rect x="114" y="98" width="6" height="13"/><rect x="126" y="98" width="6" height="13"/><rect x="138" y="98" width="6" height="13"/><rect x="160" y="98" width="6" height="13"/><rect x="172" y="98" width="6" height="13"/><rect x="194" y="98" width="6" height="13"/><rect x="206" y="98" width="6" height="13"/><rect x="216" y="98" width="6" height="13"/></g>
+          <g stroke="#c9b99e" stroke-width="1"><path d="M89 98v22M101 98v22M112 98v22M123 98v22M135 98v22M146 98v22M157 98v22M169 98v22M180 98v22M191 98v22M203 98v22M214 98v22"/></g>
+          <rect x="72" y="120" width="12" height="20" fill="#3b2414"/><rect x="216" y="120" width="12" height="20" fill="#3b2414"/>
+          <g fill="none" stroke="#f2d29e" stroke-width="2.5" stroke-linecap="round"><path d="M250 40c6-6 14-2 12 6l-8 30"/><circle cx="250" cy="78" r="6"/><path d="M38 60l-6 26"/><circle cx="28" cy="88" r="5"/><path d="M32 60l10-4"/></g>
+        </svg>
+        <h3>Pianos</h3>
+        <p>Uprights wrapped, padded and walked out with steady hands and the right gear, then set where they'll be played.</p>
+        <blockquote>"they know exactly how to move a piano." — Bob H.</blockquote>
+      </article>
+      <article class="spec reveal">
+        <svg viewBox="0 0 300 150" aria-hidden="true">
+          <path d="M98 14V138M202 14V138M90 14H210" stroke="#cdbb95" stroke-width="6" stroke-linecap="round" fill="none"/>
+          <rect x="108" y="30" width="84" height="104" rx="7" fill="#2f5d46"/>
+          <rect x="116" y="38" width="68" height="88" rx="5" fill="none" stroke="#5f8f76" stroke-width="2"/>
+          <circle cx="150" cy="70" r="15" fill="#cdbb95"/><circle cx="150" cy="70" r="10" fill="#1f2a25"/>
+          <g stroke="#cdbb95" stroke-width="3.5" stroke-linecap="round"><path d="M150 108v-11M150 108l9 6M150 108l-9 6"/></g>
+          <rect x="92" y="134" width="116" height="7" rx="2" fill="#cdbb95"/>
+          <circle cx="96" cy="144" r="5" fill="#f2d29e"/><circle cx="204" cy="144" r="5" fill="#f2d29e"/>
+          <path d="M236 60h36M236 76h26M236 92h32" stroke="#f2d29e" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+        </svg>
+        <h3>Large safes</h3>
+        <p>Heavy and valuable safes moved securely. Strapped to the dolly, protected on the way out, and placed right where you want them.</p>
+      </article>
+      <article class="spec reveal">
+        <svg viewBox="0 0 300 150" aria-hidden="true">
+          <path d="M60 60h150v66H60z" fill="#a3542f"/>
+          <path d="M60 60l75 34 75-34" fill="none" stroke="#7d3d20" stroke-width="3"/>
+          <path d="M120 60c-8-24-34-20-28-4 4 8 28 4 28 4zM150 60c8-24 34-20 28-4-4 8-28 4-28 4z" fill="none" stroke="#f2d29e" stroke-width="4"/>
+          <rect x="128" y="60" width="14" height="66" fill="#f2d29e"/>
+          <path d="M236 70c10 0 22 6 22 18s-12 18-22 18M226 88h24" fill="none" stroke="#f2d29e" stroke-width="3" stroke-linecap="round"/>
+          <g fill="#f2d29e"><path d="M40 30l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/><path d="M244 28l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></g>
+        </svg>
+        <h3>White glove delivery</h3>
+        <p>Bought something big? Our White Glove Delivery Service picks up the items you buy and brings them home with care.</p>
+      </article>
+    </div>
   </div>
-  <div class="cta-box">
-    <a class="btn call" href="tel:+18133842303"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 3.5h3.5l1.8 4.6-2.3 1.4a11 11 0 0 0 6.5 6.5l1.4-2.3 4.6 1.8V19a1.8 1.8 0 0 1-1.9 1.8A16.5 16.5 0 0 1 3.2 5.4 1.8 1.8 0 0 1 5 3.5z"/></svg>Call (813) 384-2303</a>
-    <a class="btn ghost" href="#quote">Get a free quote online</a>
-    <p>Open 24 hours, every day.</p>
+</section>
+
+<section class="sec why" id="why" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="story reveal">
+      <span class="eyebrow">A family business</span>
+      <div class="bignum" aria-hidden="true">20<sup>+</sup></div>
+      <h2 id="why-title" class="bignum-cap">years of moving Tampa Bay families, one careful lift at a time.</h2>
+      <p>Woody &amp; Sons is family-owned and locally owned, right here in Tampa. The name on the truck is the family that answers your call, and that's why we treat a grandmother's hutch the same way we'd treat our own.</p>
+      <p>Over 20 years in, the job hasn't changed much: show up, be kind, wrap everything, and leave nothing scratched. Some customers have moved with us more than once, and that means more to us than any ad.</p>
+      <div class="facts">
+        <div class="fact"><b>20+ years</b><span>Over 20 years of moving experience</span></div>
+        <div class="fact"><b>Family owned</b><span>Family-owned and locally owned</span></div>
+        <div class="fact"><b>Insured</b><span>Peace of mind on every job</span></div>
+      </div>
+    </div>
+    <div class="card steps-card reveal">
+      <h3>How a Woody &amp; Sons move goes</h3>
+      <ol class="steps">
+        <li><span class="n">1</span><div><h3>Text, call or tap</h3><p>Send the 30-second form, call, or text photos any hour of the day.</p></div></li>
+        <li><span class="n">2</span><div><h3>We plan it with you</h3><p>We talk through what's moving, what's fragile, and anything heavy like a piano or safe.</p></div></li>
+        <li><span class="n">3</span><div><h3>Wrap, pad and load</h3><p>Furniture goes in moving blankets, boxes get labeled, and the truck is loaded tight.</p></div></li>
+        <li><span class="n">4</span><div><h3>Placed where you want it</h3><p>We unload room by room and set things where they belong, so the new place feels like home.</p></div></li>
+      </ol>
+    </div>
   </div>
-</div></section>
+</section>
+
+<section class="sec reviews" id="reviews" aria-labelledby="rev-title">
+  <div class="wrap">
+    <div class="rev-top reveal">
+      <div><span class="eyebrow">Notes from neighbors</span><h2 id="rev-title">What families say after the truck pulls away.</h2></div>
+      <a class="rate-block" href="https://www.google.com/maps/search/?api=1&amp;query=Woody%20%26%20Sons%20Moving&amp;query_place_id=ChIJI9ZmriLDwogRZ5J9SmaSmG4" target="_blank" rel="noopener">
+        <span class="big">4.8</span>
+        <span><span class="stars" aria-label="4.8 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><small>from 230 Google reviews</small><span class="go">Read reviews →</span></span>
+      </a>
+    </div>
+    <div class="notes">
+      <figure class="notecard reveal">
+        <span class="stars" aria-label="5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+        <blockquote>“Everything arrived safely with no damage. Excellent job—I would definitely recommend them!”</blockquote>
+        <figcaption>— Rachel F.<small>Google review</small></figcaption>
+      </figure>
+      <figure class="notecard reveal">
+        <span class="stars" aria-label="5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+        <blockquote>“Great guys, very careful and considerate and they know exactly how to move a piano.”</blockquote>
+        <figcaption>— Bob H.<small>Google review</small></figcaption>
+      </figure>
+      <figure class="notecard reveal">
+        <span class="stars" aria-label="5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+        <blockquote>“I’ve used Woody &amp; Sons Moving twice! Wonderful experience both times. Everyone is super nice and took great care when moving our items.”</blockquote>
+        <figcaption>— Riley E.<small>Google review</small></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec areas" id="areas" aria-labelledby="areas-title">
+  <div class="wrap">
+    <div class="map-wrap reveal">
+      <svg viewBox="0 0 360 440" role="img" aria-label="Map of the five Tampa Bay counties served">
+        <defs><pattern id="waves" width="30" height="14" patternUnits="userSpaceOnUse"><path d="M0 7c5-5 10-5 15 0s10 5 15 0" fill="none" stroke="#c3d6d0" stroke-width="1.5"/></pattern></defs>
+        <rect width="360" height="440" fill="url(#waves)"/>
+        <text x="24" y="300" font-family="Fraunces, serif" font-style="italic" font-size="16" fill="#6c8f86" transform="rotate(-90 24 300)">Gulf of Mexico</text>
+        <path class="county" data-c="pasco" d="M70 22 H338 V112 H76 C 70 90, 74 60, 64 40z"/>
+        <path class="county" data-c="pinellas" d="M76 118 H118 C 118 140, 112 160, 104 178 C 100 200, 114 220, 108 244 C 100 262, 84 262, 76 250 C 64 226, 70 200, 66 176 C 62 150, 70 136, 76 118z"/>
+        <path class="county" data-c="hillsborough" d="M124 118 H338 V252 H200 C 186 236, 176 222, 162 214 C 150 196, 156 178, 140 168 C 130 160, 132 138, 124 118z"/>
+        <path class="county" data-c="manatee" d="M178 258 H338 V338 H150 C 142 320, 144 300, 136 286 C 150 280, 168 270, 178 258z"/>
+        <path class="county" data-c="sarasota" d="M150 344 H338 V420 H190 C 178 404, 172 380, 160 366 C 156 358, 152 352, 150 344z"/>
+        <text class="county-label" data-c="pasco" x="200" y="72" text-anchor="middle">Pasco</text>
+        <text class="county-label" data-c="pinellas" x="90" y="200" text-anchor="middle" transform="rotate(-80 90 200)">Pinellas</text>
+        <text class="county-label" data-c="hillsborough" x="262" y="214" text-anchor="middle">Hillsborough</text>
+        <text class="county-label" data-c="manatee" x="250" y="304" text-anchor="middle">Manatee</text>
+        <text class="county-label" data-c="sarasota" x="256" y="388" text-anchor="middle">Sarasota</text>
+        <text x="140" y="246" font-family="Fraunces, serif" font-style="italic" font-size="12" fill="#6c8f86">Tampa Bay</text>
+        <g transform="translate(222 170)">
+          <circle r="16" fill="#a3542f" opacity=".2"><animate attributeName="r" values="8;18;8" dur="3s" repeatCount="indefinite"/></circle>
+          <circle r="7" fill="#a3542f" stroke="#fff" stroke-width="2.5"/>
+          <text x="12" y="-10" font-family="Work Sans, sans-serif" font-weight="700" font-size="12" class="county-label">Tampa · home base</text>
+        </g>
+      </svg>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Where we work</span>
+      <h2 id="areas-title">Five counties, one family crew.</h2>
+      <p style="color:var(--muted);margin-top:1rem;font-size:1.08rem">We serve Hillsborough, Pinellas, Manatee, Sarasota and Pasco counties, from our home base in Tampa.</p>
+      <ul class="county-list">
+        <li><button type="button" data-c="hillsborough"><span class="n">1</span><b>Hillsborough</b><em>Home county</em></button></li>
+        <li><button type="button" data-c="pinellas"><span class="n">2</span><b>Pinellas</b><em>Across the bay</em></button></li>
+        <li><button type="button" data-c="pasco"><span class="n">3</span><b>Pasco</b><em>North</em></button></li>
+        <li><button type="button" data-c="manatee"><span class="n">4</span><b>Manatee</b><em>South</em></button></li>
+        <li><button type="button" data-c="sarasota"><span class="n">5</span><b>Sarasota</b><em>Further south</em></button></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <div class="card contact-grid reveal">
+      <div class="contact-info">
+        <div><span class="eyebrow">Get in touch</span><h2 id="contact-title" style="margin-top:.5rem">Ready when you are.</h2></div>
+        <div class="clock">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="none" stroke="#f2d29e" stroke-width="3"/><g stroke="#f2d29e" stroke-width="2.5" stroke-linecap="round"><path d="M32 8v4M32 52v4M8 32h4M52 32h4"/></g><path class="spin" d="M32 32V16" stroke="#fff" stroke-width="3" stroke-linecap="round" style="transform-origin:32px 32px;transform-box:view-box;animation-duration:12s"/><path d="M32 32l10 6" stroke="#fff" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="32" r="3" fill="#fff"/></svg>
+          <div><b>Open 24 hours</b><span>Open 24 hours, every day.</span></div>
+        </div>
+        <div class="cline"><span class="ci"><svg><use href="#i-phone"/></svg></span><div><small>Call or text</small><a href="tel:+18133842303">(813) 384-2303</a><br><a href="tel:+17279002826">(727) 900-2826</a></div></div>
+        <div class="cline"><span class="ci"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Email</small><a href="mailto:letsmove@woodyandsons.com">letsmove@woodyandsons.com</a></div></div>
+        <div class="cline"><span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" fill="currentColor"/></svg></span><div><small>Address</small><address>3902 Henderson Blvd Suite 208 – #170, Tampa, FL 33629</address></div></div>
+        <a class="btn btn-primary" href="#quote" style="align-self:flex-start">Get a quote in 30 seconds <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="map-frame">
+        <iframe title="Map: Woody &amp; Sons Moving, Tampa" src="https://www.google.com/maps?q=3902%20Henderson%20Blvd%20Suite%20208%20%E2%80%93%20%23170%2C%20Tampa%2C%20FL%2033629&amp;output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer><div class="wrap">
-  <span><b>Woody &amp; Sons Moving</b><br>3902 Henderson Blvd Suite 208 – #170, Tampa, FL 33629</span>
-  <span>(813) 384-2303</span>
-</div></footer>
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#top">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#fbf7ef"/><circle cx="24" cy="24" r="19.5" fill="none" stroke="#a97f4e" stroke-width="1" stroke-dasharray="2 2.4"/><text x="24" y="30.5" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="17" font-weight="800" fill="#3b2414">W<tspan font-style="italic" font-weight="400" fill="#2f5d46" font-size="14">&amp;</tspan>S</text></svg>
+        <span><span class="brand-name">Woody <i style="color:#f2d29e">&amp;</i> Sons</span><span class="brand-sub">Moving · Tampa Bay</span></span>
+      </a>
+      <p>Family-owned Tampa Bay movers with over 20 years of experience. Insured, family owned and locally owned.</p>
+    </div>
+    <div><h4>Services</h4><ul><li><a href="#services">Residential &amp; local</a></li><li><a href="#services">Commercial</a></li><li><a href="#services">Long-distance</a></li><li><a href="#specialties">Pianos &amp; safes</a></li><li><a href="#services">Packing &amp; storage</a></li></ul></div>
+    <div><h4>Counties</h4><ul><li>Hillsborough</li><li>Pinellas</li><li>Manatee</li><li>Sarasota</li><li>Pasco</li></ul></div>
+    <div><h4>Contact</h4><ul><li><a href="tel:+18133842303">(813) 384-2303</a></li><li><a href="tel:+17279002826">(727) 900-2826</a></li><li><a href="mailto:letsmove@woodyandsons.com">letsmove@woodyandsons.com</a></li><li>Open 24 hours, every day</li></ul></div>
+    <div class="legal">© Woody &amp; Sons Moving · Tampa, FL. Concept homepage preview by Rawcoderz, not the official site.</div>
+  </div>
+</footer>
 
-<div class="bar"><a class="btn call" href="tel:+18133842303"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 3.5h3.5l1.8 4.6-2.3 1.4a11 11 0 0 0 6.5 6.5l1.4-2.3 4.6 1.8V19a1.8 1.8 0 0 1-1.9 1.8A16.5 16.5 0 0 1 3.2 5.4 1.8 1.8 0 0 1 5 3.5z"/></svg>Call</a><a class="btn" href="#quote" style="background:#fff;color:var(--ink)">Get a quote</a></div>
+<div class="mbar" aria-label="Quick actions">
+  <a class="btn btn-ghost" href="tel:+18133842303"><svg aria-hidden="true"><use href="#i-phone"/></svg> Call</a>
+  <a class="btn btn-primary" href="#quote">Get a quote</a>
+</div>
 
-<script type="application/json" id="biz">{"name": "Woody & Sons Moving", "phone": "(813) 384-2303", "sms": {"urgent": "Moving soon. ", "join": " from ZIP ", "kind": "home size: %s", "lower": false}}</script>
 <script>
 (function(){
-  var biz = JSON.parse(document.getElementById('biz').textContent);
-  var f = document.getElementById('quote');
-  var steps = f.querySelectorAll('[data-step]');
-  var bar = document.getElementById('q-bar'), lbl = document.getElementById('q-step');
-  var cur = 1;
-  function val(n){ var el = f.querySelector('input[name="'+n+'"]:checked'); return el ? el.value : ''; }
-  function err(id, msg, input){ document.getElementById(id).textContent = msg || ''; if (input) input.setAttribute('aria-invalid', msg ? 'true' : 'false'); }
+  document.documentElement.classList.add('js');
+  var form=document.getElementById('quote-form');
+  var steps=form.querySelectorAll('[data-step]');
+  var label=document.getElementById('q-progress'),bar=document.getElementById('q-bar');
   function show(n){
-    cur = n;
-    steps.forEach(function(s){ s.hidden = s.getAttribute('data-step') !== String(n); });
-    bar.style.width = (n >= 4 ? 100 : n * 33.34) + '%';
-    lbl.textContent = n >= 4 ? 'Done' : 'Step ' + n + ' of 3';
-    var t = f.querySelector('[data-step="'+n+'"] .q-title, [data-step="'+n+'"] h3');
-    if (t) t.focus({preventScroll:true});
+    steps.forEach(function(s){s.hidden=s.getAttribute('data-step')!=String(n)});
+    if(n<4){label.textContent='Step '+n+' of 3';bar.style.width=(n*33.34)+'%';}
+    else{label.textContent='All done';bar.style.width='100%';}
   }
-  function check(n){
-    if (n === 1){ var ok = !!val('need'); err('e-need', ok ? '' : 'Pick one to continue.'); return ok; }
-    if (n === 2){ var z = document.getElementById('q-zip'); var ok2 = /^\d{5}$/.test(z.value.trim()); err('e-zip', ok2 ? '' : 'Enter a 5-digit ZIP code.', z); if (!ok2) z.focus(); return ok2; }
-    if (n === 3){
-      var nm = document.getElementById('q-name'), ph = document.getElementById('q-phone');
-      var okn = nm.value.trim().length > 1, digits = ph.value.replace(/\D/g,'').replace(/^1(?=\d{10}$)/,''), okp = digits.length === 10;
-      err('e-name', okn ? '' : 'Add your name so they know who to ask for.', nm);
-      err('e-phone', okp ? '' : 'Enter a 10-digit phone number.', ph);
-      if (!okn) nm.focus(); else if (!okp) ph.focus();
-      return okn && okp;
-    }
+  function val(name){var c=form.querySelector('input[name="'+name+'"]:checked');return c?c.value:'';}
+  function err(id,msg){document.getElementById(id).textContent=msg||'';}
+  function valid(n){
+    if(n===1){if(!val('need')){err('e1','Please pick what you need help with.');return false;}err('e1');}
+    if(n===2){var z=document.getElementById('q-zip').value.trim();if(!/^\d{5}$/.test(z)){err('e2','Please enter a 5-digit ZIP code.');return false;}err('e2');}
+    if(n===3){var nm=document.getElementById('q-name').value.trim();var ph=document.getElementById('q-phone').value.replace(/\D/g,'');
+      if(ph.length===11&&ph[0]==='1')ph=ph.slice(1);
+      if(!nm){err('e3','Please add your name.');return false;}
+      if(ph.length!==10){err('e3','Please enter a 10-digit mobile number.');return false;}err('e3');}
     return true;
   }
-  f.addEventListener('change', function(e){ if (e.target.name === 'need') err('e-need',''); });
-  f.querySelectorAll('[data-next]').forEach(function(b){ b.addEventListener('click', function(){ if (check(cur)) show(+b.getAttribute('data-next')); }); });
-  f.querySelectorAll('[data-back]').forEach(function(b){ b.addEventListener('click', function(){ show(+b.getAttribute('data-back')); }); });
-  var zip = document.getElementById('q-zip');
-  zip.addEventListener('input', function(){ zip.value = zip.value.replace(/\D/g,'').slice(0,5); if (/^\d{5}$/.test(zip.value)) err('e-zip','',zip); });
-  var ph = document.getElementById('q-phone');
-  ph.addEventListener('input', function(){
-    var d = ph.value.replace(/\D/g,'').replace(/^1/,'').slice(0,10), o = d;
-    if (d.length > 6) o = '(' + d.slice(0,3) + ') ' + d.slice(3,6) + '-' + d.slice(6);
-    else if (d.length > 3) o = '(' + d.slice(0,3) + ') ' + d.slice(3);
-    ph.value = o; if (d.length === 10) err('e-phone','',ph);
+  form.addEventListener('click',function(e){
+    var nx=e.target.closest('[data-next]'),bk=e.target.closest('[data-back]');
+    if(nx){var cur=+nx.getAttribute('data-next')-1;if(valid(cur))show(+nx.getAttribute('data-next'));}
+    if(bk)show(+bk.getAttribute('data-back'));
   });
-  f.addEventListener('submit', function(e){
+  form.addEventListener('change',function(e){if(e.target.name==='need')err('e1');});
+  var zip=document.getElementById('q-zip');
+  zip.addEventListener('input',function(){zip.value=zip.value.replace(/\D/g,'').slice(0,5);});
+  var phone=document.getElementById('q-phone');
+  phone.addEventListener('blur',function(){var d=phone.value.replace(/\D/g,'');if(d.length===11&&d[0]==='1')d=d.slice(1);if(d.length===10)phone.value='('+d.slice(0,3)+') '+d.slice(3,6)+'-'+d.slice(6);});
+  form.addEventListener('submit',function(e){
     e.preventDefault();
-    if (cur !== 3) { if (check(cur)) show(cur + 1); return; }
-    if (!check(3)) return;
-    var cfg = JSON.parse(document.getElementById('biz').textContent).sms || {};
-    var leak = val('leak') === 'Yes', kind = val('roof');
-    if (cfg.lower !== false) kind = kind.toLowerCase();
-    document.getElementById('q-sms').textContent =
-      (leak ? (cfg.urgent || 'Leaking now. ') : '') + val('need') + (cfg.join || ' in ') + zip.value.trim() + ', ' + (cfg.kind || '%s roof').replace('%s', kind) + '.\n' +
-      document.getElementById('q-name').value.trim() + ', ' + ph.value + '\nBest time: ' + val('when').toLowerCase() + '.';
+    if(!valid(3))return;
+    var d=phone.value.replace(/\D/g,'');if(d.length===11)d=d.slice(1);
+    var ph='('+d.slice(0,3)+') '+d.slice(3,6)+'-'+d.slice(6);
+    var msg=val('need')+' from ZIP '+zip.value.trim()+', home size: '+val('size')+'.'+(val('soon')==='Yes'?' Moving in the next 2 weeks.':'')+' '+document.getElementById('q-name').value.trim()+', '+ph+'. Best time: '+val('time').toLowerCase()+'.';
+    document.getElementById('q-sms').textContent=msg;
     show(4);
   });
-  document.getElementById('q-reset').addEventListener('click', function(){
-    f.reset(); ['e-need','e-zip','e-name','e-phone'].forEach(function(id){ err(id,''); });
-    f.querySelectorAll('[aria-invalid]').forEach(function(i){ i.removeAttribute('aria-invalid'); });
-    show(1);
-  });
-  document.querySelectorAll('a[href="#quote"]').forEach(function(a){
-    a.addEventListener('click', function(e){
-      e.preventDefault();
-      f.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center'});
-      setTimeout(function(){ var t = f.querySelector('[data-step="'+cur+'"] .q-title, [data-step="'+cur+'"] input'); if (t) t.focus({preventScroll:true}); }, 350);
-    });
-  });
+  document.getElementById('q-reset').addEventListener('click',function(){form.reset();show(1);document.getElementById('quote').scrollIntoView({behavior:'smooth'});});
+
+  // county map
+  var btns=document.querySelectorAll('.county-list button');
+  function hl(c){document.querySelectorAll('[data-c]').forEach(function(el){el.classList.toggle('on',el.getAttribute('data-c')===c);});}
+  btns.forEach(function(b){var c=b.getAttribute('data-c');b.addEventListener('mouseenter',function(){hl(c)});b.addEventListener('focus',function(){hl(c)});b.addEventListener('click',function(){hl(c)});});
+  document.querySelectorAll('path.county').forEach(function(p){p.addEventListener('mouseenter',function(){hl(p.getAttribute('data-c'))});});
+  hl('hillsborough');
+
+  // reveal
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('in')});}
 })();
 </script>
 </body>

@@ -199,11 +199,7 @@ footer b{color:var(--ink)}
           <fieldset>
             <legend class="q-title" tabindex="-1">What do you need?</legend>
             <div class="choices">
-              <label class="choice"><input type="radio" name="need" value="Roof repair"><span>Roof repair</span></label>
-              <label class="choice"><input type="radio" name="need" value="Roof replacement"><span>Roof replacement</span></label>
-              <label class="choice"><input type="radio" name="need" value="Storm or leak damage"><span>Storm or leak damage</span></label>
-              <label class="choice"><input type="radio" name="need" value="Inspection"><span>Inspection</span></label>
-              <label class="choice wide"><input type="radio" name="need" value="Something else"><span>Something else</span></label>
+{{need_choices}}
             </div>
             <p class="err" id="e-need" role="alert"></p>
           </fieldset>
@@ -212,22 +208,18 @@ footer b{color:var(--ink)}
 
         <div data-step="2" hidden>
           <div class="field">
-            <label class="f q-title" for="q-zip" tabindex="-1">Property ZIP code</label>
+            <label class="f q-title" for="q-zip" tabindex="-1">{{zip_label}}</label>
             <input id="q-zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="{{zip_hint}}" aria-describedby="e-zip">
             <p class="err" id="e-zip" role="alert"></p>
           </div>
           <fieldset>
-            <legend>Roof type</legend>
+            <legend>{{kind_legend}}</legend>
             <div class="choices five">
-              <label class="choice"><input type="radio" name="roof" value="Shingle" checked><span>Shingle</span></label>
-              <label class="choice"><input type="radio" name="roof" value="Tile"><span>Tile</span></label>
-              <label class="choice"><input type="radio" name="roof" value="Metal"><span>Metal</span></label>
-              <label class="choice"><input type="radio" name="roof" value="Flat"><span>Flat</span></label>
-              <label class="choice"><input type="radio" name="roof" value="Not sure"><span>Not sure</span></label>
+{{kind_choices}}
             </div>
           </fieldset>
           <fieldset>
-            <legend>Is water coming in right now?</legend>
+            <legend>{{urgent_legend}}</legend>
             <div class="choices two">
               <label class="choice"><input type="radio" name="leak" value="Yes"><span>Yes</span></label>
               <label class="choice"><input type="radio" name="leak" value="No" checked><span>No</span></label>
@@ -289,8 +281,8 @@ footer b{color:var(--ink)}
   <p class="intro">Three steps, and the first one takes about 30 seconds.</p>
   <ol class="steps">
     <li><h3>Tell us what's going on</h3><p>Pick the job, add your ZIP code and a number. It takes about 30 seconds.</p></li>
-    <li><h3>{{short}} calls you</h3><p>Your request arrives as a text, so you hear back to set a time to look at the roof.</p></li>
-    <li><h3>You get a price</h3><p>After the visit you get a quote for the work, and you decide.</p></li>
+    <li><h3>{{short}} calls you</h3><p>Your request arrives as a text, so you hear back {{visit_line}}</p></li>
+    <li><h3>You get a price</h3><p>{{price_line}}</p></li>
   </ol>
 </div></section>
 
@@ -363,9 +355,11 @@ footer b{color:var(--ink)}
     e.preventDefault();
     if (cur !== 3) { if (check(cur)) show(cur + 1); return; }
     if (!check(3)) return;
-    var leak = val('leak') === 'Yes';
+    var cfg = JSON.parse(document.getElementById('biz').textContent).sms || {};
+    var leak = val('leak') === 'Yes', kind = val('roof');
+    if (cfg.lower !== false) kind = kind.toLowerCase();
     document.getElementById('q-sms').textContent =
-      (leak ? 'Leaking now. ' : '') + val('need') + ' in ' + zip.value.trim() + ', ' + val('roof').toLowerCase() + ' roof.\n' +
+      (leak ? (cfg.urgent || 'Leaking now. ') : '') + val('need') + (cfg.join || ' in ') + zip.value.trim() + ', ' + (cfg.kind || '%s roof').replace('%s', kind) + '.\n' +
       document.getElementById('q-name').value.trim() + ', ' + ph.value + '\nBest time: ' + val('when').toLowerCase() + '.';
     show(4);
   });

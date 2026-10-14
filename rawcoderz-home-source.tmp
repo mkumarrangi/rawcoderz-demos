@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Mark the page as JavaScript-capable before the body is parsed, so the
+         static summary in #root is hidden for real visitors (no flash before
+         React mounts) but stays readable for tools that don't run JavaScript. -->
+    <script>document.documentElement.classList.add('js')</script>
+    <style>.js #static-summary { display: none; }</style>
+    <title>Rawcoderz — software and AI engineering from India</title>
+    <link rel="icon" type="image/png" href="/assets/fav-DXBY0SYQ.png" />
+
+    <!-- Keep these in sync with COMPANY in constants.ts and with the static
+         summary inside #root below. -->
+    <meta name="description" content="Rawcoderz is an early-stage software and AI engineering startup based in Jaipur, India, founded in 2025. We build AI agents, web apps and internal tools, and FlowForge, our visual AI pipeline builder. We build with Claude Code." />
+    <meta property="og:title" content="Rawcoderz" />
+    <meta property="og:description" content="Early-stage software and AI engineering startup based in Jaipur, India: AI agents, web apps, internal tools, and FlowForge, a visual AI pipeline builder." />
+    <meta property="og:url" content="https://www.rawcoderz.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#E63946", // Strawberry Red
+                        "primary-hover": "#c91f27",
+                        "soft-cyan": "#00E5FF",
+                        "muted-purple": "#7C4DFF",
+                        "background-dark": "#05070D",
+                        "background-darker": "#0A1022",
+                        "surface": "rgba(255, 255, 255, 0.03)",
+                    },
+                    fontFamily: {
+                        "display": ["Outfit", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "mono": ["JetBrains Mono", "monospace"],
+                    },
+                    backgroundImage: {
+                        'hero-gradient': 'linear-gradient(180deg, #05070D 0%, #0A1022 100%)',
+                        'glass-gradient': 'linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #05070D;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        .glass-nav {
+            background: rgba(5, 7, 13, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(230, 57, 70, 0.4);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #05070D;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #E63946;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        /* Work page — card entrance animation */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(28px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Work page — tech marquee */
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to   { transform: translateX(-50%); }
+        }
+        .marquee-track {
+            animation: marquee 35s linear infinite;
+            width: max-content;
+        }
+        .marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+        /* Respect reduced-motion preference */
+        @media (prefers-reduced-motion: reduce) {
+            .marquee-track {
+                animation: none;
+            }
+        }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-BSEpY49d.js"></script>
+</head>
+  <body>
+    <!-- Plain-HTML summary for tools that don't run JavaScript. Browsers that
+         run JavaScript hide it (see the .js rule in <head>), and React replaces
+         everything inside #root once the app loads. Keep it true and in sync
+         with COMPANY/TEAM in constants.ts. -->
+    <div id="root">
+      <main id="static-summary">
+        <h1>Rawcoderz</h1>
+        <p>
+          Rawcoderz is an early-stage software and AI engineering startup based in
+          Jaipur, India, founded in 2025. We build with Claude Code.
+        </p>
+        <h2>What we build</h2>
+        <ul>
+          <li>AI agents that automate document- and data-heavy work</li>
+          <li>Custom web apps, internal tools and cloud setups</li>
+          <li>FlowForge, our visual AI pipeline builder: <a href="https://flowforge-omega-plum.vercel.app/">https://flowforge-omega-plum.vercel.app/</a></li>
+        </ul>
+        <h2>Team</h2>
+        <p>Mukesh Kumar, Founder: <a href="https://www.linkedin.com/in/mkumarrangi/">LinkedIn</a></p>
+        <h2>Contact</h2>
+        <p><a href="mailto:mukesh.kumar@rawcoderz.com">mukesh.kumar@rawcoderz.com</a></p>
+        <p>Pratap Nagar, Sector 18, Jaipur, Rajasthan, India</p>
+      </main>
+    </div>
+</body>
+</html>

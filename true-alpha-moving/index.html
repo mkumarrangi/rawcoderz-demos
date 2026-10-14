@@ -2,387 +2,1032 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="color-scheme" content="light">
 <title>True Alpha Moving &amp; Junk · Concept homepage by Rawcoderz</title>
+<meta name="description" content="Concept homepage for True Alpha Moving & Junk — family-owned moving and junk removal across Tampa Bay.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#F1F4F3;--card:#FFFFFF;--line:#D6DDDD;--ink-soft:#46525C;--ok:#1E7A4C;--err:#B42318;
-  --ink:#23262B;--ink-2:#33373E;--accent:#D42A32;--accent-ink:#FFFFFF;--accent-deep:#B3202A;
-  --wrap:1160px;--gut:20px;
+  --ink:#0c0c0d;--ink2:#161618;--ink3:#232326;--line:#2e2e32;
+  --red:#d3141b;--red-d:#a80f15;--red-hi:#ff4d42;
+  --paper:#f3efe7;--paper2:#e8e2d6;--mute:#a9a49b;--mute-d:#5d5952;
+  --disp:"Archivo Black","Arial Black",Impact,sans-serif;
+  --body:"Archivo",system-ui,sans-serif;
+  --mono:"Space Mono",ui-monospace,monospace;
+  --cut:clamp(28px,5vw,72px);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:17px;line-height:1.55;font-stretch:100%}
+body{margin:0;background:var(--ink);color:var(--paper);font:400 16px/1.55 var(--body);overflow-x:hidden}
+img,svg{display:block;max-width:100%}
 a{color:inherit}
-img,svg{display:block}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+h1,h2,h3{margin:0;line-height:1.02;letter-spacing:-.01em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--red-hi);outline-offset:3px;border-radius:2px}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.mono{font-family:var(--mono);letter-spacing:.04em;text-transform:uppercase;font-size:12px}
 
-/* honest preview banner */
-.concept{background:#FFF4CC;color:#4A3B00;font-size:13.5px;line-height:1.4;padding:9px var(--gut);text-align:center;border-bottom:1px solid #EBD98F}
-.concept b{font-weight:650}
+/* honesty banner */
+.concept{background:#000;color:#bdb8ae;font:400 12.5px/1.45 var(--body);text-align:center;padding:7px 16px;border-bottom:1px solid #222}
+.concept b{color:var(--paper);font-weight:700}
 
 /* header */
-.top{background:var(--ink);color:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(255,255,255,.08)}
-.top .wrap{display:flex;align-items:center;gap:24px;min-height:68px}
-.mark{font-stretch:118%;font-weight:800;font-size:21px;letter-spacing:-.01em;line-height:1.05;text-decoration:none;margin-right:auto}
-.mark small{display:block;font-stretch:100%;font-weight:450;font-size:12.5px;letter-spacing:0;color:rgba(255,255,255,.66);margin-top:3px}
-.nav{display:flex;gap:22px;font-size:15px}
-.nav a{text-decoration:none;color:rgba(255,255,255,.82)}
-.nav a:hover{color:#fff;text-decoration:underline;text-underline-offset:5px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:10px;font:inherit;font-weight:700;font-size:16px;line-height:1;padding:14px 18px;cursor:pointer;text-decoration:none;white-space:nowrap}
-.btn svg{width:18px;height:18px;flex:none}
-.btn.call{background:var(--accent);color:var(--accent-ink)}
-.btn.call:hover{filter:brightness(1.06)}
-@media (max-width:880px){.nav{display:none}}
-@media (max-width:560px){.top .btn.call span{display:none}.top .btn.call{padding:12px}}
+.hdr{position:sticky;top:0;z-index:50;background:rgba(12,12,13,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;gap:20px;height:68px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0}
+.logo-mark{width:46px;height:38px;flex-shrink:0}
+.logo-txt{display:flex;flex-direction:column;line-height:.92}
+.logo-txt b{font:400 21px/1 var(--disp);letter-spacing:.01em}
+.logo-txt b i{font-style:normal;color:var(--red-hi)}
+.logo-txt span{font:700 9.5px/1 var(--mono);letter-spacing:.24em;color:var(--mute);margin-top:5px}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{font:600 14px var(--body);text-decoration:none;padding:8px 12px;color:#d9d4ca;border-radius:2px}
+.nav a:hover{color:#fff;background:var(--ink3)}
+.hdr-cta{display:flex;gap:8px}
+.btn{--b:var(--red);display:inline-flex;align-items:center;justify-content:center;gap:9px;font:800 15px/1 var(--body);letter-spacing:.01em;text-decoration:none;border:0;cursor:pointer;padding:15px 22px;background:var(--b);color:#fff;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);transition:transform .18s,background .18s;white-space:nowrap}
+.btn:hover{background:var(--red-d);transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex-shrink:0}
+.btn.ghost{background:transparent;color:var(--paper);box-shadow:inset 0 0 0 2px var(--paper);clip-path:none;border-radius:0}
+.btn.ghost:hover{background:var(--paper);color:var(--ink)}
+.btn.sm{padding:11px 16px;font-size:14px}
+.btn.paper{background:var(--paper);color:var(--ink)}
+.btn.paper:hover{background:#fff}
+.btn.blk{background:var(--ink);color:#fff}
+.btn.blk:hover{background:#000}
 
-/* hero */
-.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
-.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);grid-template-areas:"copy form" "proof form";grid-template-rows:auto 1fr;column-gap:56px;row-gap:28px;align-items:start;padding-top:56px;padding-bottom:128px}
-.copy{grid-area:copy}.quote{grid-area:form}.proof{grid-area:proof}
-@media (max-width:940px){.hero .wrap{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "form" "proof";grid-template-rows:auto;row-gap:28px;padding-top:32px;padding-bottom:104px}}
-.place{display:flex;align-items:center;gap:8px;font-size:15px;color:rgba(255,255,255,.72);margin:0 0 18px}
-.place svg{width:16px;height:16px;color:var(--accent)}
-h1{font-stretch:122%;font-weight:800;font-size:clamp(40px,6.4vw,78px);line-height:.96;letter-spacing:-.022em;margin:0 0 22px;text-wrap:balance;max-width:13ch}
-.lede{font-size:clamp(17px,1.6vw,20px);color:rgba(255,255,255,.82);max-width:40ch;margin:0}
-.lede a{color:#fff;font-weight:650;text-underline-offset:4px;white-space:nowrap}
-.proof{list-style:none;margin:0;padding:22px 0 0;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:18px 34px}
-.proof li{font-size:15px;color:rgba(255,255,255,.74);max-width:24ch;line-height:1.35}
-.proof b{display:block;font-stretch:112%;font-weight:750;font-size:22px;color:#fff;letter-spacing:-.01em;margin-bottom:3px}
-.stars{position:relative;display:inline-block;width:110px;height:20px;vertical-align:-3px;margin-right:8px}
-.stars svg{position:absolute;inset:0;width:110px;height:20px}
-.stars .fill{position:absolute;inset:0;overflow:hidden}
-.proof a{color:rgba(255,255,255,.9);text-underline-offset:3px}
+/* HERO split */
+.hero{position:relative;background:var(--ink)}
+.split{position:relative;display:flex;height:clamp(380px,62vh,580px);overflow:hidden;background:var(--ink)}
+.pane{position:relative;flex:1 1 0;min-width:0;cursor:pointer;transition:flex-grow .7s cubic-bezier(.7,0,.2,1),filter .5s;overflow:hidden;border:0;padding:0;text-align:left;color:inherit;font:inherit}
+.pane.move{background:radial-gradient(120% 90% at 30% 20%,#1c1c1f 0,#0c0c0d 70%)}
+.pane.clear{background:linear-gradient(160deg,#e01a20 0,#b70f15 100%);margin-left:calc(var(--cut) * -1);clip-path:polygon(var(--cut) 0,100% 0,100% 100%,0 100%)}
+.hero[data-mode="move"] .pane.move,.hero[data-mode="clear"] .pane.clear{flex-grow:1.55}
+.hero[data-mode="move"] .pane.clear,.hero[data-mode="clear"] .pane.move{filter:saturate(.35) brightness(.62)}
+.pane:hover{filter:none!important}
+.pane .word{position:absolute;top:clamp(58px,9vh,86px);font:400 clamp(46px,9.4vw,148px)/.82 var(--disp);letter-spacing:-.03em;white-space:nowrap;pointer-events:none;z-index:2}
+.pane.move .word{left:clamp(18px,3vw,44px);color:var(--paper)}
+.pane.move .word em{font-style:normal;color:var(--red-hi)}
+.pane.clear .word{right:clamp(18px,3vw,44px);color:var(--ink)}
+.pane.clear .word em{font-style:normal;color:var(--paper)}
+.pane .tag{position:absolute;top:calc(clamp(58px,9vh,86px) + clamp(44px,8vw,128px));font:700 11px/1.3 var(--mono);letter-spacing:.18em;text-transform:uppercase;z-index:2;pointer-events:none}
+.pane.move .tag{left:clamp(20px,3vw,48px);color:var(--mute)}
+.pane.clear .tag{right:clamp(20px,3vw,48px);color:#2a0507;text-align:right}
+.pane .art{position:absolute;inset:auto 0 0 0;height:78%;width:100%}
+.pane.clear .art{left:auto;right:0}
+.seam{position:absolute;top:0;bottom:0;width:6px;background:var(--paper);z-index:3;pointer-events:none;transform-origin:top;left:50%;display:none}
+.toggle{position:absolute;z-index:5;top:18px;left:50%;transform:translateX(-50%);display:flex;background:rgba(12,12,13,.9);border:2px solid var(--paper);padding:4px;gap:4px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.toggle button{font:400 15px/1 var(--disp);letter-spacing:.06em;border:0;cursor:pointer;padding:11px 20px;background:transparent;color:var(--paper);transition:background .25s,color .25s}
+.toggle button[aria-pressed="true"]{background:var(--paper);color:var(--ink)}
+.toggle button:not([aria-pressed="true"]):hover{background:var(--ink3)}
+.toggle .bar{width:2px;background:var(--red-hi);margin:6px 0}
 
-/* the rooftops */
-.roofs{position:absolute;left:0;right:0;bottom:-1px;height:110px;z-index:1;color:var(--paper)}
-.roofs svg{width:100%;height:100%}
-@media (max-width:940px){.roofs{height:76px}}
+/* road + motion */
+.road-dash{stroke-dasharray:28 22;animation:road 1.1s linear infinite}
+@keyframes road{to{stroke-dashoffset:-50}}
+.wheel{transform-box:fill-box;transform-origin:center;animation:spin 1.1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bob{animation:bob 2.6s ease-in-out infinite}
+.bob2{animation:bob 3.1s ease-in-out .4s infinite}
+@keyframes bob{50%{transform:translateY(-4px)}}
+.truck-shake{animation:shake .45s ease-in-out infinite alternate}
+@keyframes shake{to{transform:translateY(-1.5px)}}
+.puff{animation:puff 2.2s ease-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes puff{0%{opacity:.7;transform:translate(0,0) scale(.6)}100%{opacity:0;transform:translate(-30px,-14px) scale(1.6)}}
+.blink{animation:blink 3.4s steps(1) infinite}
+@keyframes blink{50%{opacity:.25}}
+.lift{animation:lift 7s ease-in-out infinite}
+@keyframes lift{0%,10%{transform:translateY(0)}55%,70%{transform:translateY(-150px)}100%{transform:translateY(0)}}
 
-/* quote form */
-.quote{background:var(--card);color:var(--ink);border-radius:16px;box-shadow:0 30px 60px -28px rgba(0,0,0,.55),0 0 0 1px rgba(0,0,0,.04);overflow:hidden}
-.q-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:20px 22px 0}
-.q-head h2{font-stretch:112%;font-weight:780;font-size:22px;letter-spacing:-.01em;margin:0}
-.q-step{font-size:13.5px;color:var(--ink-soft);white-space:nowrap}
-.q-bar{height:4px;background:var(--line);margin:14px 22px 0;border-radius:2px;overflow:hidden}
-.q-bar i{display:block;height:100%;width:33.33%;background:var(--accent-deep);border-radius:2px;transition:width .35s ease}
-.q-body{padding:18px 22px 22px}
+/* hero body */
+.hero-body{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(28px,4vw,64px);padding:44px 0 80px;align-items:start}
+.kicker{display:inline-flex;align-items:center;gap:10px;font:700 12px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--red-hi)}
+.kicker::before{content:"";width:28px;height:3px;background:currentColor}
+.hero h1{font:400 clamp(34px,4.3vw,60px)/1 var(--disp);margin:16px 0 20px;letter-spacing:-.02em;text-transform:uppercase}
+.hero h1 .r{color:var(--red-hi)}
+.modecopy{min-height:150px}
+.modecopy p.lead{font-size:clamp(17px,1.5vw,19px);color:#d6d1c7;max-width:58ch}
+.modecopy ul{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.modecopy li{font:700 13px/1 var(--body);padding:9px 12px;border:1px solid var(--line);background:var(--ink2);display:flex;align-items:center;gap:8px}
+.modecopy li::before{content:"";width:8px;height:8px;background:var(--red-hi);transform:skewX(-18deg)}
+[data-show][hidden]{display:none}
+.fade-in{animation:fin .45s ease both}
+@keyframes fin{from{opacity:0;transform:translateY(8px)}}
+.rate{display:flex;align-items:center;gap:14px;margin:28px 0 26px;text-decoration:none;width:fit-content;padding:12px 18px 12px 14px;background:var(--ink2);border-left:4px solid var(--red)}
+.rate b{font:400 34px/1 var(--disp)}
+.stars{display:flex;gap:2px}
+.stars svg{width:18px;height:18px;fill:#ffb21a}
+.rate small{display:block;font-size:13px;color:var(--mute);margin-top:3px}
+.rate:hover small{color:var(--paper);text-decoration:underline}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+
+/* FORM */
+.qcard{position:relative;background:var(--paper);color:var(--ink);margin-top:-150px;z-index:6;box-shadow:0 30px 70px rgba(0,0,0,.55)}
+.qcard::before{content:"";position:absolute;inset:0 0 auto 0;height:8px;background:repeating-linear-gradient(-45deg,var(--red) 0 14px,var(--ink) 14px 28px)}
+.qhead{padding:30px 28px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.qhead h2{font:400 clamp(24px,2.3vw,30px)/1 var(--disp);text-transform:uppercase;letter-spacing:-.01em}
+.qhead h2 span{color:var(--red)}
+.qhead .t30{flex-shrink:0;width:56px;height:56px}
+.qsub{padding:8px 28px 0;font-size:14px;color:var(--mute-d)}
+#quote-form{padding:18px 28px 28px}
+.prog{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.prog .mono{font-weight:700;color:var(--ink);white-space:nowrap}
+.prog .track{flex:1;height:6px;background:var(--paper2);position:relative;overflow:hidden}
+.prog .track i{position:absolute;inset:0 auto 0 0;width:33.3%;background:var(--red);transition:width .4s}
 fieldset{border:0;margin:0 0 16px;padding:0;min-width:0}
-legend{font-weight:650;font-size:16px;padding:0;margin:0 0 10px}
-.q-title{font-weight:650;font-size:16px;margin:0 0 10px;outline:none}
-.choices{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.choices.five{grid-template-columns:repeat(5,minmax(0,1fr))}
-.choices.two{grid-template-columns:1fr 1fr}
-@media (max-width:420px){.choices.five{grid-template-columns:repeat(3,minmax(0,1fr))}}
-.choice{position:relative}
-.choice input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
-.choice span{display:flex;align-items:center;min-height:50px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;font-weight:600;font-size:15px;line-height:1.25;background:#fff;transition:border-color .15s,background .15s}
-.choices.five .choice span,.choices.two .choice span{justify-content:center;text-align:center;min-height:44px;padding:8px 6px;font-size:14.5px}
-.choice input:hover+span{border-color:var(--ink-soft)}
-.choice input:checked+span{border-color:var(--ink);background:color-mix(in srgb,var(--accent) 16%,#fff);box-shadow:inset 0 0 0 1px var(--ink)}
-.choice input:focus-visible+span{outline:3px solid var(--accent);outline-offset:2px}
+legend{font:800 15px/1.2 var(--body);margin-bottom:10px;padding:0}
+.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.choices.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.choices.c5{grid-template-columns:repeat(5,minmax(0,1fr))}
+.choices.c2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.choice{position:relative;display:block;cursor:pointer}
+.choice input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.choice span{display:flex;align-items:center;gap:9px;min-height:50px;padding:10px 12px;border:2px solid #cfc8ba;background:#fff;font:700 14.5px/1.15 var(--body);transition:border-color .15s,background .15s,color .15s}
+.choice span::before{content:"";flex-shrink:0;width:14px;height:14px;border:2px solid #8f887c;border-radius:50%;transition:all .15s}
+.choice:hover span{border-color:var(--ink)}
+.choice input:checked+span{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.choice input:checked+span::before{border-color:var(--red-hi);background:var(--red-hi);box-shadow:inset 0 0 0 3px var(--ink)}
+.choice input:focus-visible+span{outline:3px solid var(--red);outline-offset:2px}
+.choices.c5 .choice span,.choices.c3 .choice span,.choices.c2 .choice span{justify-content:center;min-height:44px;padding:8px 6px;font-size:13.5px;text-align:center}
+.choices.c5 .choice span::before,.choices.c3 .choice span::before,.choices.c2 .choice span::before{display:none}
 .choice.wide{grid-column:1/-1}
-label.f{display:block;font-weight:600;font-size:15px;margin:0 0 6px}
-.field{margin:0 0 14px}
-.field input{width:100%;font:inherit;font-size:17px;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
-.field input:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 45%,transparent)}
-.field input[aria-invalid="true"]{border-color:var(--err)}
-.err{color:var(--err);font-size:14px;margin:6px 0 0;min-height:0}
+.choice.wide span{border-style:dashed}
+.fld{margin-bottom:14px}
+.fld label{display:block;font:800 15px/1.2 var(--body);margin-bottom:7px}
+.fld input{width:100%;font:600 17px var(--body);padding:13px 14px;border:2px solid #cfc8ba;background:#fff;color:var(--ink);border-radius:0}
+.fld input:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(211,20,27,.35)}
+.fld input[aria-invalid="true"]{border-color:var(--red)}
+.err{color:var(--red-d);font:700 13.5px/1.3 var(--body);min-height:0;margin:6px 0 0}
 .err:empty{display:none}
-.q-actions{display:flex;gap:10px;align-items:center;margin-top:6px}
-.go{flex:1;background:var(--accent);color:var(--accent-ink);font-size:17px;padding:16px}
-.go:hover{filter:brightness(1.05)}
-.back{background:transparent;color:var(--ink-soft);padding:16px 8px;font-weight:600}
-.back:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
-.fine{font-size:13px;color:var(--ink-soft);margin:12px 0 0;line-height:1.4}
-[hidden]{display:none!important}
-.done-head{display:flex;gap:12px;align-items:center;margin:0 0 6px}
-.done-head .tick{width:40px;height:40px;border-radius:50%;background:#E3F3EA;color:var(--ok);display:grid;place-items:center;flex:none}
-.done-head .tick svg{width:22px;height:22px}
-.done-head h3{margin:0;font-stretch:112%;font-size:21px;font-weight:780;outline:none}
-.done p{margin:0 0 12px;color:var(--ink-soft);font-size:15px}
-.sms{background:#EEF1F1;border-radius:14px;padding:14px;margin:4px 0 12px}
-.sms .from{font-size:12.5px;color:var(--ink-soft);margin:0 0 8px;text-align:center}
-.bubble{background:#fff;border:1px solid var(--line);border-radius:16px 16px 16px 4px;padding:11px 13px;font-size:15px;line-height:1.45;max-width:94%;white-space:pre-line}
+.qnav{display:flex;gap:10px;margin-top:6px}
+.qnav .btn{flex:1}
+.qnav .back{flex:0 0 auto;background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink);clip-path:none}
+.qnav .back:hover{background:var(--ink);color:var(--paper)}
+.fine{font-size:12.5px;color:var(--mute-d);margin-top:12px;text-align:center}
+#q-done h3{font:400 28px/1 var(--disp);text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+#q-done h3 svg{width:30px;height:30px}
+.phone{background:var(--ink);border-radius:26px;padding:14px;max-width:340px;margin:0 auto 16px;box-shadow:inset 0 0 0 2px #333}
+.phone-top{display:flex;justify-content:space-between;align-items:center;color:var(--mute);font:700 11px var(--mono);padding:2px 8px 10px;letter-spacing:.06em}
+.phone-top b{color:var(--paper)}
+.sms{background:#2b2b2f;color:#f1f1f1;padding:12px 14px;border-radius:18px 18px 18px 4px;font-size:14.5px;line-height:1.45;max-width:94%}
+.sms-meta{color:#8d8d93;font:400 11px var(--mono);margin:6px 0 2px 6px}
+.done-note{font-size:14px;color:var(--mute-d);text-align:center;margin-bottom:14px}
+
+/* ticker */
+.ticker{background:var(--red);color:#fff;overflow:hidden;transform:skewY(-1.6deg);margin:-14px 0 0;position:relative;z-index:4;border-block:3px solid var(--ink)}
+.ticker-in{display:flex;width:max-content;animation:tick 32s linear infinite;transform:skewY(1.6deg);padding:14px 0}
+.ticker span{font:400 clamp(16px,1.8vw,22px)/1 var(--disp);text-transform:uppercase;letter-spacing:.02em;padding:0 22px;display:flex;align-items:center;gap:44px;white-space:nowrap}
+.ticker span::after{content:"";width:14px;height:14px;background:var(--ink);transform:rotate(45deg)}
+@keyframes tick{to{transform:translateX(-50%) skewY(1.6deg)}}
 
 /* sections */
-main section{padding:84px 0}
-@media (max-width:700px){main section{padding:60px 0}}
-h2.t{font-stretch:116%;font-weight:800;font-size:clamp(30px,3.6vw,44px);line-height:1.02;letter-spacing:-.018em;margin:0 0 14px;max-width:20ch;text-wrap:balance}
-.intro{color:var(--ink-soft);max-width:56ch;margin:0 0 36px;font-size:18px}
+section{position:relative}
+.sec{padding:clamp(70px,9vw,120px) 0}
+.paper{background:var(--paper);color:var(--ink)}
+.cut-top{clip-path:polygon(0 var(--cut),100% 0,100% 100%,0 100%);margin-top:calc(var(--cut) * -1);padding-top:calc(clamp(70px,9vw,120px) + var(--cut))}
+.cut-both{clip-path:polygon(0 0,100% var(--cut),100% 100%,0 calc(100% - var(--cut)));margin-block:calc(var(--cut) * -1);padding-block:calc(clamp(70px,9vw,120px) + var(--cut))}
+.sh{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:24px 48px;align-items:end;margin-bottom:48px}
+.sh h2{font:400 clamp(36px,5.2vw,76px)/.92 var(--disp);text-transform:uppercase;letter-spacing:-.025em}
+.sh h2 .r{color:var(--red)}
+.ink .sh h2 .r{color:var(--red-hi)}
+.sh p{font-size:17px;color:var(--mute-d);max-width:48ch}
+.ink .sh p{color:var(--mute)}
+.num{font:700 12px var(--mono);letter-spacing:.14em;color:var(--red);display:block;margin-bottom:14px}
+.ink .num{color:var(--red-hi)}
 
-.svc{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;margin:0;padding:0;list-style:none;border-top:2px solid var(--ink)}
-@media (max-width:760px){.svc{grid-template-columns:1fr}}
-.svc li{display:grid;grid-template-columns:34px minmax(0,1fr);gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
-.svc svg{width:30px;height:30px;color:var(--accent-deep);margin-top:2px}
-.svc h3{margin:0 0 4px;font-size:19px;font-weight:700;font-stretch:106%}
-.svc p{margin:0;color:var(--ink-soft);font-size:16px;max-width:42ch}
+/* services */
+.svc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:3px solid var(--ink);border-left:3px solid var(--ink)}
+.svc article{border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);padding:30px 28px 32px;position:relative;background:var(--paper);transition:background .25s,color .25s;overflow:hidden}
+.svc article:hover{background:var(--ink);color:var(--paper)}
+.svc article:hover .ic{color:var(--red-hi)}
+.svc article:hover p{color:var(--mute)}
+.svc .ix{position:absolute;top:22px;right:24px;font:700 12px var(--mono);color:var(--mute-d)}
+.svc .ic{width:58px;height:58px;color:var(--red);margin-bottom:22px;transition:color .25s}
+.svc h3{font:400 22px/1.05 var(--disp);text-transform:uppercase;margin-bottom:10px;letter-spacing:-.005em}
+.svc p{color:#4b4740;font-size:15.5px;transition:color .25s}
+.svc article.junk{background:var(--red);color:#fff}
+.svc article.junk .ic{color:#fff}
+.svc article.junk p{color:#ffe1dc}
+.svc article.junk .ix{color:#ffd0ca}
+.svc article.junk:hover{background:var(--ink)}
+.spec{margin-top:40px;background:var(--ink);color:var(--paper);display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,2fr);clip-path:polygon(0 0,100% 0,100% calc(100% - 26px),calc(100% - 26px) 100%,0 100%)}
+.spec-h{padding:34px 30px;background:repeating-linear-gradient(-45deg,#151517 0 12px,#101012 12px 24px);border-right:3px solid var(--red)}
+.spec-h h3{font:400 30px/1 var(--disp);text-transform:uppercase;margin:6px 0 12px}
+.spec-h p{color:var(--mute);font-size:15px}
+.spec ul{list-style:none;margin:0;padding:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.spec li{display:flex;align-items:center;gap:12px;padding:16px 14px;background:var(--ink2);border:1px solid var(--line);font:700 15px/1.2 var(--body);transition:border-color .2s,transform .2s}
+.spec li:hover{border-color:var(--red-hi);transform:translateY(-2px)}
+.spec li svg{width:34px;height:34px;flex-shrink:0;color:var(--red-hi)}
 
-.how{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;counter-reset:s}
-@media (max-width:760px){.steps{grid-template-columns:1fr;gap:26px}}
-.steps li{counter-increment:s;position:relative;padding-top:58px}
-.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:800;font-stretch:112%;font-size:19px}
-.steps li:not(:last-child)::after{content:"";position:absolute;top:21px;left:54px;right:-20px;height:2px;background:repeating-linear-gradient(90deg,var(--line) 0 8px,transparent 8px 14px)}
-@media (max-width:760px){.steps li:not(:last-child)::after{display:none}}
-.steps h3{margin:0 0 6px;font-size:20px;font-weight:720;font-stretch:108%}
-.steps p{margin:0;color:var(--ink-soft);font-size:16px;max-width:34ch}
+/* towers */
+.ink{background:var(--ink);color:var(--paper)}
+.towers{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:40px;align-items:center}
+.sky{position:relative;border:2px solid var(--line);background:linear-gradient(#141416,#0c0c0d 70%)}
+.sky svg{width:100%;height:auto}
+.spots{list-style:none;padding:0;margin:0;counter-reset:s}
+.spots li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line);cursor:default}
+.spots li:first-child{border-top:1px solid var(--line)}
+.spots .pin{width:38px;height:38px;display:grid;place-items:center;background:var(--red);font:400 16px var(--disp);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);transition:background .2s}
+.spots b{font:400 22px/1 var(--disp);text-transform:uppercase;display:block}
+.spots small{color:var(--mute);font-size:14px}
+.spots li:hover .pin,.spots li.on .pin{background:var(--paper);color:var(--ink)}
+.tw-note{margin-top:22px;color:var(--mute);font-size:15px}
+.tw-note a{color:var(--paper);font-weight:700}
+svg .sp{transition:transform .25s;transform-box:fill-box;transform-origin:center bottom}
+svg .sp.on{transform:scale(1.25)}
 
-.revs{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px 48px;align-items:start}
-@media (max-width:860px){.revs{grid-template-columns:1fr}}
-blockquote{margin:0}
-.lead-q{font-stretch:104%;font-size:clamp(22px,2.4vw,29px);line-height:1.32;font-weight:520;letter-spacing:-.005em;padding-left:24px;border-left:5px solid var(--accent)}
-.lead-q p{margin:0 0 16px}
-cite{font-style:normal;font-size:15px;color:var(--ink-soft);font-weight:600}
-.side-q{display:grid;gap:22px}
-.side-q blockquote{padding:0 0 22px;border-bottom:1px solid var(--line)}
-.side-q blockquote:last-child{border-bottom:0;padding-bottom:0}
-.side-q p{margin:0 0 8px;font-size:16.5px}
-.score{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:30px 0 0;padding:18px 20px;background:var(--card);border:1px solid var(--line);border-radius:12px}
-.score .stars{width:110px}
-.score b{font-stretch:112%;font-size:22px}
-.score a{margin-left:auto;font-weight:650;text-underline-offset:4px}
-@media (max-width:560px){.score a{margin-left:0}}
+/* pricing */
+.price{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.pc{padding:30px 24px 28px;border:3px solid var(--ink);position:relative;background:#fff;display:flex;flex-direction:column;gap:12px;transition:transform .2s,box-shadow .2s}
+.pc:hover{transform:translate(-4px,-4px);box-shadow:8px 8px 0 var(--red)}
+.pc .big{font:400 clamp(28px,2.8vw,40px)/.92 var(--disp);text-transform:uppercase;letter-spacing:-.02em}
+.pc .big span{color:var(--red)}
+.pc p{color:#4b4740;font-size:15px}
+.pc .lbl{font:700 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mute-d)}
+.pc.dk{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.pc.dk p{color:var(--mute)}
+.pc.dk .lbl{color:var(--mute)}
+.pc.dk .big span{color:var(--red-hi)}
+.pc svg{width:100%;height:46px}
+.callbar{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:22px 26px;background:var(--red);color:#fff}
+.callbar b{font:400 clamp(20px,2.4vw,30px)/1.05 var(--disp);text-transform:uppercase}
+.callbar .ctas .btn.ghost{box-shadow:inset 0 0 0 2px #fff}
+.callbar .ctas .btn.ghost:hover{background:#fff;color:var(--red)}
 
-.area{background:var(--ink);color:#fff}
-.area .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:40px;align-items:center}
-@media (max-width:860px){.area .wrap{grid-template-columns:1fr}}
-.area h2.t{color:#fff}
-.area .intro{color:rgba(255,255,255,.78);margin-bottom:0}
-.cta-box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:24px;display:grid;gap:12px}
-.cta-box p{margin:0;color:rgba(255,255,255,.78);font-size:15px}
-.cta-box .btn{width:100%}
-.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5)}
-.btn.ghost:hover{box-shadow:inset 0 0 0 1.5px #fff}
+/* why */
+.why{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2px;background:var(--line);border:2px solid var(--line)}
+.why div{background:var(--ink);padding:30px 24px;min-height:220px;display:flex;flex-direction:column}
+.why b{font:400 clamp(30px,3vw,44px)/.9 var(--disp);text-transform:uppercase;color:var(--paper)}
+.why b i{font-style:normal;color:var(--red-hi)}
+.why p{margin-top:auto;padding-top:22px;color:var(--mute);font-size:15px}
+.steps{margin-top:56px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:st}
+.steps li{list-style:none;position:relative;padding:26px 22px 0 0}
+.steps li::before{counter-increment:st;content:"0" counter(st);font:400 64px/1 var(--disp);color:transparent;-webkit-text-stroke:2px var(--red-hi);display:block;margin-bottom:12px}
+.steps li::after{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red-hi) 40%,var(--line) 40%)}
+.steps h3{font:400 19px/1.1 var(--disp);text-transform:uppercase;margin-bottom:8px}
+.steps p{color:var(--mute);font-size:15px;max-width:30ch}
+.steps{padding:0}
 
-footer{padding:34px 0 110px;font-size:14.5px;color:var(--ink-soft)}
-footer .wrap{display:flex;flex-wrap:wrap;gap:10px 32px;justify-content:space-between}
-footer b{color:var(--ink)}
+/* reviews */
+.rev{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;border:3px solid var(--ink);background:#fff}
+.rev-big{padding:clamp(28px,4vw,56px);border-right:3px solid var(--ink);position:relative;overflow:hidden}
+.rev-big .score{font:400 clamp(110px,16vw,220px)/.8 var(--disp);letter-spacing:-.05em;display:flex;align-items:flex-start}
+.rev-big .score sup{font-size:.28em;color:var(--red);margin:.12em 0 0 .08em}
+.rev-big .stars{margin:22px 0 14px}
+.rev-big .stars svg{width:clamp(30px,3.6vw,44px);height:clamp(30px,3.6vw,44px)}
+.rev-big p{font:700 19px/1.3 var(--body)}
+.rev-side{padding:clamp(28px,4vw,56px);display:flex;flex-direction:column;justify-content:center;gap:18px;background:repeating-linear-gradient(-45deg,#fff 0 18px,#f7f4ee 18px 36px)}
+.rev-side h3{font:400 clamp(26px,3vw,40px)/1 var(--disp);text-transform:uppercase}
+.rev-side p{color:#4b4740;font-size:16px;max-width:42ch}
+.gbadge{display:inline-flex;align-items:center;gap:10px;font:700 14px var(--body);color:var(--mute-d)}
+.gbadge svg{width:22px;height:22px}
 
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:var(--ink);box-shadow:0 -8px 24px rgba(0,0,0,.18)}
-.bar .btn{flex:1;padding:15px 10px}
-@media (max-width:700px){.bar{display:flex}footer{padding-bottom:120px}}
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px}
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.areas span{font:700 15px/1 var(--body);padding:12px 14px;border:1px solid var(--line);background:var(--ink2);transition:background .2s,border-color .2s}
+.areas span:hover{border-color:var(--red-hi)}
+.areas span.hq{background:var(--red);border-color:var(--red)}
+.cbox{background:var(--ink2);border:1px solid var(--line);padding:28px}
+.cbox h3,.ca h3{font:400 24px/1 var(--disp);text-transform:uppercase;margin-bottom:18px}
+.hours{width:100%;border-collapse:collapse;font-size:16px;margin-bottom:24px}
+.hours td{padding:11px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-family:var(--mono);font-size:14px}
+.hours tr.now td{color:var(--red-hi);font-weight:700}
+.clist{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.clist a{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:700;font-size:17px;overflow-wrap:anywhere}
+.clist a:hover{color:var(--red-hi)}
+.clist svg{width:22px;height:22px;flex-shrink:0;color:var(--red-hi)}
+.ca p.big{font:400 clamp(30px,4vw,54px)/.95 var(--disp);text-transform:uppercase;letter-spacing:-.02em}
+.ca p.big .r{color:var(--red-hi)}
+.map-art{margin-top:26px;border:2px solid var(--line)}
+.map-art svg{width:100%;height:auto}
+
+/* footer */
+footer{background:#000;color:var(--mute);padding:56px 0 110px;border-top:4px solid var(--red)}
+.ft{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));gap:32px}
+.ft h4{color:var(--paper);font:700 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;margin:0 0 12px}
+.ft a{display:block;text-decoration:none;padding:3px 0;font-size:15px}
+.ft a:hover{color:var(--paper)}
+.ft .big{font:400 clamp(40px,6vw,88px)/.85 var(--disp);color:var(--paper);letter-spacing:-.03em;margin-top:6px}
+.ft .big i{font-style:normal;color:var(--red)}
+.legal{margin-top:42px;padding-top:18px;border-top:1px solid #222;font-size:13px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+/* mobile bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;grid-template-columns:1fr 1fr;background:var(--ink);border-top:2px solid var(--red);padding:8px;gap:8px;padding-bottom:max(8px,env(safe-area-inset-bottom))}
+.mbar a{display:flex;align-items:center;justify-content:center;gap:8px;font:800 15px var(--body);text-decoration:none;padding:14px 8px}
+.mbar a svg{width:18px;height:18px}
+.mbar .c{background:var(--paper);color:var(--ink)}
+.mbar .q{background:var(--red);color:#fff}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+
+@media (max-width:1080px){
+  .nav{display:none}
+  .price{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .why{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 0}
+}
+@media (max-width:900px){
+  .hero-body{grid-template-columns:minmax(0,1fr);padding-bottom:64px}
+  .qcard{margin-top:0}
+  .towers,.contact,.rev{grid-template-columns:minmax(0,1fr)}
+  .rev-big{border-right:0;border-bottom:3px solid var(--ink)}
+  .sh{grid-template-columns:minmax(0,1fr)}
+  .svc{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .spec{grid-template-columns:minmax(0,1fr)}
+  .spec-h{border-right:0;border-bottom:3px solid var(--red)}
+  .ft{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .ft>div:first-child{grid-column:1/-1}
+}
+@media (max-width:640px){
+  .wrap{width:calc(100% - 32px)}
+  .hdr .wrap{height:60px;gap:10px}
+  .logo-txt b{font-size:18px}
+  .logo-mark{width:38px;height:32px}
+  .hdr-cta .btn.ghost{display:none}
+  .hdr-cta .btn{padding:10px 14px;font-size:13.5px}
+  .split{height:380px}
+  .toggle{top:12px}
+  .toggle button{padding:10px 14px;font-size:14px}
+  .pane .word{top:66px}
+  .pane .tag{display:none}
+  .hero[data-mode="move"] .pane.move,.hero[data-mode="clear"] .pane.clear{flex-grow:2.3}
+  .pane .art{height:70%}
+  .hero-body{padding-top:30px}
+  .rate b{font-size:28px}
+  .ctas .btn{flex:1 1 100%}
+  .qhead{padding:26px 18px 0}
+  .qsub{padding:6px 18px 0}
+  #quote-form{padding:16px 18px 22px}
+  .choices.c5{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .svc{grid-template-columns:minmax(0,1fr)}
+  .svc article{padding:24px 20px 26px}
+  .price,.why{grid-template-columns:minmax(0,1fr)}
+  .why div{min-height:0}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .spec ul{grid-template-columns:minmax(0,1fr);padding:14px}
+  .callbar{padding:20px}
+  .callbar .ctas{width:100%}
+  .mbar{display:grid}
+  .ft{grid-template-columns:minmax(0,1fr)}
+  .cbox{padding:22px 18px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rv{opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 <div class="concept" role="note"><b>Concept preview</b> made by Rawcoderz for True Alpha Moving &amp; Junk. This is not True Alpha Moving &amp; Junk's official website. Questions or removal: mukesh.kumar@rawcoderz.com</div>
 
-<header class="top"><div class="wrap">
-  <a class="mark" href="#top">True Alpha Moving &amp; Junk<small>Tampa, FL movers</small></a>
-  <nav class="nav" aria-label="Sections"><a href="#services">Services</a><a href="#how">How quotes work</a><a href="#reviews">Reviews</a><a href="#area">Service area</a></nav>
-  <a class="btn call" href="tel:+18139663500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 3.5h3.5l1.8 4.6-2.3 1.4a11 11 0 0 0 6.5 6.5l1.4-2.3 4.6 1.8V19a1.8 1.8 0 0 1-1.9 1.8A16.5 16.5 0 0 1 3.2 5.4 1.8 1.8 0 0 1 5 3.5z"/></svg><span>(813) 966-3500</span></a>
-</div></header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 1.8l3.1 6.6 7.1.8-5.3 4.9 1.5 7.1L12 17.6l-6.4 3.6 1.5-7.1L1.8 9.2l7.1-.8z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 2.5l3 .4 1.3 4.6-2.2 1.6a12 12 0 006.2 6.2l1.6-2.2 4.6 1.3.4 3c.1.9-.6 1.8-1.6 1.8C10.6 19.2 4.8 13.4 4.8 4.1c0-1 .9-1.7 1.8-1.6z"/></symbol>
+    <symbol id="i-sms" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" d="M3.5 5h17v11h-9l-5 4v-4h-3z"/><path stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M8 10.5h.01M12 10.5h.01M16 10.5h.01"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 1.5L4 14h6.5l-1.5 8.5L19.5 9.5H13z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" d="M3 5.5h18v13H3z"/><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" d="M3.5 6l8.5 7 8.5-7"/></symbol>
+  </defs>
+</svg>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="True Alpha Moving &amp; Junk, home">
+      <svg class="logo-mark" viewBox="0 0 46 38" aria-hidden="true">
+        <path d="M0 38L17 0h12L46 38H35L23 10 11 38z" fill="#d3141b"/>
+        <path d="M15 27h16l-3.5 -7h-9z" fill="#f3efe7"/>
+        <path d="M23 10l4.6 10.3" stroke="#0c0c0d" stroke-width="0"/>
+      </svg>
+      <span class="logo-txt"><b>TRUE <i>ALPHA</i></b><span>MOVING &amp; JUNK</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#towers">High-rises</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hdr-cta">
+      <a class="btn ghost sm" href="sms:+18139663500"><svg aria-hidden="true"><use href="#i-sms"/></svg>Text</a>
+      <a class="btn sm" href="tel:+18139663500"><svg aria-hidden="true"><use href="#i-phone"/></svg><span>(813) 966-3500</span></a>
+    </div>
+  </div>
+</header>
 
 <main id="top">
-<div class="hero">
-  <div class="wrap">
-    <div class="copy">
-      <p class="place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Movers in Tampa, FL</p>
-      <h1>Family-owned moving and junk removal across Tampa Bay</h1>
-      <p class="lede">Tell us what's going on and get a quote, or call <a href="tel:+18139663500">(813) 966-3500</a>.</p>
+<section class="hero" data-mode="move" aria-label="Moving and junk removal">
+  <div class="split">
+    <div class="toggle" role="group" aria-label="Show service">
+      <button type="button" data-mode-btn="move" aria-pressed="true">MOVE</button>
+      <span class="bar" aria-hidden="true"></span>
+      <button type="button" data-mode-btn="clear" aria-pressed="false">CLEAR</button>
     </div>
 
-    <form class="quote" id="quote" novalidate aria-labelledby="q-h">
-      <div class="q-head"><h2 id="q-h">Get a free quote</h2><span class="q-step" id="q-step" aria-live="polite">Step 1 of 3</span></div>
-      <div class="q-bar" aria-hidden="true"><i id="q-bar"></i></div>
-      <div class="q-body">
+    <!-- MOVE pane -->
+    <div class="pane move" data-mode-btn="move" aria-hidden="true">
+      <div class="word">MOVE<em>.</em></div>
+      <div class="tag">Homes · Condos · Offices</div>
+      <svg class="art" viewBox="0 0 620 380" preserveAspectRatio="xMidYMax meet">
+        <defs>
+          <linearGradient id="mvsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b1b1e" stop-opacity="0"/><stop offset="1" stop-color="#26262a"/></linearGradient>
+          <pattern id="win" width="10" height="12" patternUnits="userSpaceOnUse"><rect x="2" y="2" width="5" height="6" fill="#3a3a40"/></pattern>
+        </defs>
+        <circle cx="470" cy="200" r="92" fill="#d3141b" opacity=".9"/>
+        <g opacity=".9">
+          <rect x="300" y="110" width="44" height="200" fill="#1d1d21"/><rect x="300" y="110" width="44" height="200" fill="url(#win)"/>
+          <rect x="350" y="70" width="38" height="240" fill="#202024"/><rect x="350" y="70" width="38" height="240" fill="url(#win)"/>
+          <path d="M350 70l19-22 19 22z" fill="#202024"/>
+          <rect x="396" y="150" width="56" height="160" fill="#1a1a1d"/><rect x="396" y="150" width="56" height="160" fill="url(#win)"/>
+          <rect x="520" y="120" width="40" height="190" fill="#1d1d21"/><rect x="520" y="120" width="40" height="190" fill="url(#win)"/>
+          <rect x="566" y="170" width="54" height="140" fill="#18181b"/>
+          <rect x="250" y="190" width="44" height="120" fill="#18181b"/>
+        </g>
+        <rect x="0" y="230" width="620" height="80" fill="url(#mvsky)"/>
+        <rect x="0" y="312" width="620" height="68" fill="#141416"/>
+        <line x1="0" y1="350" x2="620" y2="350" stroke="#f3efe7" stroke-width="4" class="road-dash" opacity=".5"/>
+        <!-- crew -->
+        <g class="bob">
+          <!-- crew 1 -->
+          <circle cx="58" cy="206" r="11" fill="#e9c9a8"/>
+          <path d="M47 200c2-9 20-9 22 0z" fill="#d3141b"/>
+          <path d="M46 218h24l3 46H43z" fill="#d3141b"/>
+          <path d="M47 264l-6 46h11l7-34 7 34h11l-6-46z" fill="#2b2b30"/>
+          <path d="M66 228l30 6" stroke="#e9c9a8" stroke-width="7" stroke-linecap="round"/>
+          <!-- crew 2 -->
+          <circle cx="168" cy="206" r="11" fill="#b98b62"/>
+          <path d="M157 200c2-9 20-9 22 0z" fill="#d3141b"/>
+          <path d="M156 218h24l3 46h-30z" fill="#f3efe7"/>
+          <text x="168" y="246" font-family="Archivo Black" font-size="10" text-anchor="middle" fill="#d3141b">TA</text>
+          <path d="M157 264l-6 46h11l7-34 7 34h11l-6-46z" fill="#2b2b30"/>
+          <path d="M158 228l-30 6" stroke="#b98b62" stroke-width="7" stroke-linecap="round"/>
+          <!-- sofa carried -->
+          <g transform="translate(0 0)">
+            <rect x="86" y="214" width="52" height="34" fill="#c9a77e"/>
+            <rect x="80" y="230" width="64" height="18" rx="3" fill="#b38f64"/>
+            <rect x="80" y="222" width="10" height="26" rx="3" fill="#a07d54"/>
+            <rect x="134" y="222" width="10" height="26" rx="3" fill="#a07d54"/>
+          </g>
+        </g>
+        <!-- truck -->
+        <g class="truck-shake">
+          <rect x="216" y="152" width="262" height="146" fill="#f3efe7"/>
+          <path d="M216 152h262v10H216z" fill="#d9d3c6"/>
+          <path d="M216 260L330 152h44L260 298h-44z" fill="#d3141b"/>
+          <text x="292" y="230" font-family="Archivo Black,Arial Black" font-size="34" fill="#0c0c0d" letter-spacing="-1">TRUE</text>
+          <text x="292" y="262" font-family="Archivo Black,Arial Black" font-size="34" fill="#d3141b" letter-spacing="-1">ALPHA</text>
+          <text x="294" y="280" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#0c0c0d" letter-spacing="2">MOVING &amp; JUNK</text>
+          <path d="M478 192h66l34 46v60H478z" fill="#d3141b"/>
+          <path d="M490 202h48l24 34h-72z" fill="#1d2a33"/>
+          <path d="M494 206h18l-4 26h-14z" fill="#3a5160" opacity=".7"/>
+          <rect x="574" y="262" width="10" height="16" fill="#ffd166"/>
+          <rect x="478" y="286" width="110" height="14" fill="#0c0c0d"/>
+          <rect x="206" y="286" width="20" height="14" fill="#0c0c0d"/>
+          <circle class="puff" cx="200" cy="292" r="8" fill="#555"/>
+          <g class="wheel"><circle cx="268" cy="306" r="26" fill="#0c0c0d"/><circle cx="268" cy="306" r="12" fill="#8a8a90"/><path d="M268 294v24M256 306h24" stroke="#0c0c0d" stroke-width="4"/></g>
+          <g class="wheel"><circle cx="530" cy="306" r="26" fill="#0c0c0d"/><circle cx="530" cy="306" r="12" fill="#8a8a90"/><path d="M530 294v24M518 306h24" stroke="#0c0c0d" stroke-width="4"/></g>
+        </g>
+      </svg>
+    </div>
+
+    <!-- CLEAR pane -->
+    <div class="pane clear" data-mode-btn="clear" aria-hidden="true">
+      <div class="word">CLEAR<em>.</em></div>
+      <div class="tag">Junk · Cleanouts · Debris</div>
+      <svg class="art" viewBox="0 0 620 380" preserveAspectRatio="xMidYMax meet">
+        <rect x="0" y="312" width="620" height="68" fill="#8f0b10"/>
+        <line x1="0" y1="350" x2="620" y2="350" stroke="#0c0c0d" stroke-width="4" class="road-dash" opacity=".5"/>
+        <!-- volume gauge -->
+        <g font-family="Space Mono,monospace" font-size="11" font-weight="700" fill="#0c0c0d">
+          <path d="M556 300V120" stroke="#0c0c0d" stroke-width="3"/>
+          <path d="M548 300h16M548 255h16M548 210h16M548 165h16M548 120h16" stroke="#0c0c0d" stroke-width="3"/>
+          <text x="570" y="259">¼</text><text x="570" y="214">½</text><text x="570" y="169">¾</text><text x="570" y="124">FULL</text>
+          <path d="M540 172l-10-6v12z" fill="#f3efe7"/>
+        </g>
+        <!-- haul truck bed + pile -->
+        <g class="truck-shake">
+          <!-- pile -->
+          <g class="bob2">
+            <rect x="196" y="146" width="150" height="34" rx="6" fill="#f3efe7" transform="rotate(-14 270 163)"/>
+            <path d="M210 158l130-30" stroke="#d6cfc1" stroke-width="3" stroke-dasharray="8 8"/>
+            <rect x="360" y="138" width="56" height="50" fill="#c9a77e" transform="rotate(10 388 163)"/>
+            <path d="M366 150l50 9" stroke="#a07d54" stroke-width="4"/>
+            <circle cx="452" cy="170" r="26" fill="#0c0c0d"/><circle cx="452" cy="170" r="11" fill="#d3141b"/>
+            <path d="M300 120l-26-48M286 96l-22-6M290 104l14-20M276 80l-6-14" stroke="#3a2a1a" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="264" cy="90" r="9" fill="#2e4a2b"/><circle cx="304" cy="84" r="8" fill="#2e4a2b"/><circle cx="272" cy="66" r="7" fill="#2e4a2b"/>
+            <path d="M420 120l18-58" stroke="#0c0c0d" stroke-width="4"/>
+            <path d="M424 66l28 0-6-22h-16z" fill="#f3efe7"/>
+            <rect x="330" y="168" width="38" height="30" fill="#f3efe7" transform="rotate(-6 349 183)"/>
+            <path d="M349 168v30" stroke="#d3141b" stroke-width="4" transform="rotate(-6 349 183)"/>
+          </g>
+          <!-- dump bed -->
+          <path d="M180 186h326l-10 112H190z" fill="#0c0c0d"/>
+          <path d="M180 186h326v10H180z" fill="#2a2a2e"/>
+          <path d="M206 210h270M206 240h270M206 270h270" stroke="#232326" stroke-width="3"/>
+          <text x="340" y="262" text-anchor="middle" font-family="Archivo Black,Arial Black" font-size="30" fill="#f3efe7">JUNK</text>
+          <text x="340" y="282" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#ff4d42" letter-spacing="3">PRICED BY VOLUME</text>
+          <!-- cab facing left -->
+          <path d="M180 206h-70l-34 40v52h104z" fill="#f3efe7"/>
+          <path d="M168 216h-52l-26 30h78z" fill="#1d2a33"/>
+          <rect x="72" y="262" width="10" height="16" fill="#ffd166"/>
+          <rect x="70" y="286" width="440" height="14" fill="#0c0c0d"/>
+          <g class="wheel"><circle cx="130" cy="306" r="26" fill="#0c0c0d"/><circle cx="130" cy="306" r="12" fill="#f3efe7"/><path d="M130 294v24M118 306h24" stroke="#0c0c0d" stroke-width="4"/></g>
+          <g class="wheel"><circle cx="410" cy="306" r="26" fill="#0c0c0d"/><circle cx="410" cy="306" r="12" fill="#f3efe7"/><path d="M410 294v24M398 306h24" stroke="#0c0c0d" stroke-width="4"/></g>
+          <g class="wheel"><circle cx="464" cy="306" r="26" fill="#0c0c0d"/><circle cx="464" cy="306" r="12" fill="#f3efe7"/><path d="M464 294v24M452 306h24" stroke="#0c0c0d" stroke-width="4"/></g>
+        </g>
+        <!-- old mattress & chair on curb -->
+        <g opacity=".95">
+          <path d="M18 312l10-52h34l6 52" fill="none" stroke="#0c0c0d" stroke-width="5"/>
+          <rect x="14" y="250" width="56" height="12" fill="#0c0c0d"/>
+          <path d="M22 250v-40h40v40" fill="none" stroke="#0c0c0d" stroke-width="5"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="wrap hero-body">
+    <div class="hero-copy">
+      <span class="kicker">Tampa Bay · Family-owned</span>
+      <h1>Family-owned moving <span class="r">&amp;</span> junk removal across Tampa Bay</h1>
+      <div class="modecopy" aria-live="polite">
+        <div data-show="move">
+          <p class="lead">Houses, apartments, condos and offices: packed, loaded and moved by a crew you book straight with the owners. Hourly rates, free estimates, and no hidden fees.</p>
+          <ul><li>Same-day when a crew is free</li><li>Downtown high-rises</li><li>Packing, loading &amp; unloading</li></ul>
+        </div>
+        <div data-show="clear" hidden>
+          <p class="lead">Junk removal priced by how much space your stuff takes in the truck. Garages, sheds, whole houses: estate and eviction cleanouts, storm debris and light demolition, hauled off.</p>
+          <ul><li>Volume-based pricing</li><li>Estate &amp; eviction cleanouts</li><li>Storm debris</li></ul>
+        </div>
+      </div>
+      <a class="rate" href="https://www.google.com/maps/search/?api=1&amp;query=True%20Alpha%20Moving%20%26%20Junk&amp;query_place_id=ChIJv5x-2ugIMCERR_bDzXzZPbs" target="_blank" rel="noopener">
+        <b>5.0</b>
+        <span><span class="stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><small>from 82 Google reviews · Read reviews</small></span>
+      </a>
+      <div class="ctas">
+        <a class="btn" href="#quote"><svg aria-hidden="true"><use href="#i-bolt"/></svg>Get a quote in 30 seconds</a>
+        <a class="btn ghost" href="tel:+18139663500"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call or text (813) 966-3500</a>
+      </div>
+    </div>
+
+    <div class="qcard" id="quote">
+      <div class="qhead">
+        <h2>Your quote<br><span>in 30 seconds</span></h2>
+        <svg class="t30" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="30" r="22" fill="none" stroke="#0c0c0d" stroke-width="4"/><path d="M28 30V14A16 16 0 0 1 42.5 23.2z" fill="#d3141b"/><rect x="23" y="2" width="10" height="5" fill="#0c0c0d"/><text x="28" y="44" text-anchor="middle" font-family="Archivo Black" font-size="11" fill="#0c0c0d">30s</text></svg>
+      </div>
+      <p class="qsub">Three quick taps. Free estimate, no hidden fees.</p>
+      <form id="quote-form" novalidate>
+        <div class="prog" aria-live="polite"><span class="mono" id="q-step">Step 1 of 3</span><span class="track"><i id="q-bar"></i></span></div>
 
         <div data-step="1">
           <fieldset>
-            <legend class="q-title" tabindex="-1">What do you need?</legend>
+            <legend>What do you need?</legend>
             <div class="choices">
               <label class="choice"><input type="radio" name="need" value="Local move"><span>Local move</span></label>
               <label class="choice"><input type="radio" name="need" value="Long-distance move"><span>Long-distance move</span></label>
               <label class="choice"><input type="radio" name="need" value="Packing help"><span>Packing help</span></label>
               <label class="choice"><input type="radio" name="need" value="Office move"><span>Office move</span></label>
-              <label class="choice wide"><input type="radio" name="need" value="Something else"><span>Something else</span></label>
+              <label class="choice wide"><input type="radio" name="need" value="Junk removal"><span>Junk removal</span></label>
             </div>
-            <p class="err" id="e-need" role="alert"></p>
+            <p class="err" id="e1" role="alert"></p>
           </fieldset>
-          <div class="q-actions"><button class="btn go" type="button" data-next="2">Next</button></div>
+          <div class="qnav"><button class="btn" type="button" data-next="2">Next</button></div>
         </div>
 
         <div data-step="2" hidden>
-          <div class="field">
-            <label class="f q-title" for="q-zip" tabindex="-1">Moving from ZIP code</label>
-            <input id="q-zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="33602" aria-describedby="e-zip">
-            <p class="err" id="e-zip" role="alert"></p>
+          <div class="fld">
+            <label for="q-zip">Moving from ZIP code</label>
+            <input id="q-zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="e.g. 33602">
+            <p class="err" id="e2" role="alert"></p>
           </div>
           <fieldset>
             <legend>Home size</legend>
-            <div class="choices five">
-              <label class="choice"><input type="radio" name="roof" value="Studio or 1 BR" checked><span>Studio or 1 BR</span></label>
-              <label class="choice"><input type="radio" name="roof" value="2 BR"><span>2 BR</span></label>
-              <label class="choice"><input type="radio" name="roof" value="3 BR"><span>3 BR</span></label>
-              <label class="choice"><input type="radio" name="roof" value="4+ BR"><span>4+ BR</span></label>
-              <label class="choice"><input type="radio" name="roof" value="Not sure"><span>Not sure</span></label>
+            <div class="choices c5">
+              <label class="choice"><input type="radio" name="size" value="Studio or 1 BR"><span>Studio / 1 BR</span></label>
+              <label class="choice"><input type="radio" name="size" value="2 BR" checked><span>2 BR</span></label>
+              <label class="choice"><input type="radio" name="size" value="3 BR"><span>3 BR</span></label>
+              <label class="choice"><input type="radio" name="size" value="4+ BR"><span>4+ BR</span></label>
+              <label class="choice"><input type="radio" name="size" value="Not sure"><span>Not sure</span></label>
             </div>
           </fieldset>
           <fieldset>
             <legend>Moving in the next 2 weeks?</legend>
-            <div class="choices two">
-              <label class="choice"><input type="radio" name="leak" value="Yes"><span>Yes</span></label>
-              <label class="choice"><input type="radio" name="leak" value="No" checked><span>No</span></label>
+            <div class="choices c2">
+              <label class="choice"><input type="radio" name="soon" value="Yes"><span>Yes</span></label>
+              <label class="choice"><input type="radio" name="soon" value="No" checked><span>No</span></label>
             </div>
           </fieldset>
-          <div class="q-actions"><button class="btn back" type="button" data-back="1">Back</button><button class="btn go" type="button" data-next="3">Next</button></div>
+          <div class="qnav"><button class="btn back" type="button" data-back="1">Back</button><button class="btn" type="button" data-next="3">Next</button></div>
         </div>
 
         <div data-step="3" hidden>
-          <div class="field">
-            <label class="f q-title" for="q-name" tabindex="-1">Your name</label>
-            <input id="q-name" name="name" autocomplete="name" aria-describedby="e-name">
-            <p class="err" id="e-name" role="alert"></p>
+          <div class="fld">
+            <label for="q-name">Your name</label>
+            <input id="q-name" name="name" autocomplete="name" placeholder="First and last">
+            <p class="err" id="e3n" role="alert"></p>
           </div>
-          <div class="field">
-            <label class="f" for="q-phone">Mobile number</label>
-            <input id="q-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(813) 555-0100" aria-describedby="e-phone">
-            <p class="err" id="e-phone" role="alert"></p>
+          <div class="fld">
+            <label for="q-phone">Mobile number</label>
+            <input id="q-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(813) 555-0100">
+            <p class="err" id="e3p" role="alert"></p>
           </div>
           <fieldset>
-            <legend>Best time to call</legend>
-            <div class="choices five" style="grid-template-columns:repeat(3,minmax(0,1fr))">
-              <label class="choice"><input type="radio" name="when" value="Morning" checked><span>Morning</span></label>
-              <label class="choice"><input type="radio" name="when" value="Afternoon"><span>Afternoon</span></label>
-              <label class="choice"><input type="radio" name="when" value="Evening"><span>Evening</span></label>
+            <legend>Best time to reach you</legend>
+            <div class="choices c3">
+              <label class="choice"><input type="radio" name="time" value="Morning" checked><span>Morning</span></label>
+              <label class="choice"><input type="radio" name="time" value="Afternoon"><span>Afternoon</span></label>
+              <label class="choice"><input type="radio" name="time" value="Evening"><span>Evening</span></label>
             </div>
           </fieldset>
-          <div class="q-actions"><button class="btn back" type="button" data-back="2">Back</button><button class="btn go" type="submit">Get my quote</button></div>
+          <div class="qnav"><button class="btn back" type="button" data-back="2">Back</button><button class="btn" type="submit">Get my quote</button></div>
           <p class="fine">This is a preview, so nothing is sent.</p>
         </div>
 
-        <div data-step="4" class="done" hidden>
-          <div class="done-head"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><h3 tabindex="-1" id="q-done">Request sent</h3></div>
-          <p>On the live site, True Alpha Moving &amp; Junk would get this text within seconds:</p>
-          <div class="sms"><p class="from">New quote request</p><div class="bubble" id="q-sms"></div></div>
-          <div class="q-actions"><button class="btn back" type="button" id="q-reset">Start a new request</button></div>
+        <div data-step="4" id="q-done" hidden>
+          <h3><svg viewBox="0 0 30 30" aria-hidden="true"><path d="M4 0h26l-4 30H0z" fill="#d3141b"/><path d="M8 15l5 5 10-10" fill="none" stroke="#fff" stroke-width="3.5"/></svg>Request sent</h3>
+          <div class="phone" aria-label="Text message preview">
+            <div class="phone-top"><span>Messages</span><b>New quote request</b><span>now</span></div>
+            <div class="sms" id="q-sms"></div>
+            <div class="sms-meta">Delivered</div>
+          </div>
+          <p class="done-note">On the live site, True Alpha Moving &amp; Junk would get this text within seconds.</p>
+          <div class="qnav"><button class="btn blk" type="button" id="q-reset">Start a new request</button></div>
         </div>
+      </form>
+    </div>
+  </div>
+</section>
 
+<div class="ticker" aria-hidden="true"><div class="ticker-in">
+  <span>Call or text (813) 966-3500</span><span>Same-day when a crew is free</span><span>Free estimates</span><span>No hidden fees</span><span>Moving + junk removal</span><span>Family-owned</span>
+  <span>Call or text (813) 966-3500</span><span>Same-day when a crew is free</span><span>Free estimates</span><span>No hidden fees</span><span>Moving + junk removal</span><span>Family-owned</span>
+</div></div>
+
+<section class="sec paper cut-top" id="services">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="num">01 / SERVICES</span><h2>One crew.<br>Two jobs. <span class="r">Done.</span></h2></div>
+      <p>Moving out and clearing out usually happen in the same week. True Alpha handles both, so you make one call instead of three.</p>
+    </div>
+    <div class="svc rv">
+      <article>
+        <span class="ix">01</span>
+        <svg class="ic" viewBox="0 0 58 58" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round" aria-hidden="true"><path d="M6 27L27 9l21 18"/><path d="M11 23v26h32V23"/><path d="M22 49V35h10v14"/><path d="M40 12h8v8" stroke-linecap="round"/><path d="M48 12l-9 9" stroke-linecap="round"/></svg>
+        <h3>Local residential moving</h3>
+        <p>House to house anywhere around Tampa Bay, billed at an hourly rate.</p>
+      </article>
+      <article>
+        <span class="ix">02</span>
+        <svg class="ic" viewBox="0 0 58 58" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round" aria-hidden="true"><path d="M14 52V6h22v46"/><path d="M36 20h10v32"/><path d="M8 52h44"/><path d="M20 13h4M28 13h2M20 21h4M28 21h2M20 29h4M28 29h2M20 37h4M28 37h2" stroke-linecap="round"/><path d="M22 52v-8h6v8"/></svg>
+        <h3>Apartment &amp; condo moves</h3>
+        <p>Elevators, stairwells and high-rise buildings from Channelside to Harbour Island.</p>
+      </article>
+      <article>
+        <span class="ix">03</span>
+        <svg class="ic" viewBox="0 0 58 58" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="18" width="46" height="30"/><path d="M21 18v-7h16v7"/><path d="M6 30h46"/><path d="M25 27h8v7h-8z"/></svg>
+        <h3>Office &amp; commercial relocations</h3>
+        <p>Desks, files and equipment moved so your business is back to work sooner.</p>
+      </article>
+      <article>
+        <span class="ix">04</span>
+        <svg class="ic" viewBox="0 0 58 58" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round" aria-hidden="true"><path d="M8 20l21-10 21 10v24L29 54 8 44z"/><path d="M8 20l21 10 21-10M29 30v24"/><path d="M18 15l21 10v8" stroke-linecap="round"/></svg>
+        <h3>Packing services</h3>
+        <p>Room-by-room packing help, so moving day starts with boxes ready to go.</p>
+      </article>
+      <article>
+        <span class="ix">05</span>
+        <svg class="ic" viewBox="0 0 58 58" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round" aria-hidden="true"><path d="M14 6l6 40h28" stroke-linecap="round"/><circle cx="22" cy="50" r="4"/><circle cx="44" cy="50" r="4"/><rect x="24" y="28" width="18" height="16"/><rect x="26" y="12" width="14" height="16"/></svg>
+        <h3>Loading &amp; unloading</h3>
+        <p>Rented your own truck or pod? Book the muscle, including labor-only help for U-Haul.</p>
+      </article>
+      <article class="junk">
+        <span class="ix">06</span>
+        <svg class="ic" viewBox="0 0 58 58" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h36l-4 24H8z"/><path d="M40 28h8l6 8v10H36"/><circle cx="14" cy="48" r="4"/><circle cx="46" cy="48" r="4"/><path d="M12 22l4-10 8 4 6-8 6 14" stroke-linecap="round"/></svg>
+        <h3>Junk removal</h3>
+        <p>Furniture, appliances and clutter hauled away, priced by the volume it fills.</p>
+      </article>
+    </div>
+
+    <div class="spec rv">
+      <div class="spec-h">
+        <span class="num">SPECIALTY</span>
+        <h3>The jobs other crews skip</h3>
+        <p>Heavier, messier, more urgent. This is where an owner-run team earns its name.</p>
       </div>
-    </form>
-
-    <ul class="proof"><li><b><span class="stars" role="img" aria-label="5.0 out of 5 stars"><svg viewBox="0 0 110 20" fill="rgba(255,255,255,.25)" aria-hidden="true"><path transform="translate(0.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(22.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(45.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(67.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(90.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/></svg><span class="fill" style="width:100.0%"><svg viewBox="0 0 110 20" fill="var(--accent)" aria-hidden="true"><path transform="translate(0.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(22.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(45.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(67.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(90.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/></svg></span></span>5.0</b>From 82 Google reviews. <a href="https://www.google.com/maps/search/?api=1&amp;query=True%20Alpha%20Moving%20%26%20Junk&amp;query_place_id=ChIJv5x-2ugIMCERR_bDzXzZPbs" target="_blank" rel="noopener">Read them</a></li><li><b>Same-day</b>Same-day and short-notice moves when a crew is free</li><li><b>Owners</b>You work directly with the owners, not a call center</li></ul>
+      <ul>
+        <li><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" aria-hidden="true"><path d="M4 16L17 5l13 11v14H4z"/><circle cx="17" cy="19" r="4"/><path d="M17 23v5"/></svg>Estate cleanouts</li>
+        <li><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" aria-hidden="true"><path d="M8 30V4h18v26"/><path d="M4 30h26"/><circle cx="21" cy="18" r="1.6" fill="currentColor"/><path d="M14 10l6 6M20 10l-6 6" stroke-linecap="round"/></svg>Eviction cleanouts</li>
+        <li><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" aria-hidden="true"><path d="M8 14a7 7 0 0113-4 6 6 0 016 9H8a5 5 0 010-10"/><path d="M17 20l-3 6h5l-3 6" stroke-linecap="round"/></svg>Storm debris</li>
+        <li><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" aria-hidden="true"><path d="M6 10l8-6 6 6-8 6z"/><path d="M15 13l14 15" stroke-linecap="round"/><path d="M4 30h12M8 26h6" stroke-linecap="round"/></svg>Light demolition</li>
+        <li><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="7" r="3.5"/><path d="M10 11v10l-4 9M10 21l4 9M10 14l8 2"/><rect x="18" y="12" width="12" height="10"/><path d="M16 30h16"/></svg>Labor-only for U-Haul</li>
+      </ul>
+    </div>
   </div>
-  <div class="roofs" aria-hidden="true">
-    <svg viewBox="0 0 1440 120" preserveAspectRatio="xMidYMax slice" fill="currentColor">
-      <path d="M0 120V84l64-34 64 34v-8l92-52 92 52v18l40-22 40 22V64l104-50 104 50v24l54-28 54 28V76l80-40 80 40v14l56-30 56 30V54l106-46 106 46v30l58-28 58 28V72l62-32 62 32H1440V120z"/><rect x="156" y="40" width="12" height="24"/><rect x="428" y="26" width="14" height="26"/><rect x="1138" y="18" width="14" height="22"/>
-    </svg>
+</section>
+
+<section class="sec ink" id="towers">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="num">02 / DOWNTOWN</span><h2>Built for Tampa's <span class="r">towers.</span></h2></div>
+      <p>Freight elevators, loading docks, long hallways and tight parking. True Alpha works the high-rises and close-in neighborhoods around downtown Tampa.</p>
+    </div>
+    <div class="towers">
+      <div class="sky rv">
+        <svg viewBox="0 0 800 440" role="img" aria-label="Illustrated Tampa skyline with five pinned spots: SkyHouse, Channelside, Hyde Park, Davis Islands and Harbour Island">
+          <defs>
+            <pattern id="w2" width="12" height="14" patternUnits="userSpaceOnUse"><rect x="3" y="3" width="6" height="7" fill="#2c2c32"/></pattern>
+            <pattern id="w3" width="12" height="14" patternUnits="userSpaceOnUse"><rect x="3" y="3" width="6" height="7" fill="#33333a"/><rect x="3" y="3" width="6" height="7" fill="#d3141b" opacity=".0"/></pattern>
+            <linearGradient id="wat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#18181c"/><stop offset="1" stop-color="#0c0c0d"/></linearGradient>
+          </defs>
+          <circle cx="640" cy="120" r="48" fill="#d3141b" opacity=".85"/>
+          <g fill="#17171a">
+            <rect x="20" y="250" width="60" height="110"/><rect x="88" y="220" width="50" height="140"/>
+            <rect x="690" y="240" width="60" height="120"/><rect x="740" y="270" width="50" height="90"/>
+          </g>
+          <!-- towers -->
+          <g>
+            <rect x="150" y="150" width="62" height="210" fill="#1e1e22"/><rect x="150" y="150" width="62" height="210" fill="url(#w2)"/>
+            <rect x="222" y="90" width="58" height="270" fill="#212126"/><rect x="222" y="90" width="58" height="270" fill="url(#w3)"/>
+            <path d="M222 90h58l-12-22h-34z" fill="#212126"/>
+            <!-- glass elevator shaft with rising box -->
+            <rect x="288" y="60" width="16" height="300" fill="#0f0f11" stroke="#d3141b" stroke-width="2"/>
+            <g class="lift"><rect x="290" y="330" width="12" height="12" fill="#c9a77e"/></g>
+            <rect x="312" y="40" width="70" height="320" fill="#1a1a1e"/><rect x="312" y="40" width="70" height="320" fill="url(#w2)"/>
+            <path d="M312 40l35-26 35 26z" fill="#1a1a1e"/><path d="M347 14v-14" stroke="#d3141b" stroke-width="3"/>
+            <circle class="blink" cx="347" cy="2" r="4" fill="#ff4d42"/>
+            <rect x="392" y="120" width="54" height="240" fill="#202024"/><rect x="392" y="120" width="54" height="240" fill="url(#w3)"/>
+            <path d="M392 120c0-30 54-30 54 0z" fill="#202024"/>
+            <rect x="456" y="180" width="70" height="180" fill="#1c1c20"/><rect x="456" y="180" width="70" height="180" fill="url(#w2)"/>
+            <rect x="536" y="140" width="46" height="220" fill="#222227"/><rect x="536" y="140" width="46" height="220" fill="url(#w3)"/>
+            <rect x="590" y="210" width="80" height="150" fill="#1b1b1f"/><rect x="590" y="210" width="80" height="150" fill="url(#w2)"/>
+          </g>
+          <!-- lit windows -->
+          <g fill="#ffd166" class="blink"><rect x="231" y="135" width="6" height="7"/><rect x="327" y="77" width="6" height="7"/><rect x="411" y="207" width="6" height="7"/><rect x="471" y="249" width="6" height="7"/><rect x="603" y="249" width="6" height="7"/></g>
+          <g fill="#ffd166" opacity=".8"><rect x="159" y="193" width="6" height="7"/><rect x="351" y="161" width="6" height="7"/><rect x="555" y="179" width="6" height="7"/><rect x="243" y="249" width="6" height="7"/></g>
+          <!-- palms -->
+          <g stroke="#0c0c0d" stroke-width="4" fill="none" stroke-linecap="round"><path d="M110 360c4-30 2-50-6-70"/><path d="M712 360c-4-30-2-50 6-66"/></g>
+          <g fill="#0c0c0d"><path d="M104 290c-20-4-30 6-36 14 12-8 24-8 36-14zm0 0c16-12 30-8 38 0-14-4-26-2-38 0zm0 0c-6-16 2-26 10-30-4 10-6 20-10 30zm0 0c-18 4-22 18-22 24 6-10 14-18 22-24z"/><path d="M718 294c-20-4-30 6-36 14 12-8 24-8 36-14zm0 0c16-12 30-8 38 0-14-4-26-2-38 0zm0 0c-6-16 2-26 10-30-4 10-6 20-10 30zm0 0c18 4 22 18 22 24-6-10-14-18-22-24z"/></g>
+          <!-- water -->
+          <rect x="0" y="360" width="800" height="80" fill="url(#wat)"/>
+          <path d="M0 360h800" stroke="#f3efe7" stroke-width="2" opacity=".35"/>
+          <g stroke="#3a3a40" stroke-width="3" stroke-linecap="round" class="road-dash"><path d="M40 384h720M80 404h640M140 424h520"/></g>
+          <!-- pins -->
+          <g font-family="Archivo Black,Arial Black" font-size="15" text-anchor="middle">
+            <g class="sp" data-sp="1"><path d="M347 -6" /><path d="M347 66l-14-18a18 18 0 1 1 28 0z" fill="#d3141b" transform="translate(0 -6)"/><text x="347" y="40" fill="#fff">1</text></g>
+            <g class="sp" data-sp="2"><path d="M490 166l-14-18a18 18 0 1 1 28 0z" fill="#d3141b"/><text x="490" y="146" fill="#fff">2</text></g>
+            <g class="sp" data-sp="3"><path d="M180 136l-14-18a18 18 0 1 1 28 0z" fill="#d3141b"/><text x="180" y="116" fill="#fff">3</text></g>
+            <g class="sp" data-sp="4"><path d="M250 418l-14-18a18 18 0 1 1 28 0z" fill="#f3efe7"/><text x="250" y="398" fill="#0c0c0d">4</text></g>
+            <g class="sp" data-sp="5"><path d="M620 196l-14-18a18 18 0 1 1 28 0z" fill="#d3141b"/><text x="620" y="176" fill="#fff">5</text></g>
+          </g>
+        </svg>
+      </div>
+      <div class="rv">
+        <ol class="spots">
+          <li data-sp="1"><span class="pin">1</span><span><b>SkyHouse</b><small>Downtown high-rise living</small></span></li>
+          <li data-sp="2"><span class="pin">2</span><span><b>Channelside</b><small>Condos by the channel</small></span></li>
+          <li data-sp="3"><span class="pin">3</span><span><b>Hyde Park</b><small>Historic homes &amp; apartments</small></span></li>
+          <li data-sp="4"><span class="pin">4</span><span><b>Davis Islands</b><small>Island homes &amp; condos</small></span></li>
+          <li data-sp="5"><span class="pin">5</span><span><b>Harbour Island</b><small>Waterfront towers</small></span></li>
+        </ol>
+        <p class="tw-note">Moving in or out of a building? <a href="sms:+18139663500">Text the details</a> and the owners will sort out the plan.</p>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<section id="services"><div class="wrap">
-  <h2 class="t">What True Alpha does</h2>
-  <p class="intro">The moves True Alpha handles, from a studio apartment to a whole house.</p>
-  <ul class="svc"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v10h-11z"/><path d="M13.5 10h4l3 3.5v3h-7z"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg><div><h3>Local residential moving</h3><p>Moves across town, priced by the hour or by the job.</p></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v10h-11z"/><path d="M13.5 10h4l3 3.5v3h-7z"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg><div><h3>Apartment &amp; condo moves</h3><p>Apartments and condos, including stairs and elevator buildings.</p></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20.5V5.5l8-2.5v17.5"/><path d="M12 9.5h8v11"/><path d="M2.5 20.5h19"/><path d="M7 8h2M7 11.5h2M7 15h2M15 13h2M15 16.5h2"/></svg><div><h3>Office &amp; commercial relocations</h3><p>Offices and businesses moved with as little downtime as possible.</p></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 7.5 12 3.5l8.5 4v9L12 20.5l-8.5-4z"/><path d="M3.5 7.5 12 11.5l8.5-4M12 11.5v9"/></svg><div><h3>Packing services</h3><p>Packing materials and careful packing, for a few rooms or the whole home.</p></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 5.5 18.5 10.5"/><path d="m11 8 5 5-8.5 8.5-5-5z"/><path d="M14.5 4.5l2-2 5 5-2 2"/></svg><div><h3>Loading &amp; unloading</h3><p>Loading and unloading help for your rental truck or container.</p></div></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18.5 12 5l9 13.5z"/><path d="M8 18.5 12 12l4 6.5"/></svg><div><h3>Junk removal</h3><p>Hauling away what you don&#x27;t want to move.</p></div></li></ul>
-</div></section>
-
-<section class="how" id="how"><div class="wrap">
-  <h2 class="t">How a quote works</h2>
-  <p class="intro">Three steps, and the first one takes about 30 seconds.</p>
-  <ol class="steps">
-    <li><h3>Tell us what's going on</h3><p>Pick the job, add your ZIP code and a number. It takes about 30 seconds.</p></li>
-    <li><h3>True Alpha calls you</h3><p>Your request arrives as a text, so you hear back to go over the details and pick a date.</p></li>
-    <li><h3>You get a price</h3><p>You get a price for the move, and you decide.</p></li>
-  </ol>
-</div></section>
-
-<section id="reviews"><div class="wrap"><h2 class="t">What customers say</h2><p class="intro">The live site would show a few of these reviews right here.</p><div class="score"><span class="stars" role="img" aria-label="5.0 out of 5 stars"><svg viewBox="0 0 110 20" fill="#D6DDDD" aria-hidden="true"><path transform="translate(0.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(22.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(45.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(67.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(90.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/></svg><span class="fill" style="width:100.0%"><svg viewBox="0 0 110 20" fill="var(--accent)" aria-hidden="true"><path transform="translate(0.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(22.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(45.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(67.5 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/><path transform="translate(90.0 0)" d="M10 1.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L10 15l-5.4 2.9 1.1-6.1L1.2 7.6l6.1-.8z"/></svg></span></span><b>5.0</b><span>from 82 Google reviews</span><a href="https://www.google.com/maps/search/?api=1&amp;query=True%20Alpha%20Moving%20%26%20Junk&amp;query_place_id=ChIJv5x-2ugIMCERR_bDzXzZPbs" target="_blank" rel="noopener">Read them on Google</a></div></div></section>
-
-<section class="area" id="area"><div class="wrap">
-  <div>
-    <h2 class="t">Serving Tampa and nearby</h2>
-    <p class="intro">Including Tampa, Brandon, Riverview, Valrico, Bloomingdale, Seffner, Apollo Beach, Ruskin, Sun City Center and Plant City.</p>
+<section class="sec paper cut-both" id="pricing">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="num">03 / PRICING</span><h2>Straight-up <span class="r">pricing.</span></h2></div>
+      <p>No mystery math. Moving is billed by the hour, junk is priced by how much truck it fills, and the estimate is free.</p>
+    </div>
+    <div class="price rv">
+      <div class="pc">
+        <span class="lbl">Moving</span>
+        <svg viewBox="0 0 200 46" aria-hidden="true"><circle cx="23" cy="23" r="19" fill="none" stroke="#0c0c0d" stroke-width="4"/><path d="M23 12v11l8 5" stroke="#d3141b" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+        <div class="big">Hourly <span>rates</span></div>
+        <p>You pay for the time the crew is working on your move.</p>
+      </div>
+      <div class="pc dk">
+        <span class="lbl">Junk removal</span>
+        <svg viewBox="0 0 200 46" aria-hidden="true"><rect x="2" y="8" width="150" height="30" fill="none" stroke="#f3efe7" stroke-width="3"/><rect x="5" y="11" width="80" height="24" fill="#ff4d42"/><path d="M40 8v-6M77 8v-6M114 8v-6" stroke="#f3efe7" stroke-width="3"/></svg>
+        <div class="big">By <span>volume</span></div>
+        <p>Priced by the space your items take up in the truck.</p>
+      </div>
+      <div class="pc">
+        <span class="lbl">Before you book</span>
+        <svg viewBox="0 0 200 46" aria-hidden="true"><path d="M4 6h30v34H4z" fill="none" stroke="#0c0c0d" stroke-width="4"/><path d="M10 16h18M10 24h18M10 32h10" stroke="#0c0c0d" stroke-width="3"/><path d="M28 30l6 6 12-14" stroke="#d3141b" stroke-width="4" fill="none"/></svg>
+        <div class="big">Free <span>estimates</span></div>
+        <p>Call, text or use the 30-second form to get one.</p>
+      </div>
+      <div class="pc">
+        <span class="lbl">On the bill</span>
+        <svg viewBox="0 0 200 46" aria-hidden="true"><circle cx="23" cy="23" r="19" fill="none" stroke="#0c0c0d" stroke-width="4"/><path d="M10 36L36 10" stroke="#d3141b" stroke-width="4"/><text x="23" y="30" text-anchor="middle" font-family="Archivo Black" font-size="18" fill="#0c0c0d">$</text></svg>
+        <div class="big">No hidden <span>fees</span></div>
+        <p>The price is explained up front, so nothing on the bill is a surprise.</p>
+      </div>
+    </div>
+    <div class="callbar rv">
+      <b>Short notice? Call or text now.</b>
+      <div class="ctas">
+        <a class="btn blk" href="tel:+18139663500"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (813) 966-3500</a>
+        <a class="btn ghost" href="sms:+18139663500"><svg aria-hidden="true"><use href="#i-sms"/></svg>Send a text</a>
+      </div>
+    </div>
   </div>
-  <div class="cta-box">
-    <a class="btn call" href="tel:+18139663500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 3.5h3.5l1.8 4.6-2.3 1.4a11 11 0 0 0 6.5 6.5l1.4-2.3 4.6 1.8V19a1.8 1.8 0 0 1-1.9 1.8A16.5 16.5 0 0 1 3.2 5.4 1.8 1.8 0 0 1 5 3.5z"/></svg>Call (813) 966-3500</a>
-    <a class="btn ghost" href="#quote">Get a free quote online</a>
-    <p>Open Monday to Saturday 8 AM to 6 PM, Sunday 8 AM to 1 PM.</p>
+</section>
+
+<section class="sec ink" id="why">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="num">04 / WHY TRUE ALPHA</span><h2>Owner-run.<br><span class="r">Fast.</span> Local.</h2></div>
+      <p>A family business, not a call center. When you reach out, you're talking to the people who run the trucks.</p>
+    </div>
+    <div class="why rv">
+      <div><b>Family<i>-</i>owned</b><p>A Tampa Bay family business doing moving and junk removal.</p></div>
+      <div><b>Owners<i>.</i></b><p>You work directly with the owners, not a call center.</p></div>
+      <div><b>Same<i>-</i>day</b><p>Same-day and short-notice moves when a crew is free.</p></div>
+      <div><b>Call or text<i>.</i></b><p>Reach the team however is easiest: (813) 966-3500.</p></div>
+    </div>
+    <ol class="steps rv">
+      <li><h3>Reach out</h3><p>Call, text, or send the 30-second quote form.</p></li>
+      <li><h3>Free estimate</h3><p>Hourly for moves, by volume for junk. No hidden fees.</p></li>
+      <li><h3>Crew arrives</h3><p>Packing, loading, hauling: whatever the job needs.</p></li>
+      <li><h3>Moved or cleared</h3><p>Your stuff is in the new place, or gone for good.</p></li>
+    </ol>
   </div>
-</div></section>
+</section>
+
+<section class="sec paper cut-top" id="reviews">
+  <div class="wrap">
+    <div class="sh rv">
+      <div><span class="num">05 / REVIEWS</span><h2>Perfect <span class="r">score.</span></h2></div>
+      <p>Tampa Bay customers rate True Alpha on Google. Read what they say, in their own words.</p>
+    </div>
+    <div class="rev rv">
+      <div class="rev-big">
+        <div class="score">5.0<sup>★</sup></div>
+        <div class="stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <p>From 82 Google reviews</p>
+      </div>
+      <div class="rev-side">
+        <span class="gbadge"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.6a4.8 4.8 0 01-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.5z"/><path fill="#34A853" d="M12 22c2.8 0 5.2-.9 6.9-2.5l-3.4-2.6c-.9.6-2.1 1-3.5 1-2.7 0-5-1.8-5.8-4.3H2.7v2.7A10 10 0 0012 22z"/><path fill="#FBBC05" d="M6.2 13.6a6 6 0 010-3.8V7.1H2.7a10 10 0 000 9.2z"/><path fill="#EA4335" d="M12 6c1.5 0 2.9.5 4 1.5l3-3A10 10 0 002.7 7.1l3.5 2.7C7 7.8 9.3 6 12 6z"/></svg>Google reviews</span>
+        <h3>82 reviews. All five stars on average.</h3>
+        <p>Every review is on True Alpha's Google profile, from moves and cleanouts across Tampa Bay.</p>
+        <div><a class="btn blk" href="https://www.google.com/maps/search/?api=1&amp;query=True%20Alpha%20Moving%20%26%20Junk&amp;query_place_id=ChIJv5x-2ugIMCERR_bDzXzZPbs" target="_blank" rel="noopener">Read reviews on Google</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec ink" id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div class="ca rv">
+        <span class="num">06 / SERVICE AREA</span>
+        <p class="big">Tampa <span class="r">&amp;</span> the whole Bay side.</p>
+        <div class="areas">
+          <span class="hq">Tampa</span><span>Brandon</span><span>Riverview</span><span>Valrico</span><span>Bloomingdale</span><span>Seffner</span><span>Apollo Beach</span><span>Ruskin</span><span>Sun City Center</span><span>Plant City</span>
+        </div>
+        <div class="map-art">
+          <svg viewBox="0 0 600 240" role="img" aria-label="Stylized map of the service area east and south of Tampa">
+            <rect width="600" height="240" fill="#121214"/>
+            <path d="M0 150c40-10 70 10 100 40s40 50 80 50H0z" fill="#1a1d22"/>
+            <path d="M60 0c10 40 40 60 30 100s-50 40-50 80" stroke="#1f2329" stroke-width="30" fill="none"/>
+            <g stroke="#2a2a2f" stroke-width="2"><path d="M0 60h600M0 120h600M0 180h600M150 0v240M300 0v240M450 0v240"/></g>
+            <path d="M120 70L250 80 330 70 470 60 M250 80l10 60 M120 70l60 150 M260 140l40 60 M260 140l-10 40" stroke="#d3141b" stroke-width="3" fill="none" stroke-dasharray="6 6"/>
+            <g font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#f3efe7">
+              <circle cx="120" cy="70" r="9" fill="#d3141b"/><text x="104" y="52">TAMPA</text>
+              <circle cx="250" cy="80" r="5" fill="#f3efe7"/><text x="222" y="104">BRANDON</text>
+              <circle cx="330" cy="70" r="5" fill="#f3efe7"/><text x="312" y="54">VALRICO</text>
+              <circle cx="470" cy="60" r="5" fill="#f3efe7"/><text x="430" y="44">PLANT CITY</text>
+              <circle cx="200" cy="40" r="5" fill="#f3efe7"/><text x="210" y="30">SEFFNER</text>
+              <circle cx="260" cy="140" r="5" fill="#f3efe7"/><text x="274" y="144">RIVERVIEW</text>
+              <circle cx="330" cy="120" r="5" fill="#f3efe7"/><text x="342" y="124">BLOOMINGDALE</text>
+              <circle cx="180" cy="220" r="5" fill="#f3efe7"/><text x="80" y="214">APOLLO BEACH</text>
+              <circle cx="250" cy="182" r="5" fill="#f3efe7"/><text x="262" y="186">RUSKIN</text>
+              <circle cx="300" cy="206" r="5" fill="#f3efe7"/><text x="312" y="222">SUN CITY CENTER</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="cbox rv">
+        <h3>Hours</h3>
+        <table class="hours">
+          <tbody>
+            <tr data-d="1"><td>Monday</td><td>8 AM – 6 PM</td></tr>
+            <tr data-d="2"><td>Tuesday</td><td>8 AM – 6 PM</td></tr>
+            <tr data-d="3"><td>Wednesday</td><td>8 AM – 6 PM</td></tr>
+            <tr data-d="4"><td>Thursday</td><td>8 AM – 6 PM</td></tr>
+            <tr data-d="5"><td>Friday</td><td>8 AM – 6 PM</td></tr>
+            <tr data-d="6"><td>Saturday</td><td>8 AM – 6 PM</td></tr>
+            <tr data-d="0"><td>Sunday</td><td>8 AM – 1 PM</td></tr>
+          </tbody>
+        </table>
+        <h3>Contact</h3>
+        <ul class="clist">
+          <li><a href="tel:+18139663500"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (813) 966-3500</a></li>
+          <li><a href="sms:+18139663500"><svg aria-hidden="true"><use href="#i-sms"/></svg>Text (813) 966-3500</a></li>
+          <li><a href="mailto:info@truealphamovingjunk.com"><svg aria-hidden="true"><use href="#i-mail"/></svg>info@truealphamovingjunk.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer><div class="wrap">
-  <span><b>True Alpha Moving &amp; Junk</b></span>
-  <span>(813) 966-3500</span>
-</div></footer>
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <h4>True Alpha Moving &amp; Junk</h4>
+        <div class="big">MOVE<i>/</i>CLEAR</div>
+        <p style="margin-top:14px;max-width:42ch">Family-owned moving and junk removal across Tampa Bay. Call or text (813) 966-3500.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <a href="#services">Services</a><a href="#towers">High-rises</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a><a href="#quote">Get a quote</a>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <a href="tel:+18139663500">(813) 966-3500</a><a href="sms:+18139663500">Text us</a><a href="mailto:info@truealphamovingjunk.com" style="overflow-wrap:anywhere">info@truealphamovingjunk.com</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=True%20Alpha%20Moving%20%26%20Junk&amp;query_place_id=ChIJv5x-2ugIMCERR_bDzXzZPbs" target="_blank" rel="noopener">Google reviews</a>
+      </div>
+    </div>
+    <div class="legal"><span>© True Alpha Moving &amp; Junk · Tampa, FL</span><span>Concept homepage by Rawcoderz. Not the official website.</span></div>
+  </div>
+</footer>
 
-<div class="bar"><a class="btn call" href="tel:+18139663500"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 3.5h3.5l1.8 4.6-2.3 1.4a11 11 0 0 0 6.5 6.5l1.4-2.3 4.6 1.8V19a1.8 1.8 0 0 1-1.9 1.8A16.5 16.5 0 0 1 3.2 5.4 1.8 1.8 0 0 1 5 3.5z"/></svg>Call</a><a class="btn" href="#quote" style="background:#fff;color:var(--ink)">Get a quote</a></div>
+<nav class="mbar" aria-label="Quick actions">
+  <a class="c" href="tel:+18139663500"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+  <a class="q" href="#quote"><svg aria-hidden="true"><use href="#i-bolt"/></svg>Get a quote</a>
+</nav>
 
-<script type="application/json" id="biz">{"name": "True Alpha Moving & Junk", "phone": "(813) 966-3500", "sms": {"urgent": "Moving soon. ", "join": " from ZIP ", "kind": "home size: %s", "lower": false}}</script>
 <script>
 (function(){
-  var biz = JSON.parse(document.getElementById('biz').textContent);
-  var f = document.getElementById('quote');
-  var steps = f.querySelectorAll('[data-step]');
-  var bar = document.getElementById('q-bar'), lbl = document.getElementById('q-step');
-  var cur = 1;
-  function val(n){ var el = f.querySelector('input[name="'+n+'"]:checked'); return el ? el.value : ''; }
-  function err(id, msg, input){ document.getElementById(id).textContent = msg || ''; if (input) input.setAttribute('aria-invalid', msg ? 'true' : 'false'); }
+  var d=document;d.documentElement.classList.add('js');
+  /* hero toggle */
+  var hero=d.querySelector('.hero');
+  function setMode(m){
+    if(hero.dataset.mode===m)return;
+    hero.dataset.mode=m;
+    d.querySelectorAll('.toggle [data-mode-btn]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.modeBtn===m?'true':'false')});
+    d.querySelectorAll('[data-show]').forEach(function(el){var on=el.dataset.show===m;el.hidden=!on;if(on){el.classList.remove('fade-in');void el.offsetWidth;el.classList.add('fade-in')}});
+    if(m==='clear'&&!d.querySelector('input[name=need]:checked')){var j=d.querySelector('input[name=need][value="Junk removal"]');if(j)j.checked=true}
+  }
+  d.querySelectorAll('[data-mode-btn]').forEach(function(b){b.addEventListener('click',function(){setMode(b.dataset.modeBtn)})});
+
+  /* quote form */
+  var f=d.getElementById('quote-form'),steps=f.querySelectorAll('[data-step]'),lab=d.getElementById('q-step'),bar=d.getElementById('q-bar');
   function show(n){
-    cur = n;
-    steps.forEach(function(s){ s.hidden = s.getAttribute('data-step') !== String(n); });
-    bar.style.width = (n >= 4 ? 100 : n * 33.34) + '%';
-    lbl.textContent = n >= 4 ? 'Done' : 'Step ' + n + ' of 3';
-    var t = f.querySelector('[data-step="'+n+'"] .q-title, [data-step="'+n+'"] h3');
-    if (t) t.focus({preventScroll:true});
+    steps.forEach(function(s){s.hidden=s.dataset.step!==String(n)});
+    if(n<4){lab.textContent='Step '+n+' of 3';bar.style.width=(n*33.34)+'%'}else{lab.textContent='Done';bar.style.width='100%'}
   }
-  function check(n){
-    if (n === 1){ var ok = !!val('need'); err('e-need', ok ? '' : 'Pick one to continue.'); return ok; }
-    if (n === 2){ var z = document.getElementById('q-zip'); var ok2 = /^\d{5}$/.test(z.value.trim()); err('e-zip', ok2 ? '' : 'Enter a 5-digit ZIP code.', z); if (!ok2) z.focus(); return ok2; }
-    if (n === 3){
-      var nm = document.getElementById('q-name'), ph = document.getElementById('q-phone');
-      var okn = nm.value.trim().length > 1, digits = ph.value.replace(/\D/g,'').replace(/^1(?=\d{10}$)/,''), okp = digits.length === 10;
-      err('e-name', okn ? '' : 'Add your name so they know who to ask for.', nm);
-      err('e-phone', okp ? '' : 'Enter a 10-digit phone number.', ph);
-      if (!okn) nm.focus(); else if (!okp) ph.focus();
-      return okn && okp;
-    }
-    return true;
-  }
-  f.addEventListener('change', function(e){ if (e.target.name === 'need') err('e-need',''); });
-  f.querySelectorAll('[data-next]').forEach(function(b){ b.addEventListener('click', function(){ if (check(cur)) show(+b.getAttribute('data-next')); }); });
-  f.querySelectorAll('[data-back]').forEach(function(b){ b.addEventListener('click', function(){ show(+b.getAttribute('data-back')); }); });
-  var zip = document.getElementById('q-zip');
-  zip.addEventListener('input', function(){ zip.value = zip.value.replace(/\D/g,'').slice(0,5); if (/^\d{5}$/.test(zip.value)) err('e-zip','',zip); });
-  var ph = document.getElementById('q-phone');
-  ph.addEventListener('input', function(){
-    var d = ph.value.replace(/\D/g,'').replace(/^1/,'').slice(0,10), o = d;
-    if (d.length > 6) o = '(' + d.slice(0,3) + ') ' + d.slice(3,6) + '-' + d.slice(6);
-    else if (d.length > 3) o = '(' + d.slice(0,3) + ') ' + d.slice(3);
-    ph.value = o; if (d.length === 10) err('e-phone','',ph);
-  });
-  f.addEventListener('submit', function(e){
-    e.preventDefault();
-    if (cur !== 3) { if (check(cur)) show(cur + 1); return; }
-    if (!check(3)) return;
-    var cfg = JSON.parse(document.getElementById('biz').textContent).sms || {};
-    var leak = val('leak') === 'Yes', kind = val('roof');
-    if (cfg.lower !== false) kind = kind.toLowerCase();
-    document.getElementById('q-sms').textContent =
-      (leak ? (cfg.urgent || 'Leaking now. ') : '') + val('need') + (cfg.join || ' in ') + zip.value.trim() + ', ' + (cfg.kind || '%s roof').replace('%s', kind) + '.\n' +
-      document.getElementById('q-name').value.trim() + ', ' + ph.value + '\nBest time: ' + val('when').toLowerCase() + '.';
+  function err(id,msg,inp){d.getElementById(id).textContent=msg||'';if(inp)inp.setAttribute('aria-invalid',msg?'true':'false')}
+  function val(n){
+    if(n===1){var c=f.querySelector('input[name=need]:checked');err('e1',c?'':'Pick one option to continue.');return !!c}
+    if(n===2){var z=d.getElementById('q-zip'),ok=/^\d{5}$/.test(z.value.trim());err('e2',ok?'':'Enter a 5-digit ZIP code.',z);if(!ok)z.focus();return ok}
+    if(n===3){var nm=d.getElementById('q-name'),ph=d.getElementById('q-phone'),a=nm.value.trim().length>1,digits=ph.value.replace(/\D/g,'');if(digits.length===11&&digits[0]==='1')digits=digits.slice(1);var b=digits.length===10;
+      err('e3n',a?'':'Tell us your name.',nm);err('e3p',b?'':'Enter a 10-digit mobile number.',ph);if(!a)nm.focus();else if(!b)ph.focus();return a&&b}
+    return true}
+  f.addEventListener('click',function(e){
+    var nx=e.target.closest('[data-next]'),bk=e.target.closest('[data-back]');
+    if(nx){var cur=+nx.dataset.next-1;if(val(cur))show(+nx.dataset.next)}
+    if(bk)show(+bk.dataset.back)});
+  f.addEventListener('change',function(e){if(e.target.name==='need')err('e1','')});
+  f.addEventListener('submit',function(e){
+    e.preventDefault();if(!val(3))return;
+    var g=function(n){var c=f.querySelector('input[name='+n+']:checked');return c?c.value:''};
+    var digits=d.getElementById('q-phone').value.replace(/\D/g,'');if(digits.length===11)digits=digits.slice(1);
+    var ph='('+digits.slice(0,3)+') '+digits.slice(3,6)+'-'+digits.slice(6);
+    var msg=g('need')+' from ZIP '+d.getElementById('q-zip').value.trim()+', home size: '+g('size')+'. '+(g('soon')==='Yes'?'Needs it in the next 2 weeks. ':'')+d.getElementById('q-name').value.trim()+', '+ph+'. Best time: '+g('time').toLowerCase()+'.';
+    d.getElementById('q-sms').textContent=msg;
     show(4);
   });
-  document.getElementById('q-reset').addEventListener('click', function(){
-    f.reset(); ['e-need','e-zip','e-name','e-phone'].forEach(function(id){ err(id,''); });
-    f.querySelectorAll('[aria-invalid]').forEach(function(i){ i.removeAttribute('aria-invalid'); });
-    show(1);
+  d.getElementById('q-reset').addEventListener('click',function(){f.reset();['e1','e2','e3n','e3p'].forEach(function(i){err(i,'')});show(1)});
+  d.getElementById('q-zip').addEventListener('input',function(){this.value=this.value.replace(/\D/g,'').slice(0,5)});
+
+  /* skyline pins */
+  d.querySelectorAll('.spots li').forEach(function(li){
+    var sp=d.querySelector('svg .sp[data-sp="'+li.dataset.sp+'"]');
+    li.addEventListener('mouseenter',function(){li.classList.add('on');sp&&sp.classList.add('on')});
+    li.addEventListener('mouseleave',function(){li.classList.remove('on');sp&&sp.classList.remove('on')});
   });
-  document.querySelectorAll('a[href="#quote"]').forEach(function(a){
-    a.addEventListener('click', function(e){
-      e.preventDefault();
-      f.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center'});
-      setTimeout(function(){ var t = f.querySelector('[data-step="'+cur+'"] .q-title, [data-step="'+cur+'"] input'); if (t) t.focus({preventScroll:true}); }, 350);
-    });
-  });
+
+  /* today's hours */
+  try{var t=new Date().toLocaleString('en-US',{timeZone:'America/New_York',weekday:'short'});var map={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};var r=d.querySelector('.hours tr[data-d="'+map[t]+'"]');if(r)r.classList.add('now')}catch(e){}
+
+  /* reveal */
+  var rv=d.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    rv.forEach(function(el){io.observe(el)});
+  }else rv.forEach(function(el){el.classList.add('in')});
 })();
 </script>
 </body>

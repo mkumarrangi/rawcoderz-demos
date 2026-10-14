@@ -5,6 +5,7 @@ Website: https://www.rawcoderz.com/ · Phone: +91 86969 75043
 
 All email and WhatsApp drafts include these contact details in a short signature. The email draft files also use the business email in their From and Reply-To fields.
 
+- **[SEND-LIST.md](SEND-LIST.md) — start here.** One file with all 28 brands in sending order: contact details, email subject and body, WhatsApp message and prefilled chat link, per-brand caveats, and follow-up copy. Problem-first copy, rewritten 14 October 2026.
 - [All 28 personalised email drafts](personalised-emails.md), each with its own live demo link.
 - [14 addressed email draft files](email-drafts/README.md), covering 15 brands; Kanha and Tansukh share one combined introduction.
 - [13 personalised WhatsApp messages](whatsapp-messages.md) for brands without email addresses, with prefilled chat links and phone provenance.
